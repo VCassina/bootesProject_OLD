@@ -34,7 +34,7 @@ span {
   font-size: 20px;
 }
 
-span::before {
+.welcome_nav-unit::before {
   content: "0" counter(number) "_";
   display: inline-block;
   font-weight: 600;
@@ -52,8 +52,12 @@ a {
   color: #031a13;
 }
 
-a:hover {
-  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+a span:hover {
+  text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+a span:hover::before {
+  text-shadow: none;
 }
 
 svg {

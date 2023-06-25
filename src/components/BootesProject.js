@@ -5,35 +5,39 @@ import meByCatalysStuff from "../assets/meByCatalysStuff.webp";
 function BootesProject() {
   return (
     <section className="bootes_container">
-      <h1>Welcome to the Boötes Project !</h1>
+      <h1>Boötes Project</h1>
       <div className="bootes_content">
         <article className="bootes_content-article">
           <h2>Un projet associatif</h2>
           <div>
             <p>
-              Le Boötes Project, c'est notre service de création de Site Web
-              destinés aux associations.
+              Le Boötes Project, c'est notre service de{" "}
+              <b>création de Site Web</b> destinés aux associations loi 1901 (la fameuse).
             </p>
             <p>
-              <u>Pourquoi choisir ce terrain ?</u>
+              <u>
+                <b>Pourquoi choisir ce terrain ?</b>
+              </u>
             </p>
             <p>
-              Et bien parceque j'y ai travaillé et c'est dans ce milieu que j'ai
-              pu rencontrer les personnes les personnes plus passionné·e·s et
-              bienveillant·e·s
+              "Et bien parceque j'y ai travaillé et c'est dans ce milieu que
+              j'ai pu rencontrer les personnes les personnes plus passionné·e·s
+              et bienveillant·e·s".
             </p>
             <p>
-              Et s'il y a bien une chose que je retire de cet univers, c'est
-              qu'il me semble évident que sans les associations et leur actions,
-              le monde perdrait de sa beauté
+              "S'il y a bien une chose que je retire de cet univers, c'est qu'il
+              me semble évident que sans les associations et leur actions, le
+              monde perdrait de sa beauté".
             </p>
             <p>
-              <u>C'est pas un peu facile comme conclusion ?</u>
+              <u>
+                <b>C'est pas un peu facile comme conclusion ?</b>
+              </u>
             </p>
             <p>
-              Oui, plutôt, mais c'est sincère - Chez Boötes Dev, nous croyons en
-              vous et c'est pour soutenir vos actions que nous vous proposons
-              nos services de la plus abordable des manières !
+              "Oui, plutôt, mais c'est sincère" ! - Chez Boötes Dev, nous
+              croyons en vous et c'est pour soutenir vos actions que nous vous
+              proposons nos services de la plus abordable des manières !
             </p>
           </div>
         </article>
@@ -59,12 +63,13 @@ function BootesProject() {
               Web et ce n'est qu'un début.
             </p>
             <p>
-              Avec <b>Lisa</b>, ma chère et tendre <u>Designeuse UI/UX</u>,
-              nous voulons faire quelque chose qui compte à nos yeux.
+              Avec <b>Lisa</b>, ma chère et tendre <u>Designeuse UI/UX</u>, nous
+              voulons faire quelque chose qui compte à nos yeux.
             </p>
             <p>
               Ensemble, nous représentons une version gentille de la Team
-              Rocket, on a même notre chat qui parle, <b>Praline</b>, 4 ans.
+              Rocket, on a même notre chat qui parle, <b>Praline</b>. Elle ne se
+              tait jamais.
             </p>
           </div>
         </article>

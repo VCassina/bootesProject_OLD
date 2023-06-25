@@ -11,22 +11,22 @@ function Header() {
           <ul>
             <li>
               <a href="#presentation">
-                <span><FaLeaf /> Boötes Project</span>
+                <span className="welcome_nav-unit"><FaLeaf /> Boötes Project</span>
               </a>
             </li>
             <li>
               <a href="#services">
-              <span><FaCode /> Mes services</span>
+              <span className="welcome_nav-unit"><FaCode /> Mes services</span>
               </a>
             </li>
             <li>
               <a href="#projets">
-              <span><FaFolderOpen /> Mes réalisations</span>
+              <span className="welcome_nav-unit"><FaFolderOpen /> Mes réalisations</span>
               </a>
             </li>
             <li>
               <a href="#contact">
-              <span><FaComments /> Me contacter</span>
+              <span className="welcome_nav-unit"><FaComments /> Me contacter</span>
               </a>
             </li>
           </ul>
