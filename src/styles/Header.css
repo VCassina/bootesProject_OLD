@@ -1,0 +1,66 @@
+.welcome-header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  width: 100vw;
+  justify-content: space-between;
+  padding: 0.5em 2em;
+  background: linear-gradient(105deg, rgba(3, 26, 19, 0.9) 20%, #fafafa 20.5%);
+  box-shadow: 0 1.5px 6px rgba(0, 0, 0, 0.5);
+}
+
+img {
+  width: 250px;
+}
+
+nav li {
+  list-style: none;
+  counter-increment: number;
+}
+
+nav ul {
+  position: relative;
+  top: 10px;
+  display: flex;
+  gap: 2.75em;
+  padding: 0 80px;
+}
+
+span {
+  position: relative;
+  font-size: 20px;
+}
+
+span::before {
+  content: "0" counter(number) "_";
+  display: inline-block;
+  font-weight: 600;
+  width: auto;
+  left: 25px;
+  top: -0.9em;
+  line-height: 0.1em;
+  font-size: 1.25em;
+  position: absolute;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+  color: #031a13;
+}
+
+a:hover {
+  text-shadow: 0 5px 10px rgba(0, 0, 0, 0.35);
+}
+
+svg {
+  color: #0CA876;
+  position: relative;
+  top: 5px;
+  border-radius: 100%;
+  padding: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
