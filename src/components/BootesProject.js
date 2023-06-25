@@ -4,41 +4,35 @@ import meByCatalysStuff from "../assets/meByCatalysStuff.webp";
 
 function BootesProject() {
   return (
-    <section className="bootes_container" id="#presentation">
-      <h1>Boötes Project</h1>
+    <section className="bootes_container" id="bootes">
+      <h2 className="bootes_title title ">_Boötes Project</h2>
       <div className="bootes_content">
         <article className="bootes_content-article">
-          <h2>Un projet associatif</h2>
+          <h3 className="bootes_content-articleTitle first-title">
+            Un projet associatif
+          </h3>
           <div>
             <p>
               Le Boötes Project, c'est notre service de{" "}
-              <b>création de Site Web</b> destinés aux associations loi 1901 (la fameuse).
+              <b>Création de Site Web</b> destinés aux associations loi 1901 et,
+              soyons directe, il se veut <b>le plus abordable possible</b> !
             </p>
             <p>
-              <u>
-                <b>Pourquoi choisir ce terrain ?</b>
-              </u>
+              <b>Pourquoi choisir ce terrain ?</b>
             </p>
             <p>
-              "Et bien parceque j'y ai travaillé et c'est dans ce milieu que
-              j'ai pu rencontrer les personnes les personnes plus passionné·e·s
-              et bienveillant·e·s".
+              Parceque j'y ai travaillé et que j'ai assisté à la détermination
+              et la bienveillance des acteurs de ce milieu. Les rencontres
+              faites avec les passionné·e·s me donnent envie de les encourager à
+              continuer leur actions !
             </p>
             <p>
-              "S'il y a bien une chose que je retire de cet univers, c'est qu'il
-              me semble évident que sans les associations et leur actions, le
-              monde perdrait de sa beauté".
+              Et c'est la raison d'être du projet :{" "}
+              <b>Fournir à votre association une vraie présence sur Internet</b>
+              , c'est un indispensable aujourd'hui mais toutes les structures ne
+              peuvent se munir d'un site aussi facilement que ça.
             </p>
-            <p>
-              <u>
-                <b>C'est pas un peu facile comme conclusion ?</b>
-              </u>
-            </p>
-            <p>
-              "Oui, plutôt, mais c'est sincère" ! - Chez Boötes Dev, nous
-              croyons en vous et c'est pour soutenir vos actions que nous vous
-              proposons nos services de la plus abordable des manières !
-            </p>
+            <p>Avec le Boötes Project, c'est ce qu'on veut résoudre !</p>
           </div>
         </article>
         <figure>
@@ -50,25 +44,28 @@ function BootesProject() {
           <figcaption>Drawn by CatalysStuff - Thank you !</figcaption>
         </figure>
         <article className="bootes_content-article second-element">
-          <h2>Notre profil</h2>
+          <h3 className="bootes_content-articleTitle second-title">
+            Notre équipe
+          </h3>
           <div>
             <p>
-              Nous sommes un couple de jeunes parisiens passionné·e·s par le web
-              et le numérique depuis plusieurs années.
+              Notre équipe est un couple de jeunes parisiens passionné·e·s par
+              le web et le numérique depuis plusieurs années.
             </p>
             <p>
-              Représenté·e·s ici avec mon éternel hoodie, je suis <b>Victor</b>{" "}
-              (bonjour), le <u>Développeur</u> du duo ! J'ai deux diplômes à mon
-              arc, un premier en Système & Réseau, un deuxieme en Intégration
-              Web et ce n'est qu'un début.
+              Moi, c'est <b>Victor</b> (bonjour), le <b>Développeur</b> du duo
+              représenté ici avec mon éternel hoodie. J'ai deux diplômes dans ma
+              besace, un premier en <u>Système & Réseau</u>, un deuxieme en{" "}
+              <u>Intégration Web</u> et ce n'est qu'un début.
             </p>
             <p>
-              Avec <b>Lisa</b>, ma chère et tendre <u>Designeuse UI/UX</u>, nous
+              Avec <b>Lisa</b>, ma chère et tendre <b>Designeuse UI/UX</b> qui
+              rejoindra bientôt l'aventure dès la fin de sa formation, nous
               voulons faire quelque chose qui compte à nos yeux.
             </p>
             <p>
               Ensemble, nous représentons une version gentille de la Team
-              Rocket, on a même notre chat qui parle, <b>Praline</b>. Elle ne se
+              Rocket, on a même un chat qui parle, <b>Praline</b>. Elle ne se
               tait jamais.
             </p>
           </div>

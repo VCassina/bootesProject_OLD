@@ -11,6 +11,7 @@
   padding: 0.5em 2em;
   background: linear-gradient(105deg, rgba(3, 26, 19, 0.9) 20%, #fafafa 20.35%);
   box-shadow: 0 1.5px 6px rgba(0, 0, 0, 0.5);
+  z-index: 999;
 }
 
 img {
