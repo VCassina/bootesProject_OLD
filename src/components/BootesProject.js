@@ -4,7 +4,7 @@ import meByCatalysStuff from "../assets/meByCatalysStuff.webp";
 
 function BootesProject() {
   return (
-    <section className="bootes_container">
+    <section className="bootes_container" id="#presentation">
       <h1>Boötes Project</h1>
       <div className="bootes_content">
         <article className="bootes_content-article">
@@ -49,7 +49,7 @@ function BootesProject() {
           />
           <figcaption>Drawn by CatalysStuff - Thank you !</figcaption>
         </figure>
-        <article className="bootes_content-article">
+        <article className="bootes_content-article second-element">
           <h2>Notre profil</h2>
           <div>
             <p>

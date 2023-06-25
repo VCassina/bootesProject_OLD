@@ -3,6 +3,7 @@
     flex-direction: column;
     align-items: center;
     margin-top: 120px;
+    color: #031a13;
 }
 
 .bootes_content-picture {
@@ -14,7 +15,17 @@
     grid-template-columns: 2fr 1fr 2fr;
 }
 
+.bootes_content-article {
+    animation: floating 1.5s ease-in-out forwards 0.25s;
+}
+
+.second-element {
+    animation: floating-mirror 1.5s ease-in-out forwards 0.25s;
+}
+
 .bootes_content-article h2 {
+    position: relative;
+    bottom: 10px;
     text-align: center;
 }
 
@@ -34,8 +45,46 @@ figcaption {
     font-size: small;
 }
 
-h1  {
+h1 {
     color: #0CA876;
     font-size: 4em;
     text-shadow: 0 1.25px 1px rgba(0, 0, 0, 1);
+    animation: fall-from-sky 0.2s ease-in forwards;
+}
+
+@keyframes floating {
+    0% { transform: translate(2%, 0) rotate(-1deg); }
+    10% { transform: translate(0, 7%) rotate(1deg); }
+    20% { transform: translate(1%, 0) rotate(-1deg); }
+    30% { transform: translate(0, 3.5%) rotate(1deg); }
+    40% { transform: translate(0.5%, 0) rotate(-0.5deg); }
+    50% { transform: translate(0, 1.5%) rotate(0.5deg); }
+    60% { transform: translate(0, 0) rotate(-0.5deg); }
+    70% { transform: translate(0, 0.5%) rotate(0.1deg); }
+    80% { transform: translate(0, 0) rotate(0.0deg); }
+  }
+
+  @keyframes floating-mirror {
+    0% { transform: translate(-2%, 0) rotate(1deg); }
+    10% { transform: translate(0, 7%) rotate(-1deg); }
+    20% { transform: translate(-1%, 0) rotate(1deg); }
+    30% { transform: translate(0, 3.5%) rotate(-1deg); }
+    40% { transform: translate(-0.5%, 0) rotate(0.5deg); }
+    50% { transform: translate(0, 1.5%) rotate(-0.5deg); }
+    60% { transform: translate(0, 0) rotate(0.5deg); }
+    70% { transform: translate(0, 0.5%) rotate(-0.1deg); }
+    80% { transform: translate(0, 0) rotate(0.0deg); }
+}
+
+@keyframes fall-from-sky {
+    0% {
+        opacity: 0;
+        transform: translateY(-500%);
+    }
+    80% { opacity: 0};
+    85% { opacity: 1};
+    100% {
+
+        transform: translateY(0);
+    }
 }
