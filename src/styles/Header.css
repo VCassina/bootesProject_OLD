@@ -19,7 +19,6 @@ img {
 }
 
 nav li {
-  list-style: none;
   counter-increment: number;
 }
 
@@ -31,12 +30,13 @@ nav ul {
   padding: 0 80px;
 }
 
-span {
+.header_nav-unit {
   position: relative;
   font-size: 20px;
 }
 
 .header_nav-unit::before {
+
   content: "0" counter(number) "_";
   display: inline-block;
   font-weight: 600;

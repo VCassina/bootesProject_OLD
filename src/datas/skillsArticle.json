@@ -1,0 +1,38 @@
+[
+  {
+    "alt": "Icone Front-end par Macrovector",
+    "title": "Front-End",
+    "description": "La partie visible de votre site.",
+    "skills": [
+      "HTML / CSS",
+      "SASS",
+      "Javascript / TypeScript",
+      "React JS & Redux",
+      "Intégration d'API"
+    ]
+  },
+  {
+    "alt": "Icone Back-end par Macrovector",
+    "title": "Back-End",
+    "description": "Le dessous de l'iceberg.",
+    "skills": [
+      "Nodes.js",
+      "SQL",
+      "MongoDB",
+      "Deploiement WEB",
+      "Redirection DNS",
+      "Git/GitHub"
+    ]
+  },
+  {
+    "alt": "Icone SEO par Macrovector",
+    "title": "SEO & Optimisation",
+    "description": "Votre visibilité sur le web.",
+    "skills": [
+      "Optimisation des performances",
+      "Injection de Micro-données",
+      "Analyse du référencement",
+      "Construction sémantique"
+    ]
+  }
+]

@@ -1,13 +1,13 @@
 import React from "react";
 import BootesProject from "../components/BootesProject";
-import MesServices from "../components/MesServices";
+import MySkills from "../components/MySkills";
 
 
 function HomePage() {
   return (
     <main>
       <BootesProject />
-      <MesServices />
+      <MySkills />
     </main>
   );
 }

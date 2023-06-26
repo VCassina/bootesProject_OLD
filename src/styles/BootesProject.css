@@ -20,6 +20,7 @@ b {
     flex-direction: column;
     align-items: center;
     color: #031a13;
+    margin-top: 60px;
 }
 
 .bootes_content-picture {
