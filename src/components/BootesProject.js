@@ -1,11 +1,12 @@
 import React from "react";
 import "../styles/BootesProject.css";
 import meByCatalysStuff from "../assets/meByCatalysStuff.webp";
+import AnchorTarget from "../items/AnchorTarget";
 
 function BootesProject() {
   return (
-    <section className="bootes_container" id="bootes">
-      <h2 className="bootes_title title ">_Boötes Project</h2>
+    <section className="bootes_container">
+      <h2 className="bootes_title title" >_Boötes Project</h2>
       <div className="bootes_content">
         <article className="bootes_content-article">
           <h3 className="bootes_content-articleTitle first-title">
@@ -71,6 +72,7 @@ function BootesProject() {
           </div>
         </article>
       </div>
+      <AnchorTarget id="skills"/>
     </section>
   );
 }

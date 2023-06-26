@@ -1,4 +1,4 @@
-.welcome-header{
+.header_content{
   font-family: 'Montserrat', sans-serif;
   position: fixed;
   top: 0;
@@ -9,7 +9,7 @@
   width: 100vw;
   justify-content: space-between;
   padding: 0.5em 2em;
-  background: linear-gradient(105deg, rgba(3, 26, 19, 0.9) 20%, #fafafa 20.35%);
+  background: linear-gradient(105deg, rgb(5, 46, 34) 20%, #fafafa 20.35%);
   box-shadow: 0 1.5px 6px rgba(0, 0, 0, 0.5);
   z-index: 999;
 }
@@ -36,7 +36,7 @@ span {
   font-size: 20px;
 }
 
-.welcome_nav-unit::before {
+.header_nav-unit::before {
   content: "0" counter(number) "_";
   display: inline-block;
   font-weight: 600;
@@ -69,4 +69,8 @@ svg {
   border-radius: 100%;
   padding: 5px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.headerHB {
+  height: 100px;
 }
