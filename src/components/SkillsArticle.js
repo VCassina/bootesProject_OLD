@@ -7,7 +7,7 @@ function SkillsArticle({img, alt, title, description, skills}) {
     alt={alt}
     className="services_content-img"
   ></img>
-  <h3>{title}</h3>
+  <h3 className="services_subTitle">{title}</h3>
 </div>
 <span className="services_content-description">{description}</span>
 <div className="services_content-bar"></div>

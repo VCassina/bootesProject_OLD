@@ -23,7 +23,7 @@ function Header() {
               </a>
             </li>
             <li>
-              <a href="#projets">
+              <a href="#creations">
               <span className="header_nav-unit"><FaFolderOpen /> Nos réalisations</span>
               </a>
             </li>

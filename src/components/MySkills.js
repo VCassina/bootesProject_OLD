@@ -14,7 +14,7 @@ function MySkills() {
     <section className="services_container" >
       <AnchorTarget id="skills"/>
       <div className="importantComponent">
-        <div class="title-skills"><h2><span>_</span><span>Nos competences</span></h2></div>
+        <div className="title-skills"><h2><span>_</span><span>Nos competences</span></h2></div>
         <div className="services_content">
         {data.map((article, index) => (
             <SkillsArticle
