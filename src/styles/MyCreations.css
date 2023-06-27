@@ -1,0 +1,52 @@
+.creations_carrousel_container {
+    position: relative;
+    display: flex;
+    width: 75%;
+    height: 46rem;
+    padding: 20px;
+  }
+  
+  .creations_carrousel_left {
+    flex: 1;
+    background-color: yellow;
+  }
+  
+  .creations_carrousel_right {
+    flex: 2;
+    background-color: red;
+    overflow: hidden;
+    position: relative;
+    transition: transform 0.5s, opacity 0.5s;
+  }
+  
+  .slidein {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  
+  .slideout {
+    transform: translateY(-400px);
+    opacity: 0;
+  }
+  
+  @keyframes slidein {
+    0% {
+      transform: translateY(-400px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideout {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-400px);
+      opacity: 0;
+    }
+  }  
