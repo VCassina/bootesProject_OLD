@@ -27,9 +27,9 @@ function MyCreations() {
       setAnimateOut(false); // Met fin à l'animation de slide-out.
 
       // Met à jour les nouvelles données avec un délai supplémentaire.
-      setTimeout(() => {
+
         setNewData(dataSlider[selectedElement]);
-      });
+      
     }, 500);
   };
 
