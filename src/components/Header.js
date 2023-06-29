@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/css/Header.css";
 import Logo from "../assets/bootesDevLogo.webp";
 import { FaLeaf, FaCode, FaFolderOpen, FaComments } from "react-icons/fa";
 import AnchorTarget from "../items/AnchorTarget";

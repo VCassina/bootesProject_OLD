@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/css/BootesProject.css";
 import meByCatalysStuff from "../assets/meByCatalysStuff.webp";
 
 function BootesProject() {
@@ -8,7 +7,7 @@ function BootesProject() {
       <h2 className="bootes_title title" >_Boötes Project</h2>
       <div className="bootes_content">
         <article className="bootes_content-article">
-          <h3 className="bootes_content-articleTitle first-title">
+          <h3 className="bootes_content-article-title first-title">
             Un projet associatif
           </h3>
           <div>
@@ -44,7 +43,7 @@ function BootesProject() {
           <figcaption>Drawn by CatalysStuff - Thank you !</figcaption>
         </figure>
         <article className="bootes_content-article second-element">
-          <h3 className="bootes_content-articleTitle second-title">
+          <h3 className="bootes_content-article-title second-title">
             Notre équipe
           </h3>
           <div>

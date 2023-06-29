@@ -1,0 +1,70 @@
+.creations {
+    &_label {
+        cursor: pointer;
+        display: flex;
+        align-self: center;
+        align-items: center;
+        transition: transform 0.3s ease-in-out;
+
+        &::hover {
+            filter: brightness(80%) saturate(160%);
+            transform: scale(1.025);
+        }
+
+        & span {
+            font-family: "Montserrat", sans-serif;
+            padding: 0 40px;
+            font-size: 30px;
+        }
+
+        &-img {
+            width: 80px;
+        }
+    }
+
+    &_carrousel {
+        &_container {
+            position: relative;
+            display: flex;
+            width: 75%;
+            height: 600px;
+            padding: 20px;
+        }
+
+        &_left {
+            display: flex;
+            gap: 45px;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            flex: 1;
+            background-color: yellow;
+
+            &-item {
+                display: flex;
+                gap: 30px;
+                background-color: white;
+            }
+        }
+
+        &_right {
+            display: flex;
+            gap: 30px;
+            align-items: center;
+            justify-content: center;
+            flex: 2;
+            background-color: red;
+            overflow: hidden;
+            position: relative;
+            transition: transform 0.5s, opacity 0.5s;
+        }
+    }
+}
+
+.slidein-animation {
+    animation: slideIn--myCreations 0.5s forwards;
+}
+
+.slideout-animation {
+    animation: slideOut--myCreations 0.5s forwards;
+}

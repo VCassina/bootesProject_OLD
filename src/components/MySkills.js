@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/css/MySkills.css";
 import SkillsArticle from "../components/SkillsArticle";
 import data from "../datas/skillsArticle.json";
 import AnchorTarget from "../items/AnchorTarget";

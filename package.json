@@ -18,7 +18,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "sass": "sass --watch src/styles/sass/main.scss:src/style/css/main.css -w"
+    "sass": "sass --watch src/styles/sass/main.scss:src/styles/css/main.css -w"
   },
   "eslintConfig": {
     "extends": [

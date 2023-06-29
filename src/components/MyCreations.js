@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import "../styles/css/MyCreations.css";
 import AnchorTarget from "../items/AnchorTarget";
 import BankPicto from "../assets/bankPictoByIbrandify.png";
 import BankPicto2 from "../assets/seoByMacrovector.webp";
