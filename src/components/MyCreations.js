@@ -37,7 +37,7 @@ function MyCreations() {
   }, [animateOut, selectedElement]);
 
   return (
-    <section className="creations_container">
+    <article className="creations_container">
       <AnchorTarget id="creations" />
 
       <div className="creations_carrousel_container importantComponent">
@@ -97,7 +97,7 @@ function MyCreations() {
           <img src={nextImage} alt="A modifier" className="creations_label-img"/>
         </div>
       </div>
-    </section>
+    </article>
   );
 }
 

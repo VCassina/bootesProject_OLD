@@ -1,7 +1,6 @@
 import React from "react";
 import Logo from "../assets/bootesDevLogo.webp";
 import { FaLeaf, FaCode, FaFolderOpen, FaComments } from "react-icons/fa";
-import AnchorTarget from "../items/AnchorTarget";
 
 function Header() {
 
@@ -34,7 +33,6 @@ function Header() {
           </ul>
         </nav>
         </div>
-        <AnchorTarget id="bootes"/>
     </header>
   );
 }

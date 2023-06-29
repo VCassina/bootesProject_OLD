@@ -4,7 +4,8 @@
         flex-direction: column;
         align-items: center;
         color: $darkGreen;
-        margin-top: 60px;
+        height: $majorComponentHeight;
+        background-color: white;
     }
 
     &_content {
@@ -36,6 +37,9 @@
 
     &_title {
         animation: fallFromSky--bootesProject 0.4s ease-in forwards;
+        color: #0CA876;
+        font-size: 4em;
+        text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
     }
 }
 
@@ -57,6 +61,6 @@
 
 .first-title,
 .second-title {
-    border-bottom: 2px solid #031a13;
+    border-bottom: 2px solid $darkGreen;
     white-space: nowrap;
 }
