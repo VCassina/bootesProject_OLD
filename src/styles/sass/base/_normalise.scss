@@ -7,12 +7,8 @@ body {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
     overflow-x: hidden;
-    background-color: #fffafa;
-    margin: 0px;
-}
-
-main {
     background-color: white;
+    margin: 0px;
 }
 
 li {
@@ -36,42 +32,10 @@ b {
     font-size: large;
 }
 
-img {
-    width: 250px;
-}
-
-nav li {
-    counter-increment: number;
-}
-
-nav ul {
-    position: relative;
-    top: 10px;
-    display: flex;
-    gap: 2.75em;
-    padding: 0 80px;
-}
 
 a {
     text-decoration: none;
     color: #031a13;
-}
-
-a span:hover {
-    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
-}
-
-a span:hover::before {
-    text-shadow: none;
-}
-
-svg {
-    color: #0CA876;
-    position: relative;
-    top: 5px;
-    border-radius: 100%;
-    padding: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 input[type="radio"] {

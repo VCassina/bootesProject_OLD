@@ -6,6 +6,6 @@
 
     &-first {
         // Adjusting the absolute position of the Header.
-        height: calc(#{$anchorMargin} - 20px);
+        height: $anchorMarginFirst;
     }
 }

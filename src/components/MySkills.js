@@ -13,8 +13,8 @@ function MySkills() {
     <article className="skills_container darkComponent" >
       <AnchorTarget id="skills"/>
       <div className="importantComponent">
-        <div className="title-skills"><h2><span>_</span><span>Nos competences</span></h2></div>
-        <section className="skills_content">
+        <h2 className="title-skills"><span>_</span><span>Nos competences</span></h2>
+        <div className="skills_content">
         {data.map((article, index) => (
             <SkillsArticle
               key={index}
@@ -25,8 +25,8 @@ function MySkills() {
               skills={article.skills}
             />
             ))}
-        </section>
-        <figcaption className="skills_content-credit">Designed by Macrovector - Thank you !</figcaption>
+        </div>
+        <figcaption className="skills_content-credit">Icones designed by Macrovector - Thank you !</figcaption>
       </div>
     </article>
   );

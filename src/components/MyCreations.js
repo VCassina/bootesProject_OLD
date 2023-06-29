@@ -1,100 +1,81 @@
-import React, { useState, useEffect } from "react";
+import React, { useState } from "react";
 import AnchorTarget from "../items/AnchorTarget";
-import BankPicto from "../assets/bankPictoByIbrandify.png";
-import BankPicto2 from "../assets/seoByMacrovector.webp";
+import CreationsLeftSideArticle from "../items/CreationsLeftCarrouselUnit";
+import CreationsRightCarrousel from "./CreationsRightCarrousel";
+import data from "../datas/realisationsSlider.json";
+import CreationsSleepingAnimationHelper from "../helpers/CreationsSleepingAnimationHelper";
 
 function MyCreations() {
-  const [selectedElement, setSelectedElement] = useState("");
+  const dataSlider = data;
+  const { sleepingRef, wakingRef } = CreationsSleepingAnimationHelper();
+  const [selectedElement, setSelectedElement] = useState(null);
   const [animateOut, setAnimateOut] = useState(false);
-  const [nextImage, setNextImage] = useState("");
+  const [nextElement, setNextElement] = useState(null);
+  const [newData, setNewData] = useState(null); // Nouvelle donnée.
 
-  const handleElementChange = (event) => {
-    setSelectedElement(event.target.value);
-    setAnimateOut(true);
+  // Gère le changement d'élément dans le carrousel
+  const handleElementChange = (index) => {
+    if (selectedElement === index) {
+      return; // Si l'élément sélectionné est le même que celui cliqué, ne rien faire.
+    }
+
+    setAnimateOut(true); // Déclenche l'animation de slide-out.
+    setSelectedElement(index); // Met à jour l'élément sélectionné.
+
+    // Attente de 500 ms avant de déclencher l'animation de slide-in et la mise à jour des données.
+    setTimeout(() => {
+      setAnimateOut(false); // Met fin à l'animation de slide-out.
+
+      // Met à jour les nouvelles données avec un délai supplémentaire.
+      setTimeout(() => {
+        setNewData(dataSlider[selectedElement]);
+      });
+    }, 500);
   };
 
-  const getSelectedImage = (selectedElement) => {
-    switch (selectedElement) {
-      case "Element1":
-        return BankPicto;
-      case "Element2":
-        return BankPicto2;
-      case "Element3":
-        return BankPicto;
-      default:
-        return "";
-    }
-  };
-
-  useEffect(() => {
-    if (animateOut) {
-      const timer = setTimeout(() => {
-        setAnimateOut(false);
-        setNextImage(getSelectedImage(selectedElement));
-      }, 500);
-      return () => clearTimeout(timer);
-    }
-  }, [animateOut, selectedElement]);
 
   return (
     <article className="creations_container">
-      <AnchorTarget id="creations" />
-
-      <div className="creations_carrousel_container importantComponent">
-        <div className="creations_carrousel_left">
-          <input
-            type="radio"
-            id="element1"
-            name="elements"
-            value="Element1"
-            checked={selectedElement === "Element1"}
-            onChange={handleElementChange}
-          />
-          <label htmlFor="element1" className="creations_label">
-          <img src={BankPicto} alt="A modifier" className="creations_label-img"/>
-          <span>Element 1</span>
-          </label>
-
-          <input
-            type="radio"
-            id="element2"
-            name="elements"
-            value="Element2"
-            checked={selectedElement === "Element2"}
-            onChange={handleElementChange}
-          />
-          <label htmlFor="element2" className="creations_label">
-          <img src={BankPicto2} alt="A modifier" className="creations_label-img"/>
-            <span>Element 2</span>
-          </label>
-
-          <input
-            type="radio"
-            id="element3"
-            name="elements"
-            value="Element3"
-            checked={selectedElement === "Element3"}
-            onChange={handleElementChange}
-          />
-          <label htmlFor="element3" className="creations_label">
-          <img src={BankPicto} alt="A modifier" className="creations_label-img"/>
-          <span>Element 3</span>
-          </label>
-        </div>
-
-        <div className="creations_carrousel_middle"></div>
-
-        <div
-          className={`creations_carrousel_right ${
-            selectedElement
-              ? animateOut
-                ? "slideout-animation"
-                : "slidein-animation"
-              : ""
-          }`}
-        >
-          {selectedElement && <p>{selectedElement}</p>}
-          <img src={nextImage} alt="A modifier" className="creations_label-img"/>
+      <div className="importantComponent">
+        <AnchorTarget id="creations" />
+        <h2 className="title-creations">
+          <span ref={wakingRef} className="">
+            _
+          </span>
+          <span ref={sleepingRef} className="">
+            Nos réalisations
+          </span>
+        </h2>
+        <div className="creations_content">
+          <section className="creations_content_carrousel">
+            <div className="creations_content_carrousel_left">
+              {dataSlider.map((item, index) => (
+                <CreationsLeftSideArticle
+                  key={index}
+                  index={index}
+                  handleElementChange={() => handleElementChange(index)}
+                  selectedElement={selectedElement}
+                  title={item.title}
+                  iconeClass={item.iconeClass}
+                  alt={item.alt}
+                />
+              ))}
+            </div>
+            <div className="creations_content_carrousel_middle"></div>
+            {/*  // Utilise les nouvelles données. */}
+            <CreationsRightCarrousel
+              selectedElement={selectedElement}
+              webSiteScreen={newData?.webSiteScreen}
+              altScreen={newData?.altScreen}
+              title={newData?.title}
+              description={newData?.description}
+              siteUrl={newData?.siteUrl}
+              gitHubUrl={newData?.gitHubUrl}
+              animateOut={animateOut}
+              nextElement={nextElement}
+              setNextElement={setNextElement}
+            />
+          </section>
         </div>
       </div>
     </article>

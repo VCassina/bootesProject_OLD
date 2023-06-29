@@ -1,6 +1,6 @@
 function SkillsArticle({img, alt, title, description, skills}) {
     return (
-    <article>
+    <section>
 <div className="skills_content-titleGroup">
   <img
     src={img}
@@ -16,7 +16,7 @@ function SkillsArticle({img, alt, title, description, skills}) {
           <span key={index}>{skill}</span>
         ))}
       </div>
-</article>
+</section>
   );
 }
 
