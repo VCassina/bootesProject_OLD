@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/AnchorTarget.css";
+import "../styles/css/AnchorTarget.css";
 
 function AnchorTarget({ id }) {
   return (

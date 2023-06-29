@@ -1,5 +1,5 @@
 import React from "react";
-import "../styles/BootesProject.css";
+import "../styles/css/BootesProject.css";
 import meByCatalysStuff from "../assets/meByCatalysStuff.webp";
 
 function BootesProject() {
