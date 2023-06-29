@@ -1,82 +1,4 @@
-figure {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-}
-
-figcaption {
-    position: relative;
-    bottom: 10px;
-    font-size: small;
-}
-
-b {
-    font-family: 'Acme', sans-serif;
-    font-size: large;
-}
-
-.bootes_container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #031a13;
-    margin-top: 60px;
-}
-
-.bootes_content-picture {
-    width: 380px;
-}
-
-.bootes_content {
-    display: grid;
-    grid-template-columns: 2fr 1fr 2fr;
-}
-
-.bootes_content-article {
-    animation: vibing 1.5s ease-in-out forwards 0.4s;
-}
-
-.second-element {
-    animation: vibing-mirror 1.5s ease-in-out forwards 0.4s;
-}
-
-.bootes_content-article h2 {
-    position: relative;
-    bottom: 10px;
-}
-
-.bootes_content-article div {
-    text-align: justify;
-}
-
-.bootes_title {
-    animation: fall-from-sky 0.4s ease-in forwards;
-}
-
-.first-title {
-    align-self: left;
-    animation: slide-in-left 1.5s forwards;
-}
-
-.second-title {
-    text-align: right;
-    animation: slide-in-right 1.5s forwards;
-    position: relative;
-    right: -100%;
-}
-
-.first-title,
-.second-title {
-    border-bottom: 2px solid #031a13;
-    white-space: nowrap;
-}
-
-.bootes_content-articleTitle {
-    font-size: 40px;
-    font-weight: bold;
-}
-
-@keyframes vibing {
+@keyframes vibing--bootesProject {
     0% {
         transform: translate(2%, 0) rotate(-1deg);
     }
@@ -114,7 +36,7 @@ b {
     }
 }
 
-@keyframes vibing-mirror {
+@keyframes vibingMirror--bootesProject {
     0% {
         transform: translate(-2%, 0) rotate(1deg);
     }
@@ -152,7 +74,7 @@ b {
     }
 }
 
-@keyframes fall-from-sky {
+@keyframes fallFromSky--bootesProject {
     0% {
         opacity: 0;
         transform: translateY(-500%);
@@ -175,41 +97,109 @@ b {
     }
 }
 
-@keyframes slide-in-left {
+@keyframes slideInLeft-bootesProject {
     0% {
         width: 0;
         opacity: 0;
     }
+
     25% {
         width: 50%;
         opacity: 0;
     }
+
     45% {
         opacity: 0.45;
     }
+
     100% {
         width: 75%;
         opacity: 1;
     }
 }
 
-@keyframes slide-in-right {
+@keyframes slideInRight--bootesProject {
     0% {
         width: 0;
         opacity: 0;
         transform: translateX(-100%);
     }
+
     25% {
         width: 50%;
         opacity: 0;
         transform: translateX(-100%);
     }
+
     45% {
         opacity: 0.45;
     }
+
     100% {
         width: 75%;
         opacity: 1;
         transform: translateX(-100%);
     }
 }
+
+@keyframes blink--mySkills {
+    78% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    79% {
+        color: #333;
+    }
+
+    80% {
+        text-shadow: none;
+    }
+
+    81% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    82% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    83% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+
+    92% {
+        color: #333;
+        text-shadow: none;
+    }
+
+    92.5% {
+        color: inherit;
+        text-shadow: inherit;
+    }
+}
+
+@keyframes slideIn--myCreations {
+    0% {
+      transform: translateY(-400px);
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  @keyframes slideOut--myCreations  {
+    0% {
+      transform: translateY(0);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(400px);
+      opacity: 0;
+    }
+  }  

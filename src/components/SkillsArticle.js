@@ -1,17 +1,17 @@
 function SkillsArticle({img, alt, title, description, skills}) {
     return (
     <article>
-<div className="services_content-titleGroup">
+<div className="skills_content-titleGroup">
   <img
     src={img}
     alt={alt}
-    className="services_content-img"
+    className="skills_content-img"
   ></img>
-  <h3 className="services_subTitle">{title}</h3>
+  <h3 className="skills_subTitle">{title}</h3>
 </div>
-<span className="services_content-description">{description}</span>
-<div className="services_content-bar"></div>
-<div className="services_content-articleListing">
+<span className="skills_content-description">{description}</span>
+<div className="skills_content-bar"></div>
+<div className="skills_content-articleListing">
     {skills.map((skill, index) => (
           <span key={index}>{skill}</span>
         ))}

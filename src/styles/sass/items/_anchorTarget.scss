@@ -1,0 +1,11 @@
+.anchor {
+    &-target {
+        // margin-top: $anchorMargin;
+        height: $anchorMargin;
+    }
+
+    &-first {
+        // Adjusting the absolute position of the Header.
+        height: calc(#{$anchorMargin} - 20px);
+    }
+}

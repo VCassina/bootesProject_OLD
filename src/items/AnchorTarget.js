@@ -1,9 +1,8 @@
 import React from "react";
-import "../styles/css/AnchorTarget.css";
 
-function AnchorTarget({ id }) {
+function AnchorTarget({ id, isFirst }) {
   return (
-    <div className="anchorTarget" id={id}>
+    <div className={`anchor-target ${isFirst ? "anchor-first" : ""}`} id={id}>
     </div>
   );
 }

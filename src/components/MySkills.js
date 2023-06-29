@@ -1,5 +1,4 @@
 import React from "react";
-import "../styles/css/MySkills.css";
 import SkillsArticle from "../components/SkillsArticle";
 import data from "../datas/skillsArticle.json";
 import AnchorTarget from "../items/AnchorTarget";
@@ -11,11 +10,11 @@ function MySkills() {
   const imgSrc = [frontEndIcon, backEndIcon, seoIcon];
 
   return (
-    <section className="services_container" >
+    <article className="skills_container darkComponent" >
       <AnchorTarget id="skills"/>
       <div className="importantComponent">
         <div className="title-skills"><h2><span>_</span><span>Nos competences</span></h2></div>
-        <div className="services_content">
+        <section className="skills_content">
         {data.map((article, index) => (
             <SkillsArticle
               key={index}
@@ -26,10 +25,10 @@ function MySkills() {
               skills={article.skills}
             />
             ))}
-        </div>
-        <figcaption>Drawn by Macrovector - Thank you !</figcaption>
+        </section>
+        <figcaption className="skills_content-credit">Designed by Macrovector - Thank you !</figcaption>
       </div>
-    </section>
+    </article>
   );
 }
 

@@ -1,0 +1,94 @@
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+    background-color: #fffafa;
+    margin: 0px;
+}
+
+main {
+    background-color: white;
+}
+
+li {
+    list-style: none;
+}
+
+figure {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+figcaption {
+    position: relative;
+    bottom: 10px;
+    font-size: small;
+}
+
+b {
+    font-family: 'Acme', sans-serif;
+    font-size: large;
+}
+
+img {
+    width: 250px;
+}
+
+nav li {
+    counter-increment: number;
+}
+
+nav ul {
+    position: relative;
+    top: 10px;
+    display: flex;
+    gap: 2.75em;
+    padding: 0 80px;
+}
+
+a {
+    text-decoration: none;
+    color: #031a13;
+}
+
+a span:hover {
+    text-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+}
+
+a span:hover::before {
+    text-shadow: none;
+}
+
+svg {
+    color: #0CA876;
+    position: relative;
+    top: 5px;
+    border-radius: 100%;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+input[type="radio"] {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    width: 0;
+    height: 0;
+    position: absolute;
+}
+
+.importantComponent {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+
+.darkComponent {
+    margin: -60px 0;
+}
