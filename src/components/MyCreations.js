@@ -33,7 +33,11 @@ function MyCreations() {
   }, [selectedElement, dataSlider]);
 
    // Gestion des animations du carrousel.
-  const handleElementChange = (index) => {
+   const handleElementChange = (index) => {
+    if (selectedElement === index) {
+      return; // Ne rien faire si selectedElement est déjà égal à l'index
+    }
+    
     console.log("INDEX : ", index);
     setAnimateOut(true); // Déclenche l'animation de slide-out.
     setSelectedElement(index); // Met à jour l'élément sélectionné.
