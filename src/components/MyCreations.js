@@ -11,38 +11,31 @@ function MyCreations() {
   const [selectedElement, setSelectedElement] = useState(null);
   const [animateOut, setAnimateOut] = useState(false);
   const [nextElement, setNextElement] = useState(null);
-  const [newData, setNewData] = useState(null); // Nouvelle donnée à transmettre !
+  const [newData, setNewData] = useState(null);
 
-  // Gestion de la mise à jour des données du carrousel.
+  // Gestion de la mise à jour des données du carrousel & gestion du temps.
   useEffect(() => {
     let timeoutId = null;
     if (selectedElement !== null) {
-      console.log("selectedElement : ", selectedElement);
-      // Annule le délai précédent s'il existe !
       if (timeoutId) {
         clearTimeout(timeoutId);
       }
-      // Définit un nouveau délai de 500 ms avant d'effectuer les changements.
       timeoutId = setTimeout(() => {
         setNewData(dataSlider[selectedElement]);
-        console.log("selectedElement AFTER : ", selectedElement);
       }, 500);
     }
-    // Reset le délai si on spam.
     return () => clearTimeout(timeoutId);
   }, [selectedElement, dataSlider]);
 
-   // Gestion des animations du carrousel.
-   const handleElementChange = (index) => {
+  // Gestion des animations du carrousel.
+  const handleElementChange = (index) => {
     if (selectedElement === index) {
-      return; // Ne rien faire si selectedElement est déjà égal à l'index
+      return;
     }
-    
-    console.log("INDEX : ", index);
-    setAnimateOut(true); // Déclenche l'animation de slide-out.
-    setSelectedElement(index); // Met à jour l'élément sélectionné.
+    setAnimateOut(true);
+    setSelectedElement(index);
     setTimeout(() => {
-      setAnimateOut(false); // Met fin à l'animation de slide-out.
+      setAnimateOut(false);
     }, 500);
   };
 
@@ -74,7 +67,7 @@ function MyCreations() {
               ))}
             </div>
             <div className="creations_content_carrousel_middle"></div>
-            {/*  // Utilise les nouvelles données. */}
+            {/*  // Utilise les nouvelles données uniquement. */}
             <CreationsRightCarrousel
               selectedElement={selectedElement}
               webSiteScreen={newData?.webSiteScreen}

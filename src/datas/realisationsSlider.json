@@ -4,7 +4,7 @@
     "webSiteScreen": "./jsonPicture/BankArgent.webp",
     "altScreen": "Capture de la page d'accueil projet bankArgent",
     "title": "Bank Argent",
-    "description": "Un site entiérement sécurisé, avec des cookies ? Mieux que ça, grâce à Redux ! Il a permit une gestion du Token à chaque input sur l'interface depuis l'utilisateur. Seul le front-end est disponible sur le repo gitHub.",
+    "description": "<p>Ce site a été <b>sécurisé</b>, avec des cookies ? un lecteur d'empreinte digitale ? Perdu, via la gestion de l'authentification sous <b>Redux</b> !</p><p>De plus, il a été préparé aux fonctionnements sous <b>dataBase</b> et fonctionne avec une <b>API Rest</b>, ça en fait des termes techniques.</p>",
     "siteUrl": "COMING SOON",
     "gitHubUrl": "https://github.com/VCassina/projet-11-front-end/tree/master"
   },
@@ -13,8 +13,8 @@
     "webSiteScreen": "./jsonPicture/NinaCarducci.webp",
     "altScreen": "Capture de la page d'accueil projet ninaCarducci",
     "title": "Nina Carducci",
-    "description": "Un site très lourd comportant énormement de photo en très haute résolution, le tout entiérement optimisé par votre serviteur. On dit également << coucou >> au micro-données de référencement !",
-    "siteUrl": "https://vcassina.github.io/projet-9/",
+    "description": "<p>Lui, il était <b>très lourd</b> comportant énormement de photos <b>haute résolutions</b> et pourtant, maintenant il est très léger, c'est à ni rien comprendre. En réalité... Nous y sommes pour quelque chose.</p>Tant que j'y pense, nous sommes également responsables des micro-données qui lui permettent d'obtenir un <b>meilleur référencement</b>.</p>",
+    "siteUrl": "https://vcassina.github.io/projet-9",
     "gitHubUrl": "https://github.com/VCassina/projet-9/tree/master"
   }
 ]

@@ -12,7 +12,7 @@ function BootesProject() {
           <h3 className="bootes_content-article-title first-title">
             Un projet associatif
           </h3>
-          <div>
+          <div className="bootes_content-article-txt">
             <p>
               Le Boötes Project, c'est notre service de{" "}
               <b>Création de Site Web</b> destinés aux associations loi 1901 et,
@@ -48,7 +48,7 @@ function BootesProject() {
           <h3 className="bootes_content-article-title second-title">
             Notre équipe
           </h3>
-          <div>
+          <div className="bootes_content-article-txt">
             <p>
               Notre équipe est un couple de jeunes parisiens passionné·e·s par
               le web et le numérique depuis plusieurs années.
