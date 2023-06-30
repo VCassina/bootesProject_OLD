@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import AnchorTarget from "../items/AnchorTarget";
 import CreationsLeftSideArticle from "../items/CreationsLeftCarrouselUnit";
 import CreationsRightCarrousel from "./CreationsRightCarrousel";
@@ -11,28 +11,36 @@ function MyCreations() {
   const [selectedElement, setSelectedElement] = useState(null);
   const [animateOut, setAnimateOut] = useState(false);
   const [nextElement, setNextElement] = useState(null);
-  const [newData, setNewData] = useState(null); // Nouvelle donnée.
+  const [newData, setNewData] = useState(null); // Nouvelle donnée à transmettre !
 
-  // Gère le changement d'élément dans le carrousel
-  const handleElementChange = (index) => {
-    if (selectedElement === index) {
-      return; // Si l'élément sélectionné est le même que celui cliqué, ne rien faire.
+  // Gestion de la mise à jour des données du carrousel.
+  useEffect(() => {
+    let timeoutId = null;
+    if (selectedElement !== null) {
+      console.log("selectedElement : ", selectedElement);
+      // Annule le délai précédent s'il existe !
+      if (timeoutId) {
+        clearTimeout(timeoutId);
+      }
+      // Définit un nouveau délai de 500 ms avant d'effectuer les changements.
+      timeoutId = setTimeout(() => {
+        setNewData(dataSlider[selectedElement]);
+        console.log("selectedElement AFTER : ", selectedElement);
+      }, 500);
     }
+    // Reset le délai si on spam.
+    return () => clearTimeout(timeoutId);
+  }, [selectedElement, dataSlider]);
 
+   // Gestion des animations du carrousel.
+  const handleElementChange = (index) => {
+    console.log("INDEX : ", index);
     setAnimateOut(true); // Déclenche l'animation de slide-out.
     setSelectedElement(index); // Met à jour l'élément sélectionné.
-
-    // Attente de 500 ms avant de déclencher l'animation de slide-in et la mise à jour des données.
     setTimeout(() => {
       setAnimateOut(false); // Met fin à l'animation de slide-out.
-
-      // Met à jour les nouvelles données avec un délai supplémentaire.
-
-        setNewData(dataSlider[selectedElement]);
-      
     }, 500);
   };
-
 
   return (
     <article className="creations_container">
