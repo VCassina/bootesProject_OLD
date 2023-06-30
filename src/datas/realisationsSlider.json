@@ -13,8 +13,8 @@
     "webSiteScreen": "./jsonPicture/NinaCarducci.webp",
     "altScreen": "Capture de la page d'accueil projet ninaCarducci",
     "title": "Nina Carducci",
-    "description": "<p>Lui, il était <b>très lourd</b> comportant énormement de photos <b>haute résolutions</b> et pourtant, maintenant il est très léger, c'est à ni rien comprendre. En réalité... Nous y sommes pour quelque chose.</p>Tant que j'y pense, nous sommes également responsables des micro-données qui lui permettent d'obtenir un <b>meilleur référencement</b>.</p>",
-    "siteUrl": "https://vcassina.github.io/projet-9",
+    "description": "<p>Lui, il était <b>très lourd</b> comportant énormement de photos <b>haute résolutions</b> et pourtant, maintenant il est très léger, c'est à ni rien comprendre. En réalité... Nous y sommes pour quelque chose.</p><p>Tant que j'y pense, nous sommes également responsables des micro-données qui lui permettent un <b>meilleur référencement</b>.</p>",
+    "siteUrl": "https://vcassina.github.io/projet-9/",
     "gitHubUrl": "https://github.com/VCassina/projet-9/tree/master"
   }
 ]

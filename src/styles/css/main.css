@@ -238,10 +238,10 @@ input[type=radio] {
   }
 }
 .anchor-target {
-  height: 80px;
+  height: 100px;
 }
 .anchor-first {
-  height: calc(80px - 20px);
+  height: calc(100px - 20px);
 }
 
 .bootes_container {
@@ -324,10 +324,10 @@ input[type=radio] {
 .header_content-li {
   counter-increment: number;
   min-width: 190px;
+  transition: transform 0.25s;
 }
 .header_content-li:hover {
   transform: scale(1.025);
-  transition: transform 0.25s;
 }
 .header_content-ul {
   position: relative;
@@ -469,72 +469,94 @@ input[type=radio] {
   margin-top: 60px;
 }
 .creations_content {
-  position: relative;
-  bottom: 20px;
+  width: 1600px;
   padding: 10px;
   overflow: hidden;
+  color: #031a13;
 }
 .creations_content_carrousel {
-  height: 640px;
+  height: 620px;
   display: grid;
-  grid-template-columns: 1fr 0fr 3.5fr;
+  grid-template-columns: 2.5fr 10fr 0.5fr;
   align-items: center;
 }
 .creations_content_carrousel_left {
-  height: 100%;
-  display: flex;
-  gap: 45px;
-  flex-direction: column;
+  display: grid;
+  grid-template-rows: 2fr 6fr;
+  height: 90%;
   justify-content: center;
   text-align: center;
+  align-items: center;
+  justify-items: center;
   border-radius: 20px 0 0 20px;
-  box-shadow: 0px 0px 10px #0CA876;
+  box-shadow: 0px 0px 5px #0CA876;
 }
 .creations_content_carrousel_left-item {
   display: flex;
-  gap: 30px;
+  gap: 20px;
   background-color: white;
 }
-.creations_content_carrousel_right {
-  transition: transform 0.5s, opacity 0.5s;
-  position: relative;
-  top: 10px;
-  height: 640px;
+.creations_content_carrousel_left-articles {
+  display: flex;
+  gap: 45px;
+  flex-direction: column;
+}
+.creations_content_carrousel_left-title {
+  padding: 25px 0;
+  font-size: 26px;
+}
+.creations_content_carrousel_left-title-border {
+  width: 75%;
+  border-bottom: 1px solid #0CA876;
+}
+.creations_content_carrousel_left-title-container {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  justify-items: center;
   align-items: center;
-  align-content: center;
-  flex: 2.5;
+}
+.creations_content_carrousel_right {
+  padding: 15px 0;
+  overflow: hidden;
+  transition: transform 0.5s, opacity 0.5s;
+  height: 600px;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  gap: 15px;
+  justify-items: center;
 }
 .creations_content_carrousel_right-img {
   width: 70%;
   border-radius: 10px;
-  box-shadow: 0px 0px 10px #0CA876;
+  box-shadow: 0px 0px 5px #0CA876;
   object-fit: cover;
   box-sizing: border-box;
 }
-.creations_content_carrousel_right-txt {
+.creations_content_carrousel_right-title {
+  font-size: 40px;
+  display: block;
+  background-color: #031a13;
+  border-radius: 15px;
+  padding: 10px;
+  color: white;
+  text-shadow: 0px 0px 12px white;
+  font-family: "Montserrat", sans-serif;
+}
+.creations_content_carrousel_right-description {
   display: flex;
   flex-direction: column;
   text-align: center;
   width: 70%;
-}
-.creations_content_carrousel_right-title {
-  font-size: 40px;
-  line-height: 10px;
-}
-.creations_content_carrousel_right-description {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
   line-height: 24px;
+  letter-spacing: 0.25x;
 }
 .creations_content_carrousel_right-void {
   display: flex;
   flex-direction: column;
   text-align: center;
   position: relative;
+  font-size: 20px;
 }
 .creations_content_carrousel_right-void-title {
   font-size: 36px;
@@ -544,28 +566,32 @@ input[type=radio] {
 }
 .creations_content_carrousel_right-void-caption {
   position: relative;
-  bottom: 40px;
+  bottom: 20px;
 }
 .creations_content_carrousel-label {
   cursor: pointer;
-  display: grid;
-  grid-template-columns: 1fr 8fr;
+  display: flex;
   text-align: center;
   align-items: center;
-  padding: 0 10px 0 25px;
-  transition: transform 0.3s ease-in-out;
+  padding: 0 0px 0 40px;
+  transition: transform 0.15s ease-in-out;
 }
 .creations_content_carrousel-label:hover {
-  filter: brightness(80%);
-  transform: scale(1.025);
+  filter: brightness(35%);
+  transform: scale(1.1);
 }
 .creations_content_carrousel-label span {
-  padding: 0 40px;
-  font-size: 30px;
+  padding: 0 30px;
+  font-size: 26px;
 }
 .creations_content_carrousel-label-img {
-  font-size: 50px;
+  font-size: 40px;
   color: #0CA876;
+}
+
+.checked {
+  filter: brightness(35%);
+  transform: scale(1.125);
 }
 
 .title-creations {

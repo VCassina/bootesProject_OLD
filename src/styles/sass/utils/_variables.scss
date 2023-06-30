@@ -1,10 +1,11 @@
 $darkGreen: #031a13;
 $lightGreen: #0CA876;
-$anchorMargin: 80px;
+$anchorMargin: 100px;
 $majorComponentHeight: 1080px;
 $majorComponentDarkAfterLight: 60px;
 $anchorMarginFirst: calc(#{$anchorMargin} - 20px);
 $titleFontSize: 72px;
+$maxWidhtDesktop: 1600px;
 
 // Header full desktop is 90px.
 // Natural padding of 60px upper and lower every darkgreen component.

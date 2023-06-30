@@ -16,10 +16,10 @@
         &-li {
             counter-increment: number;
             min-width: 190px;
+            transition: transform 0.25s;
 
             &:hover {
                 transform: scale(1.025);
-                transition: transform 0.25s;
             }
         }
 

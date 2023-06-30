@@ -1,7 +1,7 @@
 import React from "react";
 import ReactHtmlParser from "react-html-parser";
 // import pralineByCatalysStuff from "../assets/pralineByCatalysStuff.webp";
-import leftArrow from "../assets/leftArrow.webp";
+import pralineByCatalysStuff from "../assets/pralineByCatalysStuff.webp";
 function CreationsRightCarrousel({
   selectedElement,
   webSiteScreen,
@@ -20,22 +20,19 @@ function CreationsRightCarrousel({
     <div className={classNames}>
       {selectedElement !== null && (
         <>
+         {/* <h3 className="creations_content_carrousel_right-title">{title}</h3> */}
           <img
             src={webSiteScreen}
             alt={altScreen}
             className="creations_content_carrousel_right-img"
           />
-          <div className="creations_content_carrousel_right-txt">
-            <p className="creations_content_carrousel_right-title">{title}</p>
             <div className="creations_content_carrousel_right-description">
               {ReactHtmlParser(description)}
             </div>
-          </div>
-          <div className="creations_content_carrousel_right-links">
-            {/* <span><b>GitHub</b> : </span><a href={siteUrl}>{siteUrl}</a>
-            <span> </span>
-            <span><b>Web : </b></span> <a href={gitHubUrl}>{gitHubUrl}</a> */}
-          </div>
+          {/* <div className="creations_content_carrousel_right-links">
+             <a href={siteUrl}><span>Site</span></a>
+             <a href={gitHubUrl}><span>GitHub</span></a>
+          </div> */}
         </>
       )}
 
@@ -51,11 +48,11 @@ function CreationsRightCarrousel({
           </div>
           <div>
             <img
-              src={leftArrow}
+              src={pralineByCatalysStuff}
               alt="Praline, notre chat, déssiné par CatalysStuff"
               className="creations_content_carrousel_right-void-img"
             ></img>
-            {/* <figcaption className="creations_content_carrousel_right-void-caption">Designed by CatalysStuff - Thank you !</figcaption> */}
+            <figcaption className="creations_content_carrousel_right-void-caption">Designed by CatalysStuff - Thank you !</figcaption>
           </div>
           </div>
         </>

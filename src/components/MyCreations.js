@@ -30,8 +30,8 @@ function MyCreations() {
   // Gestion des animations du carrousel.
   const handleElementChange = (index) => {
     if (selectedElement === index) {
-      return;
-    }
+      setSelectedElement(null); // Désélectionne l'élément actuel.
+    } else {}
     setAnimateOut(true);
     setSelectedElement(index);
     setTimeout(() => {
@@ -53,7 +53,13 @@ function MyCreations() {
         </h2>
         <div className="creations_content">
           <section className="creations_content_carrousel">
+            
             <div className="creations_content_carrousel_left">
+              <div className="creations_content_carrousel_left-title-container">
+            <span className="creations_content_carrousel_left-title">Selectionnez un projet !</span>
+            <span className="creations_content_carrousel_left-title-border"></span>
+            </div>
+            <div className="creations_content_carrousel_left-articles" >
               {dataSlider.map((item, index) => (
                 <CreationsLeftSideArticle
                   key={index}
@@ -65,8 +71,9 @@ function MyCreations() {
                   alt={item.alt}
                 />
               ))}
+              </div>
             </div>
-            <div className="creations_content_carrousel_middle"></div>
+            {/* <div className="creations_content_carrousel_middle"></div> */}
             {/*  // Utilise les nouvelles données uniquement. */}
             <CreationsRightCarrousel
               selectedElement={selectedElement}
