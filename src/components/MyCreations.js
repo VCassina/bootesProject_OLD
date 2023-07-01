@@ -8,7 +8,7 @@ import CreationsBottomArticle from "../items/CreationsBottomArticle";
 function MyCreations() {
   const dataSlider = data;
   const { sleepingRef } = CreationsSleepingAnimationHelper();
-  const [selectedElement, setSelectedElement] = useState(null);
+  const [selectedElement, setSelectedElement] = useState(0);
   const [animateOut, setAnimateOut] = useState(false);
   const [nextElement, setNextElement] = useState(null);
   const [newData, setNewData] = useState(null);
@@ -16,7 +16,7 @@ function MyCreations() {
    // Gestion des animations du carrousel.
    const handleElementChange = (index) => {
     if (selectedElement === index) {
-      setSelectedElement(null);
+      return (null)
     } else {}
     setAnimateOut(true);
     setSelectedElement(index);
@@ -70,6 +70,7 @@ function MyCreations() {
               webSiteScreen={newData?.webSiteScreen}
               altScreen={newData?.altScreen}
               description={newData?.description}
+              title={newData?.title}
               animateOut={animateOut}
               nextElement={nextElement}
               setNextElement={setNextElement}

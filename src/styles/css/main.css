@@ -471,6 +471,8 @@ input[type=radio] {
 }
 .creations_content_upper-title {
   display: flex;
+  flex: 3;
+  justify-content: right;
   color: #0CA876;
   text-shadow: 0 1px 2px rgb(0, 0, 0);
   font-family: "Segoe UI", sans-serif;
@@ -481,21 +483,62 @@ input[type=radio] {
   animation: sleepingAnimation--myCreations 4s forwards ease-in-out;
 }
 .creations_content_upper-label {
-  font-size: 30px;
+  font-size: 40px;
+  font-family: "acme", sans-serif;
+  cursor: pointer;
+  transition: 0.25s;
+}
+.creations_content_upper-label:hover {
+  transform: scale(1.125);
+}
+.creations_content_upper-nav {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
 }
 .creations_content_carrousel {
   position: relative;
-  bottom: 40px;
-  background-color: yellow;
-  height: 620px;
+  bottom: 30px;
+  height: 600px;
   max-width: 100%;
-  display: grid;
-  grid-template-columns: 10fr 5fr;
-  gap: 10px;
-  padding: 15px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 50px;
+  padding: 15px 0;
+  text-align: center;
+}
+.creations_content_carrousel-img {
+  flex: 3;
+  width: 100%;
+  box-shadow: 0px 0px 5px #0CA876;
+  border-radius: 5px;
+  box-sizing: border-box;
+  object-fit: contain;
+}
+.creations_content_carrousel-txt {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+  gap: 100px;
+  justify-content: center;
+  color: #031a13;
+}
+.creations_content_carrousel-txt-title {
+  font-size: 36px;
+}
+.creations_content_carrousel-txt-subtitle {
+  display: block;
+  border-bottom: 1px solid #0CA876;
+  box-shadow: 0px 0px 5px #0CA876;
+}
+.creations_content_carrousel-txt-description {
+  letter-spacing: 0.25px;
+  font-size: 20px;
 }
 
 .aaa {
+  min-width: 100%;
   height: 620px;
   border-top: 1px solid #000000;
   background-color: rebeccapurple;
