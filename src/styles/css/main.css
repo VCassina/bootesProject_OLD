@@ -55,6 +55,7 @@ input[type=radio] {
 
 .darkComponent {
   margin: -60px 0;
+  background-color: #031a13;
 }
 
 @keyframes vibing--bootesProject {
@@ -373,7 +374,6 @@ input[type=radio] {
 }
 
 .skills_container {
-  background-color: #031a13;
   height: 1080px;
 }
 .skills_content {
@@ -463,6 +463,9 @@ input[type=radio] {
   animation: blink--mySkills linear infinite 3s;
 }
 
+.creations_container {
+  min-height: 1080px;
+}
 .creations_content b {
   font-size: 22px;
 }

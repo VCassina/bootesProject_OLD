@@ -41,9 +41,10 @@ function MyCreations() {
   }, [selectedElement, dataSlider]);
 
   return (
-    <section className="creations_container">
+    <article className="creations_container">
+       <AnchorTarget id="creations" />
       <div className="importantComponent">
-        <AnchorTarget id="creations" />
+       
         <div className="creations_content">
           <div className="creations_content_upper">
             <h2 className="creations_content_upper-title">
@@ -80,7 +81,7 @@ function MyCreations() {
           </div>
         </div>
       </div>
-    </section>
+    </article>
   );
 }
 

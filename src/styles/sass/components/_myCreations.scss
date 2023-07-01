@@ -1,8 +1,13 @@
 .creations {
+    &_container {
+        min-height: $majorComponentHeight;
+    }
+
     &_content {
         & b {
             font-size: 22px;
         }
+
         &_upper {
             display: flex;
             flex-direction: row-reverse;
@@ -114,6 +119,7 @@
                     justify-content: center;
                     gap: 15px;
                     height: 100%;
+
                     & svg {
                         height: 25px;
                         transition: $transitionButtonTime;

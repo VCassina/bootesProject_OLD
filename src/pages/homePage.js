@@ -2,6 +2,7 @@ import React from "react";
 import BootesProject from "../components/BootesProject";
 import MySkills from "../components/MySkills";
 import MyCreations from "../components/MyCreations";
+import ContactUs from "../components/ContactUs"
 
 
 function HomePage() {
@@ -10,6 +11,7 @@ function HomePage() {
       <BootesProject />
       <MySkills />
       <MyCreations />
+      <ContactUs />
     </main>
   );
 }
