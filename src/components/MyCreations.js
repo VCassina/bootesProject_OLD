@@ -35,7 +35,6 @@ function MyCreations() {
       }
       timeoutId = setTimeout(() => {
         setNewData(dataSlider[selectedElement]);
-        console.log(dataSlider[selectedElement]);
       }, 500);
     }
     return () => clearTimeout(timeoutId);
