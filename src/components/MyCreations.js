@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import data from "../datas/realisationsSlider.json";
+import data from "../datas/creationsSlider.json";
 import AnchorTarget from "../items/AnchorTarget";
 import CreationsSleepingAnimationHelper from "../helpers/CreationsSleepingAnimationHelper";
 import CreationsUpperArticle from "../items/CreationsUpperArticle";
@@ -55,6 +55,7 @@ function MyCreations() {
             <nav className="creations_content_upper-nav">
             {dataSlider.map((item, index) => (
   <CreationsUpperArticle
+key={index}
     item={item}
     index={index}
     selectedElement={selectedElement}

@@ -5,7 +5,7 @@
             flex-direction: row-reverse;
             justify-content: space-between;
             align-items: last baseline;
-            
+
 
             &-title {
                 display: flex;
@@ -15,28 +15,51 @@
                 text-shadow: 0 1px 2px rgb(0, 0, 0);
                 font-family: 'Segoe UI', sans-serif;
                 font-size: $titleFontSize;
-    
+
                 &-sleepingAnimation {
                     display: block;
                     animation: sleepingAnimation--myCreations 4s forwards ease-in-out;
                 }
             }
+
             &-label {
                 font-size: 40px;
                 font-family: "acme", sans-serif;
                 cursor: pointer;
                 transition: $transitionButtonTime;
+
                 &:hover {
                     transform: scale(1.125);
                 }
             }
+
             &-nav {
-            flex: 1;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
+                flex: 1;
+                display: flex;
+                justify-content: center;
+                text-align: center;
+                gap: 30px;
+
+                & label {
+                    flex: 1;
+                    height: fit-content;
+                    background-color: $lightGreen;
+                    border-radius: 10px;
+                    transition: all 0.3 ease;
+                    text-shadow: 0px 0px 5px $darkGreen;
+                    color: white;
+
+                    &:hover {
+                        flex: 1.25;
+                        color: white;
+                        box-shadow: 0px 0px 5px $lightGreen;
+                        text-shadow: 0px 0px 5px $lightGreen;
+                        background-color: darken($lightGreen, 20%);
+                    }
+                }
             }
         }
+
         &_carrousel {
             position: relative;
             bottom: 30px;
@@ -47,7 +70,7 @@
             gap: 50px;
             padding: 15px 0;
             text-align: center;
-            
+
             &-img {
                 flex: 3;
                 width: 100%;
@@ -55,24 +78,27 @@
                 border-radius: 5px;
                 box-sizing: border-box;
                 object-fit: contain;
-                
+
             }
 
-            &-txt {                    
+            &-txt {
                 display: flex;
                 flex-direction: column;
                 flex: 1;
                 gap: 100px;
                 justify-content: center;
                 color: $darkGreen;
+
                 &-title {
-                   font-size: 36px; 
+                    font-size: 36px;
                 }
+
                 &-subtitle {
                     display: block;
                     border-bottom: 1px solid $lightGreen;
                     box-shadow: 0px 0px 5px $lightGreen;
                 }
+
                 &-description {
                     letter-spacing: 0.25px;
                     font-size: 20px;
@@ -82,23 +108,6 @@
 
         }
     }
-}
-
-.aaa {
-    min-width: 100%;
-    height: 620px;
-    border-top: 1px solid #000000;
-    background-color: rebeccapurple;
-    box-shadow: 0px 0px 5px $lightGreen;
-    border-radius: 5px;
-}
-
-.bbb {
-    height: 620px;
-    border-top: 1px solid #000000;
-    background-color: red;
-    box-shadow: 0px 0px 5px $lightGreen;
-    border-radius: 5px;
 }
 
 .slidein-animation {

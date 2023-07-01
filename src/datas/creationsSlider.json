@@ -4,7 +4,7 @@
     "webSiteScreen": "./jsonPicture/BankArgent.webp",
     "altScreen": "Capture de la page d'accueil projet bankArgent",
     "title": "Bank Argent",
-    "description": "<p>Ce site a été <b>sécurisé</b>, avec des cookies ? un lecteur d'empreinte digitale ? Perdu, via la gestion de l'authentification sous <b>Redux</b> !</p><p>De plus, il a été préparé aux fonctionnements sous <b>dataBase</b> et fonctionne avec une <b>API Rest</b>, ça en fait des termes techniques.</p>",
+    "description": "<p>Ce site a été <b>sécurisé</b>, avec des cookies ? un lecteur d'empreinte digitale ? Perdu, via la gestion de l'authentification sous <b>Redux</b> !</p><p>C'est également un insubmesible résistant aux terribles <b>injections SQL</b> en tout genre.</p>",
     "siteUrl": "COMING SOON",
     "gitHubUrl": "https://github.com/VCassina/projet-11-front-end/tree/master"
   },

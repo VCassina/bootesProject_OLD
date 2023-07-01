@@ -495,7 +495,24 @@ input[type=radio] {
   flex: 1;
   display: flex;
   justify-content: center;
+  text-align: center;
   gap: 30px;
+}
+.creations_content_upper-nav label {
+  flex: 1;
+  height: fit-content;
+  background-color: #0CA876;
+  border-radius: 10px;
+  transition: all 0.3 ease;
+  text-shadow: 0px 0px 5px #031a13;
+  color: white;
+}
+.creations_content_upper-nav label:hover {
+  flex: 1.25;
+  color: white;
+  box-shadow: 0px 0px 5px #0CA876;
+  text-shadow: 0px 0px 5px #0CA876;
+  background-color: #054933;
 }
 .creations_content_carrousel {
   position: relative;
@@ -535,23 +552,6 @@ input[type=radio] {
 .creations_content_carrousel-txt-description {
   letter-spacing: 0.25px;
   font-size: 20px;
-}
-
-.aaa {
-  min-width: 100%;
-  height: 620px;
-  border-top: 1px solid #000000;
-  background-color: rebeccapurple;
-  box-shadow: 0px 0px 5px #0CA876;
-  border-radius: 5px;
-}
-
-.bbb {
-  height: 620px;
-  border-top: 1px solid #000000;
-  background-color: red;
-  box-shadow: 0px 0px 5px #0CA876;
-  border-radius: 5px;
 }
 
 .slidein-animation {
