@@ -1,17 +1,29 @@
 import React, { useState, useEffect } from "react";
-import AnchorTarget from "../items/AnchorTarget";
-import CreationsLeftSideArticle from "../items/CreationsLeftCarrouselUnit";
-import CreationsRightCarrousel from "./CreationsRightCarrousel";
 import data from "../datas/realisationsSlider.json";
+import AnchorTarget from "../items/AnchorTarget";
 import CreationsSleepingAnimationHelper from "../helpers/CreationsSleepingAnimationHelper";
+import CreationsUpperArticle from "../items/CreationsUpperArticle";
+import CreationsBottomArticle from "../items/CreationsBottomArticle";
 
 function MyCreations() {
   const dataSlider = data;
-  const { sleepingRef, wakingRef } = CreationsSleepingAnimationHelper();
+  const { sleepingRef } = CreationsSleepingAnimationHelper();
   const [selectedElement, setSelectedElement] = useState(null);
   const [animateOut, setAnimateOut] = useState(false);
   const [nextElement, setNextElement] = useState(null);
   const [newData, setNewData] = useState(null);
+
+   // Gestion des animations du carrousel.
+   const handleElementChange = (index) => {
+    if (selectedElement === index) {
+      setSelectedElement(null);
+    } else {}
+    setAnimateOut(true);
+    setSelectedElement(index);
+    setTimeout(() => {
+      setAnimateOut(false);
+    }, 500);
+  };
 
   // Gestion de la mise à jour des données du carrousel & gestion du temps.
   useEffect(() => {
@@ -27,70 +39,45 @@ function MyCreations() {
     return () => clearTimeout(timeoutId);
   }, [selectedElement, dataSlider]);
 
-  // Gestion des animations du carrousel.
-  const handleElementChange = (index) => {
-    if (selectedElement === index) {
-      setSelectedElement(null); // Désélectionne l'élément actuel.
-    } else {}
-    setAnimateOut(true);
-    setSelectedElement(index);
-    setTimeout(() => {
-      setAnimateOut(false);
-    }, 500);
-  };
 
   return (
-    <article className="creations_container">
+    <section className="creations_container">
       <div className="importantComponent">
         <AnchorTarget id="creations" />
-        <h2 className="title-creations">
-          <span ref={wakingRef} className="">
-            _
-          </span>
-          <span ref={sleepingRef} className="">
-            Nos réalisations
-          </span>
-        </h2>
         <div className="creations_content">
-          <section className="creations_content_carrousel">
-            
-            <div className="creations_content_carrousel_left">
-              <div className="creations_content_carrousel_left-title-container">
-            <span className="creations_content_carrousel_left-title">Selectionnez un projet !</span>
-            <span className="creations_content_carrousel_left-title-border"></span>
-            </div>
-            <div className="creations_content_carrousel_left-articles" >
-              {dataSlider.map((item, index) => (
-                <CreationsLeftSideArticle
-                  key={index}
-                  index={index}
-                  handleElementChange={() => handleElementChange(index)}
-                  selectedElement={selectedElement}
-                  title={item.title}
-                  iconeClass={item.iconeClass}
-                  alt={item.alt}
-                />
-              ))}
-              </div>
-            </div>
-            {/* <div className="creations_content_carrousel_middle"></div> */}
-            {/*  // Utilise les nouvelles données uniquement. */}
-            <CreationsRightCarrousel
+          <div className="creations_content_upper">
+            <h2 className="creations_content_upper-title">
+              <span>_</span>
+              <span ref={sleepingRef} className="">
+                Nos réalisations
+              </span>
+            </h2>
+            <nav className="creations_content_upper-nav">
+            {dataSlider.map((item, index) => (
+  <CreationsUpperArticle
+    item={item}
+    index={index}
+    selectedElement={selectedElement}
+    handleElementChange={() => handleElementChange(index)}
+  />
+))}
+            </nav>
+          </div>
+
+          <div className="creations_content_carrousel">
+            <CreationsBottomArticle 
               selectedElement={selectedElement}
               webSiteScreen={newData?.webSiteScreen}
               altScreen={newData?.altScreen}
-              title={newData?.title}
               description={newData?.description}
-              siteUrl={newData?.siteUrl}
-              gitHubUrl={newData?.gitHubUrl}
               animateOut={animateOut}
               nextElement={nextElement}
               setNextElement={setNextElement}
             />
-          </section>
+          </div>
         </div>
       </div>
-    </article>
+    </section>
   );
 }
 

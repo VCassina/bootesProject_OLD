@@ -10,7 +10,7 @@ function BootesProject() {
       <AnchorTarget id="bootes" isFirst={true} />
       <h2 className="bootes_title title" >_Boötes Project</h2>
       <div className="bootes_content">
-      <BootesArticle title={data[0].title} description={data[0].description} titleIndex="first-title" />
+      <BootesArticle title={data[0].title} description={data[0].description} titleIndex="first-title" secondElement={false}/>
         <figure>
           <img
             className="bootes_content-picture"
@@ -19,7 +19,7 @@ function BootesProject() {
           />
           <figcaption>Designed by CatalysStuff - Thank you !</figcaption>
         </figure>
-        <BootesArticle title={data[1].title} description={data[1].description} titleIndex="second-title" />
+        <BootesArticle title={data[1].title} description={data[1].description} titleIndex="second-title" secondElement={true} />
       </div>
     </article>
   );

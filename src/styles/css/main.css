@@ -201,21 +201,21 @@ input[type=radio] {
 }
 @keyframes slideIn--myCreations {
   0% {
-    transform: translateY(-800px);
+    transform: translateX(-100vw);
     opacity: 1;
   }
   100% {
     opacity: 1;
-    transform: translateY(0);
+    transform: translateX(0);
   }
 }
 @keyframes slideOut--myCreations {
   0% {
-    transform: translateY(0);
+    transform: translateX(0);
     opacity: 1;
   }
   100% {
-    transform: translateY(800px);
+    transform: translateX(100vw);
     opacity: 1;
   }
 }
@@ -463,158 +463,52 @@ input[type=radio] {
   animation: blink--mySkills linear infinite 3s;
 }
 
-.creations_container {
+.creations_content_upper {
   display: flex;
-  height: 1080px;
-  margin-top: 60px;
+  flex-direction: row-reverse;
+  justify-content: space-between;
+  align-items: last baseline;
 }
-.creations_content {
-  width: 1600px;
-  padding: 10px;
-  overflow: hidden;
-  color: #031a13;
-}
-.creations_content_carrousel {
-  height: 620px;
-  display: grid;
-  grid-template-columns: 2.5fr 10fr 0.5fr;
-  align-items: center;
-}
-.creations_content_carrousel_left {
-  display: grid;
-  grid-template-rows: 2fr 6fr;
-  height: 90%;
-  justify-content: center;
-  text-align: center;
-  align-items: center;
-  justify-items: center;
-  border-radius: 20px 0 0 20px;
-  box-shadow: 0px 0px 5px #0CA876;
-}
-.creations_content_carrousel_left-item {
+.creations_content_upper-title {
   display: flex;
-  gap: 20px;
-  background-color: white;
-}
-.creations_content_carrousel_left-articles {
-  display: flex;
-  gap: 45px;
-  flex-direction: column;
-}
-.creations_content_carrousel_left-title {
-  padding: 25px 0;
-  font-size: 26px;
-}
-.creations_content_carrousel_left-title-border {
-  width: 75%;
-  border-bottom: 1px solid #0CA876;
-}
-.creations_content_carrousel_left-title-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-.creations_content_carrousel_right {
-  padding: 15px 0;
-  overflow: hidden;
-  transition: transform 0.5s, opacity 0.5s;
-  height: 600px;
-  display: grid;
-  grid-template-rows: 1fr 1fr;
-  gap: 15px;
-  justify-items: center;
-}
-.creations_content_carrousel_right-img {
-  width: 70%;
-  border-radius: 10px;
-  box-shadow: 0px 0px 5px #0CA876;
-  object-fit: cover;
-  box-sizing: border-box;
-}
-.creations_content_carrousel_right-title {
-  font-size: 40px;
-  display: block;
-  background-color: #031a13;
-  border-radius: 15px;
-  padding: 10px;
-  color: white;
-  text-shadow: 0px 0px 12px white;
-  font-family: "Montserrat", sans-serif;
-}
-.creations_content_carrousel_right-description {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  width: 70%;
-  font-family: "Montserrat", sans-serif;
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: 0.25x;
-}
-.creations_content_carrousel_right-void {
-  display: flex;
-  flex-direction: column;
-  text-align: center;
-  position: relative;
-  font-size: 20px;
-}
-.creations_content_carrousel_right-void-title {
-  font-size: 36px;
-}
-.creations_content_carrousel_right-void-img {
-  width: 180px;
-}
-.creations_content_carrousel_right-void-caption {
-  position: relative;
-  bottom: 20px;
-}
-.creations_content_carrousel-label {
-  cursor: pointer;
-  display: flex;
-  text-align: center;
-  align-items: center;
-  padding: 0 0px 0 40px;
-  transition: transform 0.15s ease-in-out;
-}
-.creations_content_carrousel-label:hover {
-  filter: brightness(35%);
-  transform: scale(1.1);
-}
-.creations_content_carrousel-label span {
-  padding: 0 30px;
-  font-size: 26px;
-}
-.creations_content_carrousel-label-img {
-  font-size: 40px;
-  color: #0CA876;
-}
-
-.checked {
-  filter: brightness(35%);
-  transform: scale(1.125);
-}
-
-.title-creations {
-  display: flex;
-  position: relative;
-  bottom: 30px;
-  width: 100%;
-  margin-bottom: 20px;
   color: #0CA876;
   text-shadow: 0 1px 2px rgb(0, 0, 0);
   font-family: "Segoe UI", sans-serif;
   font-size: 72px;
-  z-index: 2;
-  justify-content: right;
-  overflow: hidden;
 }
-.title-creations-sleepingAnimation {
+.creations_content_upper-title-sleepingAnimation {
   display: block;
   animation: sleepingAnimation--myCreations 4s forwards ease-in-out;
 }
-.title-creations-wakingUpAnimation {
-  display: block;
-  animation: wakingUpAnimation--myCreations 4s forwards ease-in-out;
+.creations_content_upper-label {
+  font-size: 30px;
+}
+.creations_content_carrousel {
+  position: relative;
+  bottom: 40px;
+  background-color: yellow;
+  height: 620px;
+  max-width: 100%;
+  display: grid;
+  grid-template-columns: 10fr 5fr;
+  gap: 10px;
+  padding: 15px;
+}
+
+.aaa {
+  height: 620px;
+  border-top: 1px solid #000000;
+  background-color: rebeccapurple;
+  box-shadow: 0px 0px 5px #0CA876;
+  border-radius: 5px;
+}
+
+.bbb {
+  height: 620px;
+  border-top: 1px solid #000000;
+  background-color: red;
+  box-shadow: 0px 0px 5px #0CA876;
+  border-radius: 5px;
 }
 
 .slidein-animation {

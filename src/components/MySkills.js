@@ -1,5 +1,5 @@
 import React from "react";
-import SkillsArticle from "../components/SkillsArticle";
+import SkillsArticle from "../items/SkillsArticle";
 import data from "../datas/skillsArticle.json";
 import AnchorTarget from "../items/AnchorTarget";
 import frontEndIcon from "../assets/frontEndByMacrovector.webp"
