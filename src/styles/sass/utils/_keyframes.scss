@@ -206,56 +206,6 @@
     }
 }
 
-// Compatible "réveil" & "marteau".
-// @keyframes sleepingAnimation--myCreations {
-//     0% {
-//         // transform: translateY(10px) translateX(15px) rotate(0deg);
-//         // transform-origin: right center;
-//         transform: translateY(80px) translateX(0px);
-//         opacity: 0;
-//     }
-
-//     8% {
-//         // transform: translateY(10px) translateX(15px) rotate(0deg);
-//         // transform-origin: right center;
-//         // transform: translateY(80px) translateX(0px);
-//         // opacity: 0;
-//     }
-
-//     15% {
-//         // transform: translateY(10px) translateX(15px) rotate(-1.5deg);
-//         // transform-origin: right center;
-//         transform: translateY(80px) translateX(0px);
-//         opacity: 1;
-//     }
-
-//     26% {
-//         // transform: translateY(10px) translateX(15px) rotate(-1.5deg);
-//         // transform-origin: right center;
-//         transform: translateY(80px) translateX(0px);
-//         opacity: 1;
-//     }
-
-
-//     32% {
-//         // transform: translateY(-20px) translateX(20px) rotate(5deg);
-//         // transform-origin: left;
-
-//         transform: translateY(-20px) translateX(0px) rotate(0deg);
-//         opacity: 1;
-//     }
-
-//     35% {
-//         transform: translateY(0px) rotate(0deg);
-//         transform-origin: right center;
-//     }
-
-//     100% {
-//         transform: translateY(0) rotate(0deg);
-//         transform-origin: right center;
-//     }
-// }
-
 // Solo-runner.
 @keyframes sleepingAnimation--myCreations {
     0% {
@@ -269,9 +219,6 @@
     }
 
     13% {
-        // transform: translateY(-20px) translateX(20px) rotate(5deg);
-        // transform-origin: left;
-
         transform: translateY(-20px) translateX(0px) rotate(0deg);
         opacity: 1;
     }
@@ -283,111 +230,23 @@
 
 }
 
-// Animation type "réveil".
-// @keyframes wakingUpAnimation--myCreations {
+@keyframes sideWays--contactUs {
+    0% {
+        margin-left: 0px;
+    }
 
-//     0% {
-//         transform: translate(0, 0) rotate(0deg);
-//     }
+    100% {
+        margin-left: 200px;
+    }
+}
 
-//     25% {
-//         transform: translate(0, 0) rotate(0deg);
-//     }
+@keyframes bubble--contactUs {
+    0% {
+        transform: translateY(0%);
+        opacity: 0.06;
+    }
 
-//     26% {
-//         transform: translate(-5px, -25px) rotate(-10deg) scale(1.10);
-//     }
-
-//     26.5% {
-//         transform: translate(10px, -30px) rotate(10deg) scale(1.10);
-//     }
-
-//     27% {
-//         transform: translate(-10px, -10px) rotate(-10deg);
-//     }
-
-//     27.5% {
-//         transform: translate(10px, -30px) rotate(10deg);
-//     }
-
-//     28% {
-//         transform: translate(-10px, -30px) rotate(-10deg) scale(1.10);
-//     }
-
-//     28.5% {
-//         transform: translate(10px, -30px) rotate(10deg) scale(1.10);
-//     }
-
-//     29% {
-//         transform: translate(-10px, -10px) rotate(-10deg);
-//     }
-
-//     29.5% {
-//         transform: translate(0, 0) rotate(0deg) scale(1.10);
-//     }
-
-//     30% {
-//         transform: translate(-10px, -30x) rotate(-10deg) scale(1.10);
-//     }
-
-//     30.5% {
-//         transform: translate(10px, -20px) rotate(10deg);
-//     }
-
-//     31% {
-//         transform: translate(-10px, -10px) rotate(-10deg) scale(1.10);
-//     }
-
-//     31.5% {
-//         transform: translate(10px, -30px) rotate(10deg) scale(1.10);
-//     }
-
-//     32% {
-//         transform: translate(-10px, -30px) rotate(-10deg);
-//     }
-
-//     32.5% {
-//         transform: translate(10px, -30px) rotate(10deg);
-//     }
-
-//     33% {
-//         transform: translate(-10px, -10px) rotate(-10deg);
-//     }
-
-//     33.5% {
-//         transform: translate(0, 0) rotate(0deg);
-//     }
-
-//     34% {
-//         transform: translate(-10px, -10px) rotate(-10deg);
-//     }
-
-//     34.5% {
-//         transform: translate(10px, -10px) rotate(10deg);
-//     }
-
-//     35% {
-//         transform: translate(0, 0) rotate(0deg);
-//     }
-// }
-
-// Animation type "Marteau".
-// @keyframes wakingUpAnimation--myCreations {
-
-//     0% {
-//         transform: translate(0, 0) rotate(0deg);
-//     }
-//     15% {
-//         transform: translate(0, 0) rotate(0deg);
-//     }
-//     25% {
-//         transform: translate(-20px, 0) rotate(10deg);
-//     }
-//     28% {
-//         transform: translate(25px, 0) rotate(0deg)
-//         // transform: translate(0px, 0) rotate(0deg)
-//     }
-//     34% {
-//         transform: translate(0px, 0) rotate(0deg)
-//     }
-// }
+    100% {
+        transform: translateY(-120vh);
+    }
+}

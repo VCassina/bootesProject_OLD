@@ -238,6 +238,23 @@ input[type=radio] {
     transform-origin: right center;
   }
 }
+@keyframes sideWays--contactUs {
+  0% {
+    margin-left: 0px;
+  }
+  100% {
+    margin-left: 200px;
+  }
+}
+@keyframes bubble--contactUs {
+  0% {
+    transform: translateY(0%);
+    opacity: 0.06;
+  }
+  100% {
+    transform: translateY(-120vh);
+  }
+}
 .anchor-target {
   height: 100px;
 }
@@ -602,6 +619,207 @@ input[type=radio] {
   background-color: #031a13 !important;
   opacity: 0.9 !important;
   transform: scale(1.125);
+}
+
+.contact_container {
+  width: 100vw;
+}
+.contact_content_title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  justify-content: center;
+  height: fit-content;
+}
+.contact_content_title-item {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact_content_title-animation {
+  display: block;
+  opacity: 1;
+  animation: waterEffect--contactUs 6s linear forwards;
+  transform-origin: center;
+}
+.contact_content_title h2 {
+  font-size: 72px;
+  height: 72px;
+  text-shadow: 0 1px 2px rgb(0, 0, 0);
+  color: #fff;
+  text-shadow: 0 0px 40px, 0 0 2px, 0 0 0.25em #0CA876, 0 0 0.25em #0CA876, 0 0 0.1em #0CA876;
+}
+.contact_content_title p {
+  position: relative;
+  bottom: 40px;
+  color: white;
+  font-size: 20px;
+  text-shadow: 0 0px 80px, 0 0 2px, 0 0 0.125em #0CA876, 0 0 0.125em #0CA876, 0 0 0.0125em #0CA876;
+}
+
+.ocean {
+  position: relative;
+  height: 100vh;
+  background-image: #031a13;
+  overflow: hidden;
+}
+
+.bubble {
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  position: absolute;
+  background-color: white;
+  bottom: -30px;
+  opacity: 0.2;
+  animation: bubble--contactUs 15s ease-in-out infinite, sideWays--contactUs 4s ease-in-out infinite alternate;
+}
+.bubble--1 {
+  left: 10%;
+  animation-delay: 0.5s;
+  animation-duration: 16s;
+  opacity: 0.2;
+}
+.bubble--2 {
+  width: 15px;
+  height: 15px;
+  left: 40%;
+  animation-delay: 1s;
+  animation-duration: 10s;
+  opacity: 0.1;
+}
+.bubble--3 {
+  width: 10px;
+  height: 10px;
+  left: 30%;
+  animation-delay: 5s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+.bubble--4 {
+  width: 25px;
+  height: 25px;
+  left: 40%;
+  animation-delay: 8s;
+  animation-duration: 17s;
+  opacity: 0.2;
+}
+.bubble--5 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  animation-delay: 10s;
+  animation-duration: 15s;
+  opacity: 0.1;
+}
+.bubble--6 {
+  width: 10px;
+  height: 10px;
+  left: 80%;
+  animation-delay: 3s;
+  animation-duration: 30s;
+  opacity: 0.4;
+}
+.bubble--7 {
+  width: 15px;
+  height: 15px;
+  left: 90%;
+  animation-delay: -7s;
+  animation-duration: 25s;
+  opacity: 0.3;
+}
+.bubble--9 {
+  width: 20px;
+  height: 20px;
+  left: 50%;
+  bottom: 30px;
+  animation-delay: -5s;
+  animation-duration: 19s;
+  opacity: 0.2;
+}
+.bubble--10 {
+  width: 40px;
+  height: 40px;
+  left: 30%;
+  bottom: 30px;
+  animation-delay: -21s;
+  animation-duration: 16s;
+  opacity: 0.3;
+}
+.bubble--11 {
+  width: 30px;
+  height: 30px;
+  left: 60%;
+  bottom: 30px;
+  animation-delay: -13.75s;
+  animation-duration: 20s;
+  opacity: 0.3;
+}
+.bubble--12 {
+  width: 20px;
+  height: 20px;
+  left: 70%;
+  bottom: 30px;
+  animation-delay: -15s;
+  animation-duration: 22s;
+  opacity: 0.4;
+}
+.bubble--13 {
+  width: 25px;
+  height: 25px;
+  left: 20%;
+  bottom: 30px;
+  animation-delay: -12s;
+  animation-duration: 18s;
+  opacity: 0.2;
+}
+.bubble--14 {
+  width: 15px;
+  height: 15px;
+  left: 50%;
+  bottom: 30px;
+  animation-delay: -8s;
+  animation-duration: 16s;
+  opacity: 0.3;
+}
+.bubble--15 {
+  width: 30px;
+  height: 30px;
+  left: 70%;
+  bottom: 30px;
+  animation-delay: -20s;
+  animation-duration: 14s;
+  opacity: 0.1;
+}
+
+@keyframes waterEffect--contactUs {
+  0% {
+    transform: translateY(-300%) rotate(45deg);
+  }
+  30% {
+    transform: translateY(-100%) rotate(25deg);
+  }
+  41.5% {
+    transform: translateY(-70%) rotate(16deg);
+  }
+  55% {
+    transform: translateY(-40%) rotate(8deg);
+  }
+  70% {
+    transform: translateY(-1%) rotate(0deg);
+  }
+  78% {
+    transform: translateY(-1%) rotate(1deg);
+  }
+  80% {
+    transform: translateY(-1%) rotate(1deg);
+  }
+  82% {
+    transform: translateY(-1%) rotate(1deg);
+  }
+  95% {
+    transform: translateY(0%) rotate(0deg);
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
