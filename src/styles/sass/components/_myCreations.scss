@@ -1,5 +1,8 @@
 .creations {
     &_content {
+        & b {
+            font-size: 22px;
+        }
         &_upper {
             display: flex;
             flex-direction: row-reverse;
@@ -54,7 +57,9 @@
                         color: white;
                         box-shadow: 0px 0px 5px $lightGreen;
                         text-shadow: 0px 0px 5px $lightGreen;
-                        background-color: darken($lightGreen, 20%);
+
+                        background-color: $darkGreen;
+                        opacity: 0.9;
                     }
                 }
             }
@@ -74,6 +79,7 @@
             &-img {
                 flex: 3;
                 width: 100%;
+                height: 95%;
                 box-shadow: 0px 0px 5px $lightGreen;
                 border-radius: 5px;
                 box-sizing: border-box;
@@ -85,23 +91,49 @@
                 display: flex;
                 flex-direction: column;
                 flex: 1;
-                gap: 100px;
-                justify-content: center;
+                text-align: center;
                 color: $darkGreen;
+                height: 100%;
+                padding: 5px;
 
                 &-title {
+                    flex: 1;
                     font-size: 36px;
+
+                    &-subtitle {
+                        display: block;
+                        border-bottom: 1px solid $lightGreen;
+                        box-shadow: 0px 0px 5px $lightGreen;
+                    }
                 }
 
-                &-subtitle {
-                    display: block;
-                    border-bottom: 1px solid $lightGreen;
-                    box-shadow: 0px 0px 5px $lightGreen;
+                &-links {
+                    flex: 1;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    gap: 15px;
+                    height: 100%;
+                    & svg {
+                        height: 25px;
+                        transition: $transitionButtonTime;
+                        color: $lightGreen;
+
+                        &:hover {
+                            transform: scale(1.25);
+                            cursor: pointer;
+                            color: $darkGreen;
+                        }
+                    }
                 }
 
                 &-description {
+                    flex: 6;
+                    display: flex;
+                    flex-direction: column;
                     letter-spacing: 0.25px;
                     font-size: 20px;
+                    height: 100%;
                 }
             }
 
@@ -116,4 +148,15 @@
 
 .slideout-animation {
     animation: slideOut--myCreations 0.5s forwards;
+}
+
+.checked {
+    flex: 1.25 !important;
+    color: white;
+    box-shadow: 0px 0px 5px $lightGreen !important;
+    text-shadow: 0px 0px 5px $lightGreen !important;
+    // background-color: darken($lightGreen, 20%);
+    background-color: $darkGreen !important;
+    opacity: 0.9 !important;
+    transform: scale(1.125);
 }

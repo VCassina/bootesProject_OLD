@@ -1,5 +1,5 @@
-function CreationsUpperArticle({ index, handleElementChange }) {
-;
+function CreationsUpperArticle({ index, handleElementChange, selectedElement }) {
+  const isChecked = index === selectedElement;
       return (
         <>
           <input
@@ -7,10 +7,13 @@ function CreationsUpperArticle({ index, handleElementChange }) {
             id={`element${index + 1}`}
             name="elements"
             value={`Element${index + 1}`}
-            // checked={selectedElement === `Element${index + 1}`}
+            checked={index === selectedElement}
             onClick={() => handleElementChange(index + 1)}
           />
-          <label htmlFor={`element${index + 1}`} className="creations_content_upper-label">
+                <label
+        htmlFor={`element${index + 1}`}
+        className={`creations_content_upper-label ${isChecked ? "checked" : ""}`}
+      >
             <span>{index+1}</span>
           </label>
         </>

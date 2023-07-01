@@ -13,11 +13,12 @@ function MyCreations() {
   const [nextElement, setNextElement] = useState(null);
   const [newData, setNewData] = useState(null);
 
-   // Gestion des animations du carrousel.
-   const handleElementChange = (index) => {
+  // Gestion des animations du carrousel.
+  const handleElementChange = (index) => {
     if (selectedElement === index) {
-      return (null)
-    } else {}
+      return null;
+    } else {
+    }
     setAnimateOut(true);
     setSelectedElement(index);
     setTimeout(() => {
@@ -34,11 +35,11 @@ function MyCreations() {
       }
       timeoutId = setTimeout(() => {
         setNewData(dataSlider[selectedElement]);
+        console.log(dataSlider[selectedElement]);
       }, 500);
     }
     return () => clearTimeout(timeoutId);
   }, [selectedElement, dataSlider]);
-
 
   return (
     <section className="creations_container">
@@ -53,25 +54,26 @@ function MyCreations() {
               </span>
             </h2>
             <nav className="creations_content_upper-nav">
-            {dataSlider.map((item, index) => (
-  <CreationsUpperArticle
-key={index}
-    item={item}
-    index={index}
-    selectedElement={selectedElement}
-    handleElementChange={() => handleElementChange(index)}
-  />
-))}
+              {dataSlider.map((item, index) => (
+                <CreationsUpperArticle
+                  key={index}
+                  item={item}
+                  index={index}
+                  handleElementChange={() => handleElementChange(index)}
+                  selectedElement={selectedElement}
+                />
+              ))}
             </nav>
           </div>
 
           <div className="creations_content_carrousel">
-            <CreationsBottomArticle 
-              selectedElement={selectedElement}
+            <CreationsBottomArticle
               webSiteScreen={newData?.webSiteScreen}
               altScreen={newData?.altScreen}
               description={newData?.description}
               title={newData?.title}
+              siteUrl={newData?.siteUrl}
+              gitUrl={newData?.gitUrl}
               animateOut={animateOut}
               nextElement={nextElement}
               setNextElement={setNextElement}

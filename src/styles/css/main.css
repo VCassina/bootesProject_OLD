@@ -463,6 +463,9 @@ input[type=radio] {
   animation: blink--mySkills linear infinite 3s;
 }
 
+.creations_content b {
+  font-size: 22px;
+}
 .creations_content_upper {
   display: flex;
   flex-direction: row-reverse;
@@ -512,7 +515,8 @@ input[type=radio] {
   color: white;
   box-shadow: 0px 0px 5px #0CA876;
   text-shadow: 0px 0px 5px #0CA876;
-  background-color: #054933;
+  background-color: #031a13;
+  opacity: 0.9;
 }
 .creations_content_carrousel {
   position: relative;
@@ -528,6 +532,7 @@ input[type=radio] {
 .creations_content_carrousel-img {
   flex: 3;
   width: 100%;
+  height: 95%;
   box-shadow: 0px 0px 5px #0CA876;
   border-radius: 5px;
   box-sizing: border-box;
@@ -537,21 +542,45 @@ input[type=radio] {
   display: flex;
   flex-direction: column;
   flex: 1;
-  gap: 100px;
-  justify-content: center;
+  text-align: center;
   color: #031a13;
+  height: 100%;
+  padding: 5px;
 }
 .creations_content_carrousel-txt-title {
+  flex: 1;
   font-size: 36px;
 }
-.creations_content_carrousel-txt-subtitle {
+.creations_content_carrousel-txt-title-subtitle {
   display: block;
   border-bottom: 1px solid #0CA876;
   box-shadow: 0px 0px 5px #0CA876;
 }
+.creations_content_carrousel-txt-links {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 15px;
+  height: 100%;
+}
+.creations_content_carrousel-txt-links svg {
+  height: 25px;
+  transition: 0.25s;
+  color: #0CA876;
+}
+.creations_content_carrousel-txt-links svg:hover {
+  transform: scale(1.25);
+  cursor: pointer;
+  color: #031a13;
+}
 .creations_content_carrousel-txt-description {
+  flex: 6;
+  display: flex;
+  flex-direction: column;
   letter-spacing: 0.25px;
   font-size: 20px;
+  height: 100%;
 }
 
 .slidein-animation {
@@ -560,6 +589,16 @@ input[type=radio] {
 
 .slideout-animation {
   animation: slideOut--myCreations 0.5s forwards;
+}
+
+.checked {
+  flex: 1.25 !important;
+  color: white;
+  box-shadow: 0px 0px 5px #0CA876 !important;
+  text-shadow: 0px 0px 5px #0CA876 !important;
+  background-color: #031a13 !important;
+  opacity: 0.9 !important;
+  transform: scale(1.125);
 }
 
 /*# sourceMappingURL=main.css.map */
