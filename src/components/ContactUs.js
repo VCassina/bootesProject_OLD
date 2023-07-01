@@ -1,8 +1,16 @@
-import React from "react";
+import React, { useRef } from "react";
 import AnchorTarget from "../items/AnchorTarget";
+import titleAnimationHelper from "../helpers/titleAnimationHelper";
 
 
 function ContactUs() {
+    const flowingRef = useRef(null);
+
+    titleAnimationHelper(
+        "contact_content_title-flowingAnimation",
+        flowingRef
+      );
+
   return (
     <section className="contact_container darkComponent ocean">
       <div className="bubble bubble--1"></div>
@@ -24,7 +32,7 @@ function ContactUs() {
       <div className="importantComponent">
         <div className="contact_content">
           <div className="contact_content_title">
-          <h2 className="contact_content_title-item">_<span className="contact_content_title-animation">Nous contacter</span></h2>
+          <h2 className="contact_content_title-item">_<span ref={flowingRef} className="contact_content_title-animation">Nous contacter</span></h2>
             <p>Les abysses du site, vous ne tomberez pas plus bas.</p>
           </div>
         </div>

@@ -1,18 +1,22 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import data from "../datas/creationsSlider.json";
 import AnchorTarget from "../items/AnchorTarget";
-import CreationsSleepingAnimationHelper from "../helpers/CreationsSleepingAnimationHelper";
 import CreationsUpperArticle from "../items/CreationsUpperArticle";
 import CreationsBottomArticle from "../items/CreationsBottomArticle";
+import titleAnimationHelper from "../helpers/titleAnimationHelper";
 
 function MyCreations() {
   const dataSlider = data;
-  const { sleepingRef } = CreationsSleepingAnimationHelper();
+  const sleepingRef = useRef(null);
   const [selectedElement, setSelectedElement] = useState(0);
   const [animateOut, setAnimateOut] = useState(false);
   const [nextElement, setNextElement] = useState(null);
   const [newData, setNewData] = useState(null);
 
+  titleAnimationHelper(
+    "creations_content_upper-title-sleepingAnimation",
+    sleepingRef
+  );
   // Gestion des animations du carrousel.
   const handleElementChange = (index) => {
     if (selectedElement === index) {

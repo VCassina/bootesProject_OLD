@@ -255,6 +255,35 @@ input[type=radio] {
     transform: translateY(-120vh);
   }
 }
+@keyframes waterEffect--contactUs {
+  0% {
+    transform: translateY(-300%) rotate(45deg);
+  }
+  30% {
+    transform: translateY(-100%) rotate(25deg);
+  }
+  41.5% {
+    transform: translateY(-70%) rotate(16deg);
+  }
+  55% {
+    transform: translateY(-40%) rotate(8deg);
+  }
+  70% {
+    transform: translateY(-1%) rotate(0deg);
+  }
+  78% {
+    transform: translateY(-1%) rotate(1deg);
+  }
+  80% {
+    transform: translateY(-1%) rotate(1deg);
+  }
+  82% {
+    transform: translateY(-1%) rotate(1deg);
+  }
+  95% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
 .anchor-target {
   height: 100px;
 }
@@ -636,7 +665,7 @@ input[type=radio] {
   align-items: center;
   justify-content: center;
 }
-.contact_content_title-animation {
+.contact_content_title-flowingAnimation {
   display: block;
   opacity: 1;
   animation: waterEffect--contactUs 6s linear forwards;
@@ -790,36 +819,6 @@ input[type=radio] {
   animation-delay: -20s;
   animation-duration: 14s;
   opacity: 0.1;
-}
-
-@keyframes waterEffect--contactUs {
-  0% {
-    transform: translateY(-300%) rotate(45deg);
-  }
-  30% {
-    transform: translateY(-100%) rotate(25deg);
-  }
-  41.5% {
-    transform: translateY(-70%) rotate(16deg);
-  }
-  55% {
-    transform: translateY(-40%) rotate(8deg);
-  }
-  70% {
-    transform: translateY(-1%) rotate(0deg);
-  }
-  78% {
-    transform: translateY(-1%) rotate(1deg);
-  }
-  80% {
-    transform: translateY(-1%) rotate(1deg);
-  }
-  82% {
-    transform: translateY(-1%) rotate(1deg);
-  }
-  95% {
-    transform: translateY(0%) rotate(0deg);
-  }
 }
 
 /*# sourceMappingURL=main.css.map */
