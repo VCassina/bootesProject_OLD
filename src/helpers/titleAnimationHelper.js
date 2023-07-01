@@ -6,8 +6,7 @@ const TitleAnimationHelper = (classToAdd, valueRef) => {
       entries.forEach((entry) => {
         if (entry.isIntersecting) {
           entry.target.classList.add(classToAdd);
-        } else {
-          entry.target.classList.remove(classToAdd);
+          sleepingObserver.unobserve(entry.target);
         }
       });
     });
@@ -23,6 +22,8 @@ const TitleAnimationHelper = (classToAdd, valueRef) => {
       }
     };
   }, [classToAdd, valueRef]);
+
+  return valueRef;
 };
 
 export default TitleAnimationHelper;
