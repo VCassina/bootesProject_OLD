@@ -1,8 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import data from "../datas/creationsSlider.json";
 import AnchorTarget from "../items/AnchorTarget";
-import CreationsUpperArticle from "../items/CreationsUpperArticle";
-import CreationsBottomArticle from "../items/CreationsBottomArticle";
+import CreationsUpperArticle from "../components/CreationsUpperArticle";
+import CreationsBottomArticle from "../components/CreationsBottomArticle";
 import titleAnimationHelper from "../helpers/titleAnimationHelper";
 
 function MyCreations() {

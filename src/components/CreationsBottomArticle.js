@@ -4,6 +4,8 @@ import { Markup } from 'interweave';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
+import TEMP_FIX_IMG from "../assets/NinaCarducci.webp"
+
 library.add(faGlobe);
 
 function CreationsBottomArticle ({
@@ -23,7 +25,7 @@ function CreationsBottomArticle ({
     <div className={classNames}>
       <>
         <img
-          src={webSiteScreen}
+          src={TEMP_FIX_IMG}
           alt={altScreen}
           className="creations_content_carrousel-img"
         />
