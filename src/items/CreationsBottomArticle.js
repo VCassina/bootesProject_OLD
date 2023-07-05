@@ -1,6 +1,6 @@
 import React from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import ReactHtmlParser from "react-html-parser";
+import { Markup } from 'interweave';
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faGithub } from "@fortawesome/free-brands-svg-icons";
 import { faGlobe } from "@fortawesome/free-solid-svg-icons";
@@ -37,7 +37,7 @@ function CreationsBottomArticle ({
             <a href={siteUrl}><FontAwesomeIcon icon={faGlobe} /></a>
           </div>
           <div className="creations_content_carrousel-txt-description">
-            {ReactHtmlParser(description)}
+          <Markup content={description} />
           </div>
         </div>
       </>
