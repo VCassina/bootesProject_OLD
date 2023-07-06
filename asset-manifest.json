@@ -1,22 +1,22 @@
 {
   "files": {
-    "main.css": "/Projet-12/static/css/main.78e42e9e.css",
-    "main.js": "/Projet-12/static/js/main.eb67aff1.js",
-    "static/js/787.1ed0c42c.chunk.js": "/Projet-12/static/js/787.1ed0c42c.chunk.js",
-    "static/media/NinaCarducci.webp": "/Projet-12/static/media/NinaCarducci.b4e36f1731bf482be221.webp",
-    "static/media/meByCatalysStuff.webp": "/Projet-12/static/media/meByCatalysStuff.2f2eaee4f354cc9e4410.webp",
-    "static/media/pralineByCatalysStuff.webp": "/Projet-12/static/media/pralineByCatalysStuff.2ac4ae9aa2dab48be33f.webp",
-    "static/media/bootesDevLogo.webp": "/Projet-12/static/media/bootesDevLogo.24c17c40e8f15fdb643d.webp",
-    "static/media/backEndByMacrovector.webp": "/Projet-12/static/media/backEndByMacrovector.ce2050c6c970c529bd89.webp",
-    "static/media/seoByMacrovector.webp": "/Projet-12/static/media/seoByMacrovector.f30fb04c1e117a20e815.webp",
-    "static/media/frontEndByMacrovector.webp": "/Projet-12/static/media/frontEndByMacrovector.4233328557ba4de47f0e.webp",
-    "index.html": "/Projet-12/index.html",
-    "main.78e42e9e.css.map": "/Projet-12/static/css/main.78e42e9e.css.map",
-    "main.eb67aff1.js.map": "/Projet-12/static/js/main.eb67aff1.js.map",
-    "787.1ed0c42c.chunk.js.map": "/Projet-12/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/bootesDev/static/css/main.78e42e9e.css",
+    "main.js": "/bootesDev/static/js/main.6d5409d6.js",
+    "static/js/787.1ed0c42c.chunk.js": "/bootesDev/static/js/787.1ed0c42c.chunk.js",
+    "static/media/NinaCarducci.webp": "/bootesDev/static/media/NinaCarducci.b4e36f1731bf482be221.webp",
+    "static/media/meByCatalysStuff.webp": "/bootesDev/static/media/meByCatalysStuff.2f2eaee4f354cc9e4410.webp",
+    "static/media/pralineByCatalysStuff.webp": "/bootesDev/static/media/pralineByCatalysStuff.2ac4ae9aa2dab48be33f.webp",
+    "static/media/bootesDevLogo.webp": "/bootesDev/static/media/bootesDevLogo.24c17c40e8f15fdb643d.webp",
+    "static/media/backEndByMacrovector.webp": "/bootesDev/static/media/backEndByMacrovector.ce2050c6c970c529bd89.webp",
+    "static/media/seoByMacrovector.webp": "/bootesDev/static/media/seoByMacrovector.f30fb04c1e117a20e815.webp",
+    "static/media/frontEndByMacrovector.webp": "/bootesDev/static/media/frontEndByMacrovector.4233328557ba4de47f0e.webp",
+    "index.html": "/bootesDev/index.html",
+    "main.78e42e9e.css.map": "/bootesDev/static/css/main.78e42e9e.css.map",
+    "main.6d5409d6.js.map": "/bootesDev/static/js/main.6d5409d6.js.map",
+    "787.1ed0c42c.chunk.js.map": "/bootesDev/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.78e42e9e.css",
-    "static/js/main.eb67aff1.js"
+    "static/js/main.6d5409d6.js"
   ]
 }
