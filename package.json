@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://vcassina.github.io/Projet-12",
+  "homepage": "https://vcassina.github.io/bootesDev",
   "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
