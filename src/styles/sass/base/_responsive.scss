@@ -1,59 +1,158 @@
-
-// HD Desktop - 1440 x 900
-@media (min-width: 1440px) and (max-width: 1679px) {
-    .importantComponent {
-        padding: 0 40px;
-    }
+// // HD Desktop - 1620 x 900
+@media (min-width: 1441px) and (max-width: 1679px) {
+  .importantComponent {
+    padding: 0 40px;
+  }
 }
 
-// LOW HD Desktop - 1280 x 800
-@media (min-width: 1280px) and (max-width: 1439px) {
+// // Desktop - 1440 x 900
+@media (min-width: 1367px) and (max-width: 1440px) {
     .importantComponent {
         padding: 0 40px;
-    }
-    .header_content {
-        background: linear-gradient(105deg, rgb(5, 46, 34) 320px, #fafafa 325px) !important;
-    }
-    .header_content-ul {
-gap: 2rem !important;
-white-space: nowrap;
-    }
-    .bootes_content {
-        top: -20px !important;
-    }
-
-    .skills_content section {
-        margin-top: 0px !important;
-        height: 480px !important;
-    }
-
-    .creations_content {
         position: relative;
         bottom: 20px;
-    }
-
-    .creations_content_carrousel {
+        height: 920px !important;
+      }
+      
+      .header {
+        &_content {
+          background: linear-gradient(105deg, rgb(5, 46, 34) 320px, #fafafa 325px) !important;
+        }
+        &_content-ul {
+          gap: 2rem !important;
+          white-space: nowrap;
+        }
+      }
+      
+      .bootes {
+        &_container {
+          margin: 45px 0 105px 0;
+        }
+        &_content {
+          top: 0px !important;
+        }
+      }
+      
+      .skills_container {
+        height: 920px !important;
+      }
+      
+      .skills_content section {
+        height: 490px !important;
+      }
+      
+      .creations_content {
+        position: relative;
+        bottom: 20px;
+      }
+      
+      .creations_content_carrousel {
         max-height: 540px !important;
-    }
-
-    .creations_content_carrousel-txt-description {
+      }
+      
+      .creations_content_carrousel-txt-description {
         overflow: scroll;
-    }
+      }
+      
+      .ocean {
+        height: 900px !important;
+      }
+      
+      .contact_content {
+        &_lower-main {
+          height: 420px !important;
+        }
+      }
+      
+      .contact_content_lower-main-txt-content {
+        gap: 0px !important;
+      }
+      
+      .contact_content_lower-main-txt-content-subtitle p:nth-child(2) {
+        display: none;
+      }
+}
 
-    .contact_content_lower-main {
+// Low Desktop - 1366 x 768
+@media (min-width: 1281px) and (max-width: 1366px) {
+    .importantComponent {
+        padding: 0 40px;
+        position: relative;
+        bottom: 20px; 
+        height: 1080px !important;
+      }
+      
+      .header {
+        &_content {
+          background: linear-gradient(105deg, rgb(5, 46, 34) 320px, #fafafa 325px) !important;
+        }
+        &_content-ul {
+          gap: 2rem !important;
+          white-space: nowrap;
+        }
+      }
+      
+      .bootes {
+        &_content {
+            align-items: center;
+          top: 0px !important;
+          grid-template-columns: 3fr 0.5fr 3fr;
+          &-picture {
+            width: 300px !important;
+          }
+          &-article-txt {
+            overflow: scroll !important;
+          }
+        }
+      }
+      
+      .skills_container {
+        height: 920px !important;
+      }
+      
+      .skills_content{
+      & section {
+        height: 460px !important;
+      }
+      &-description {
+        display: none !important;
+      }
+    }
+      
+      .creations_content {
         position: relative;
         bottom: 20px;
-        height: 440px !important;
-    }
-
-    .contact_content_lower-main-txt-content-subtitle {
-        display: initial !important;
-        line-height: 140% !important;
-        font-size: 18px !important;
-
-    }
-
-    .contact_content_lower-main-txt-content {
-        gap: 10px !important;
-    }
+      }
+      
+      .creations_content_carrousel {
+        max-height: 500px !important;
+      }
+      
+      .creations_content_carrousel-txt-description {
+        overflow: scroll;
+      }
+      
+      .ocean {
+        height: 900px !important;
+      }
+      
+      .contact_content {
+        &_lower-main {
+          height: 400px !important;
+        }
+        &_title {
+            display: initial !important;
+        }
+      }
+      
+      .contact_content_lower-main-txt-content {
+        gap: 0px !important;
+      }
+      
+      .contact_content_lower-main-txt-content-subtitle p:nth-child(2) {
+        display: none;
+      }
 }
+
+// // Very Low Desktop - 1280 x 720
+// COMING SOON.
