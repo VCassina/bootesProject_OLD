@@ -58,6 +58,53 @@ input[type=radio] {
   background-color: #031a13;
 }
 
+@media (min-width: 1440px) and (max-width: 1679px) {
+  .importantComponent {
+    padding: 0 40px;
+  }
+}
+@media (min-width: 1280px) and (max-width: 1439px) {
+  .importantComponent {
+    padding: 0 40px;
+  }
+  .header_content {
+    background: linear-gradient(105deg, rgb(5, 46, 34) 320px, #fafafa 325px) !important;
+  }
+  .header_content-ul {
+    gap: 2rem !important;
+    white-space: nowrap;
+  }
+  .bootes_content {
+    top: -20px !important;
+  }
+  .skills_content section {
+    margin-top: 0px !important;
+    height: 480px !important;
+  }
+  .creations_content {
+    position: relative;
+    bottom: 20px;
+  }
+  .creations_content_carrousel {
+    max-height: 540px !important;
+  }
+  .creations_content_carrousel-txt-description {
+    overflow: scroll;
+  }
+  .contact_content_lower-main {
+    position: relative;
+    bottom: 20px;
+    height: 440px !important;
+  }
+  .contact_content_lower-main-txt-content-subtitle {
+    display: initial !important;
+    line-height: 140% !important;
+    font-size: 18px !important;
+  }
+  .contact_content_lower-main-txt-content {
+    gap: 10px !important;
+  }
+}
 @keyframes vibing--bootesProject {
   0% {
     transform: translate(2%, 0) rotate(-1deg);
@@ -764,17 +811,15 @@ input[type=radio] {
 }
 .contact_content_lower-mascot {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
 }
 .contact_content_lower-mascot img {
   width: 100%;
 }
 .contact_content_lower-mascot figcaption {
   position: relative;
-  bottom: 50px;
+  bottom: 2rem;
   text-align: center;
+  white-space: nowrap;
 }
 
 .ocean {
