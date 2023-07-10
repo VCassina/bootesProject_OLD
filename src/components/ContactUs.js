@@ -39,15 +39,15 @@ function ContactUs() {
                 <div>
                   <a href="mailto:BoötesDev@gmail.com">
                     <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
-                    BoötesDev@gmail.com
+                    <span>BoötesDev@gmail.com</span>
                   </a>
                   <a href="https://www.linkedin.com/in/victor-cassina-032a5816b/">
-                    <FontAwesomeIcon icon="fa-brands fa-linkedin" /> Victor
-                    Cassina
+                    <FontAwesomeIcon icon="fa-brands fa-linkedin" /> <span>Victor
+                    Cassina</span>
                   </a>
                   <a href="https://www.facebook.com/profile.php?id=100006082485106">
-                    <FontAwesomeIcon icon="fa-brands fa-discord" /> Victor
-                    Cassina
+                    <FontAwesomeIcon icon="fa-brands fa-discord" /> <span>Victor
+                    Cassina</span>
                   </a>
                 </div>
               </section>

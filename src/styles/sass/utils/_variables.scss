@@ -1,12 +1,12 @@
 $darkGreen: #031a13;
 $lightGreen: #0CA876;
 $anchorMargin: 100px;
-$majorComponentHeight: 1140px;
+$majorComponentHeight: 110vh;
 $majorComponentDarkAfterLight: 60px;
 $anchorMarginFirst: calc(#{$anchorMargin} - 20px);
 $titleFontSize: 72px;
 $maxWidhtDesktop: 1600px;
-$transitionButtonTime: 0.25s;
+$transitionButtonTime: 0.125s;
 
 // Header full desktop is 90px.
 // Natural padding of 60px upper and lower every darkgreen component.

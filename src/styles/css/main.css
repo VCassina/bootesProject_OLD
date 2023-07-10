@@ -1,13 +1,19 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
+  scrollbar-width: thin;
+}
+html ::-webkit-scrollbar {
+  width: 5px;
 }
 
 body {
   font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  overflow-x: hidden;
+  overflow: hidden;
   background-color: white;
   margin: 0px;
 }
@@ -58,20 +64,30 @@ input[type=radio] {
   background-color: #031a13;
 }
 
-/* HD Desktop - 1680px */
+.importantComponent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media (min-width: 1681px) {
+  .importantComponent,
+  .darkComponent,
+  .creations_container {
+    display: flex;
+  }
+}
+/* HD Desktop - 1680px (x1050) */
 @media (max-width: 1680px) {
   .importantComponent {
     padding: 0 40px;
-    position: relative;
-    bottom: 20px;
   }
 }
-/* Desktop - 1440px */
+/* Desktop - 1440px (x900) */
 @media (max-width: 1440px) {
   .importantComponent {
     position: relative;
     bottom: 20px;
-    height: 920px !important;
   }
   .header_content {
     background: linear-gradient(105deg, rgb(5, 46, 34) 320px, #fafafa 325px) !important;
@@ -86,11 +102,16 @@ input[type=radio] {
   .bootes_content {
     top: 0px !important;
   }
-  .skills_container {
-    height: 920px !important;
-  }
   .skills_content section {
     height: 520px !important;
+  }
+  .title-skills {
+    position: relative;
+    bottom: 60px !important;
+  }
+  .skills_content {
+    position: relative;
+    bottom: 40px !important;
   }
   .creations_content_carrousel {
     max-height: 540px !important;
@@ -111,12 +132,13 @@ input[type=radio] {
     display: none;
   }
 }
-/* Low Desktop - 1366px */
+/* Low Desktop - 1366px (x768) */
 @media (max-width: 1366px) {
-  .importantComponent {
-    height: 1080px !important;
+  .bootes_container {
+    justify-content: end;
   }
   .bootes_content {
+    top: -40px !important;
     align-items: center;
     grid-template-columns: 3fr 0.5fr 3fr;
   }
@@ -125,6 +147,10 @@ input[type=radio] {
   }
   .bootes_content-article-txt {
     overflow: scroll !important;
+    font-size: 16px !important;
+  }
+  .bootes_content-article-title {
+    font-size: 34px !important;
   }
   .skills_subTitle {
     margin-top: 5px !important;
@@ -139,6 +165,17 @@ input[type=radio] {
   .skills_content-description {
     display: none !important;
   }
+  .title-skills {
+    position: relative;
+    bottom: 40px !important;
+  }
+  .skills_content {
+    position: relative;
+    bottom: 60px !important;
+  }
+  figcaption.skills_content-credit {
+    top: 10px !important;
+  }
   .creations_content {
     position: relative;
     bottom: 20px;
@@ -148,6 +185,8 @@ input[type=radio] {
   }
   .creations_content_carrousel-txt-description {
     overflow: scroll;
+    overflow-x: hidden !important;
+    scrollbar-width: thin;
   }
   .contact_content_lower-main {
     height: 400px !important;
@@ -156,10 +195,72 @@ input[type=radio] {
     display: initial !important;
   }
 }
-/* Very Low Desktop - 1280px */
+/* Full HD Tablette / Very low Desktop - 1280px (x800) */
 @media (max-width: 1280px) {
-  /* COMING SOON */
+  .bootes_content {
+    top: -40px !important;
+  }
+  .bootes_content-article-txt {
+    overflow: visible !important;
+    max-height: 400px;
+  }
+  .header_nav-prefixe {
+    display: none;
+  }
+  .header_nav-unit {
+    text-transform: capitalize;
+  }
+  .header_content-ul {
+    padding: 0 0px !important;
+    gap: 1rem !important;
+    text-align: initial !important;
+  }
+  .header_content-li {
+    width: 200px;
+  }
+  .header_content-miniLogo {
+    width: 75px;
+  }
+  .skills_content {
+    bottom: 40px !important;
+  }
 }
+@media (max-width: 1280px) and (max-width: 1160px) {
+  .header_content {
+    background: linear-gradient(105deg, rgb(5, 46, 34) 180px, #fafafa 190px) !important;
+  }
+  .creations_content_carrousel-txt-title-main {
+    white-space: nowrap;
+  }
+  .header_content-logo {
+    display: none;
+  }
+  .header_content-miniLogo {
+    display: initial !important;
+  }
+  .bootes_content-article-title {
+    width: 100% !important;
+    text-align: center !important;
+  }
+  .skills_content-articleListing {
+    font-size: 20px !important;
+  }
+  .contact_content_lower-main-txt-content-title b {
+    white-space: nowrap;
+  }
+  .contact_content_lower-main-links {
+    padding: 0 15px !important;
+  }
+  .contact_content_lower-main-links div a span {
+    display: none;
+  }
+}
+/* Je ne parviens pas à être satisfait, on passe en disposition d'affichage mobile en dessous de 1024px et basta ! */
+/* Low Tablette - 1024 (x768) */
+/* --- --- --- --- --- --- --- --- --- --- --- ---
+--- OLD DISPOSITION --
+Quand j'essayais encore de faire un mode tablette/mobile qui ressemblait à du desktop...
+--- --- --- --- --- --- --- --- --- --- --- --- */
 @keyframes vibing--bootesProject {
   0% {
     transform: translate(2%, 0) rotate(-1deg);
@@ -415,8 +516,10 @@ input[type=radio] {
   flex-direction: column;
   align-items: center;
   color: #031a13;
-  height: 1140px;
+  height: 110vh;
   background-color: white;
+  position: relative;
+  bottom: 180px;
 }
 .bootes_content {
   display: grid;
@@ -490,7 +593,7 @@ input[type=radio] {
 .header_content-li {
   counter-increment: number;
   min-width: 190px;
-  transition: transform 0.25s;
+  transition: transform 0.125s;
 }
 .header_content-li:hover {
   transform: scale(1.025);
@@ -506,6 +609,9 @@ input[type=radio] {
 }
 .header_content-logo {
   width: 250px;
+}
+.header_content-miniLogo {
+  display: none;
 }
 .header_nav-unit {
   position: relative;
@@ -539,9 +645,13 @@ input[type=radio] {
 }
 
 .skills_container {
-  height: 1140px;
+  height: 110vh;
 }
 .skills_content {
+  display: flex;
+  flex-direction: column;
+}
+.skills_content_low {
   position: relative;
   bottom: 10px;
   display: flex;
@@ -549,6 +659,7 @@ input[type=radio] {
   gap: 60px;
 }
 .skills_content section {
+  width: 100vw;
   display: flex;
   flex-direction: column;
   flex: 1;
@@ -558,7 +669,7 @@ input[type=radio] {
   box-shadow: -5px 10px 20px, 0 0 2px, 0 0 2em #0CA876, 0 0 1em #0CA876, 0 0 1em #0CA876, 0 10px 3px #000;
   padding: 20px 0;
   margin-top: 15px;
-  height: 560px;
+  height: 500px;
 }
 .skills_content-img {
   width: 120px;
@@ -578,12 +689,10 @@ input[type=radio] {
 .skills_content-articleListing {
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  height: 50%;
+  gap: 10px;
   font-size: 24px;
-  gap: 12px;
   font-family: "Montserrat", sans-serif;
-  text-align: center;
+  margin: auto;
 }
 .skills_content-description {
   font-size: 20px;
@@ -605,7 +714,6 @@ input[type=radio] {
   bottom: 30px;
   text-align: left;
   width: 100%;
-  margin: auto;
   margin-bottom: 20px;
   color: #fff;
   padding: 50px 0 0 50px;
@@ -621,7 +729,7 @@ input[type=radio] {
 }
 
 .creations_container {
-  min-height: 1140px;
+  height: 110vh;
 }
 .creations_content b {
   font-size: 22px;
@@ -649,7 +757,7 @@ input[type=radio] {
   font-size: 40px;
   font-family: "acme", sans-serif;
   cursor: pointer;
-  transition: 0.25s;
+  transition: 0.125s;
 }
 .creations_content_upper-label:hover {
   transform: scale(1.125);
@@ -726,7 +834,7 @@ input[type=radio] {
 }
 .creations_content_carrousel-txt-links svg {
   height: 25px;
-  transition: 0.25s;
+  transition: 0.125s;
   color: #0CA876;
 }
 .creations_content_carrousel-txt-links svg:hover {
@@ -763,7 +871,6 @@ input[type=radio] {
 
 .contact_container {
   width: 100vw;
-  height: 1140px;
 }
 .contact_content_title {
   display: flex;
@@ -880,8 +987,7 @@ input[type=radio] {
 
 .ocean {
   position: relative;
-  height: 100vh;
-  min-height: 900px;
+  height: 110vh;
   background-image: #031a13;
   overflow: hidden;
 }

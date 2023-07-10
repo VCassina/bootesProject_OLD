@@ -6,8 +6,9 @@ import BootesArticle from "../items/BootesArticle";
 
 function BootesProject() {
   return (
-    <article className="bootes_container importantComponent">
-      <AnchorTarget id="bootes" isFirst={true} />
+    <>
+    <AnchorTarget id="bootes" isFirst={true} />
+    <article className="bootes_container importantComponent"> 
       <h2 className="bootes_title title" >_Boötes Project</h2>
       <div className="bootes_content">
       <BootesArticle title={data[0].title} description={data[0].description} titleIndex="first-title" secondElement={false}/>
@@ -22,6 +23,7 @@ function BootesProject() {
         <BootesArticle title={data[1].title} description={data[1].description} titleIndex="second-title" secondElement={true} />
       </div>
     </article>
+    </>
   );
 }
 

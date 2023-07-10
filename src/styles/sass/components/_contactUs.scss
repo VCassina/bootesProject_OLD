@@ -1,7 +1,6 @@
 .contact {
   &_container {
     width: 100vw;
-    height: $majorComponentHeight;
   }
 
   &_content {
@@ -131,8 +130,7 @@
 
 .ocean {
   position: relative;
-  height: 100vh;
-  min-height: 900px;
+  height: $majorComponentHeight;
   background-image: $darkGreen;
   overflow: hidden;
 }

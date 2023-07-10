@@ -4,13 +4,19 @@
     }
 
     &_content {
+        display: flex;
+        flex-direction: column;
+       &_low {
         position: relative;
         bottom: 10px;
         display: flex;
         justify-content: space-evenly;
         gap: 60px;
 
+       }
+
         & section {
+            width: 100vw;
             display: flex;
             flex-direction: column;
             flex: 1;
@@ -20,7 +26,7 @@
             box-shadow: -5px 10px 20px, 0 0 2px, 0 0 2em $lightGreen, 0 0 1em $lightGreen, 0 0 1em $lightGreen, 0 10px 3px #000;
             padding: 20px 0;
             margin-top: 15px;
-            height: 560px;
+            height: 500px;        
         }
 
         &-img {
@@ -44,12 +50,10 @@
         &-articleListing {
             display: flex;
             flex-direction: column;
-            justify-content: center;
-            height: 50%;
+            gap: 10px;
             font-size: 24px;
-            gap: 12px;
             font-family: "Montserrat", sans-serif;
-            text-align: center;
+            margin: auto;
         }
 
         &-description {
@@ -76,7 +80,6 @@
     bottom: 30px;
     text-align: left;
     width: 100%;
-    margin: auto;
     margin-bottom: 20px;
     color: #fff;
     padding: 50px 0 0 50px;

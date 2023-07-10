@@ -1,18 +1,23 @@
-/* HD Desktop - 1680px */
-@media (max-width: 1680px) {
-  .importantComponent {
-    padding: 0 40px;
-    position: relative;
-    bottom: 20px;
+@media (min-width: 1681px) {
+  .importantComponent,
+  .darkComponent,
+  .creations_container {
+    display: flex;
   }
 }
 
-/* Desktop - 1440px */
+/* HD Desktop - 1680px (x1050) */
+@media (max-width: 1680px) {
+  .importantComponent {
+    padding: 0 40px;
+  }
+}
+
+/* Desktop - 1440px (x900) */
 @media (max-width: 1440px) {
   .importantComponent {
     position: relative;
     bottom: 20px;
-    height: 920px !important;
   }
 
   .header_content {
@@ -37,12 +42,19 @@
   }
 
   .skills {
-    &_container {
-      height: 920px !important;
-    }
     &_content section {
       height: 520px !important;
     }
+  }
+
+  .title-skills {
+    position: relative;
+    bottom: 60px !important;
+  }
+
+  .skills_content {
+    position: relative;
+    bottom: 40px !important;
   }
 
   .creations {
@@ -71,22 +83,28 @@
   }
 }
 
-/* Low Desktop - 1366px */
+/* Low Desktop - 1366px (x768) */
 @media (max-width: 1366px) {
-  .importantComponent {
-    height: 1080px !important;
-  }
-
   .bootes {
+    &_container {
+      justify-content: end;
+    }
     &_content {
+      top: -40px !important;
       align-items: center;
       grid-template-columns: 3fr 0.5fr 3fr;
-    }
-    &_content-picture {
-      width: 300px !important;
-    }
-    &_content-article-txt {
-      overflow: scroll !important;
+      &-picture {
+        width: 300px !important;
+      }
+      &-article {
+        &-txt {
+          overflow: scroll !important;
+          font-size: 16px !important;
+        }
+        &-title {
+          font-size: 34px !important;
+        }
+      }
     }
   }
 
@@ -106,6 +124,20 @@
     }
   }
 
+  .title-skills {
+    position: relative;
+    bottom: 40px !important;
+  }
+
+  .skills_content {
+    position: relative;
+    bottom: 60px !important;
+  }
+
+  figcaption.skills_content-credit {
+    top: 10px !important;
+  }
+
   .creations {
     &_content {
       position: relative;
@@ -114,6 +146,8 @@
         max-height: 500px !important;
         &-txt-description {
           overflow: scroll;
+          overflow-x: hidden !important;
+          scrollbar-width: thin;
         }
       }
     }
@@ -129,7 +163,142 @@
   }
 }
 
-/* Very Low Desktop - 1280px */
+/* Full HD Tablette / Very low Desktop - 1280px (x800) */
 @media (max-width: 1280px) {
-  /* COMING SOON */
+  .bootes_content {
+    top: -40px !important;
+    &-article-txt {
+      overflow: visible !important;
+      max-height: 400px;
+    }
+  }
+  .header {
+    &_nav {
+      &-prefixe {
+        display: none;
+      }
+      &-unit {
+        text-transform: capitalize;
+      }
+    }
+
+    &_content {
+      &-ul {
+        padding: 0 0px !important;
+        gap: 1rem !important;
+        text-align: initial !important;
+      }
+      &-li {
+        width: 200px;
+      }
+      &-miniLogo {
+        width: 75px;
+      }
+    }
+  }
+  .skills {
+    &_content {
+      bottom: 40px !important;
+    }
+  }
+
+  @media (max-width: 1160px) {
+    .header_content {
+      background: linear-gradient(
+        105deg,
+        rgb(5, 46, 34) 180px,
+        #fafafa 190px
+      ) !important;
+    }
+    .creations_content_carrousel-txt-title-main {
+      white-space: nowrap;
+    }
+    .header_content {
+      &-logo {
+        display: none;
+      }
+      &-miniLogo {
+        display: initial !important;
+      }
+    }
+    .bootes_content-article-title {
+      width: 100% !important;
+      text-align: center !important;
+    }
+    .skills_content-articleListing {
+      font-size: 20px !important;
+    }
+    .contact_content_lower-main-txt-content-title b {
+      white-space: nowrap;
+    }
+    .contact_content_lower-main-links {
+      padding: 0 15px !important;
+      & div a span {
+        display: none;
+      }
+    }
+  }
 }
+
+/* Je ne parviens pas à être satisfait, on passe en disposition d'affichage mobile en dessous de 1024px et basta ! */
+
+/* Low Tablette - 1024 (x768) */
+@media (max-width: 1024px) {
+}
+
+// /* Smartphone - 768 (x576) */
+@media (max-width: 768px) {
+}
+
+/* --- --- --- --- --- --- --- --- --- --- --- ---
+--- OLD DISPOSITION --
+Quand j'essayais encore de faire un mode tablette/mobile qui ressemblait à du desktop...
+--- --- --- --- --- --- --- --- --- --- --- --- */
+
+// /* Low Tablette - 1024 (x768) */
+// @media (max-width: 1024px) {
+//   .header_content-logo {
+//     display: none;
+//   }
+//   .header_content-ul {
+//     gap: 10px !important;
+//     text-align: initial !important;
+//   }
+//   .header_content-li {
+//     width: 100px !important;
+//   }
+//   .contact_content_lower-main-links {
+//     padding: 0 15px !important;
+//     & div a span {
+//       display: none;
+//     }
+//   }
+//   .bootes_content-article-txt {
+//     overflow: scroll !important;
+//     overflow-x: hidden !important;
+//     scrollbar-width: thin;
+//     padding: 0 15px !important;
+//     max-height: 50vh !important;
+//   }
+//   .bootes_content-picture {
+//     width: 200px !important;
+//   }
+//   .contact_content_lower-main-txt-content-title b {
+//     white-space: nowrap;
+//   }
+
+//   .creations_content_carrousel-txt-description span {
+//     padding: 0 5px;
+//   }
+
+//   .creations_content_carrousel-img {
+//     flex: 2.5 !important;
+//   }
+
+//   /* Tenir bon jusqu'à 768px ... Seems hard. */
+//   /* Je pense qu'on va viser 960px et passer en mode smartphone... */
+// }
+
+// /* Smartphone - 768 (x576) */
+// @media (max-width: 768px) {
+// }

@@ -16,7 +16,7 @@
         &-li {
             counter-increment: number;
             min-width: 190px;
-            transition: transform 0.25s;
+            transition: transform $transitionButtonTime;
 
             &:hover {
                 transform: scale(1.025);
@@ -35,6 +35,9 @@
 
         &-logo {
             width: 250px;
+        }
+        &-miniLogo {
+            display: none;
         }
     }
 

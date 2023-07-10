@@ -6,6 +6,8 @@
         color: $darkGreen;
         height: $majorComponentHeight;
         background-color: white;
+            position: relative;
+            bottom: 180px;
     }
 
     &_content {
