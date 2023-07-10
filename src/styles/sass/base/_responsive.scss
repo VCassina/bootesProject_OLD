@@ -1,158 +1,135 @@
-// // HD Desktop - 1620 x 900
-@media (min-width: 1441px) and (max-width: 1679px) {
+/* HD Desktop - 1680px */
+@media (max-width: 1680px) {
   .importantComponent {
     padding: 0 40px;
+    position: relative;
+    bottom: 20px;
   }
 }
 
-// // Desktop - 1440 x 900
-@media (min-width: 1367px) and (max-width: 1440px) {
-    .importantComponent {
-        padding: 0 40px;
-        position: relative;
-        bottom: 20px;
-        height: 920px !important;
-      }
-      
-      .header {
-        &_content {
-          background: linear-gradient(105deg, rgb(5, 46, 34) 320px, #fafafa 325px) !important;
-        }
-        &_content-ul {
-          gap: 2rem !important;
-          white-space: nowrap;
-        }
-      }
-      
-      .bootes {
-        &_container {
-          margin: 45px 0 105px 0;
-        }
-        &_content {
-          top: 0px !important;
-        }
-      }
-      
-      .skills_container {
-        height: 920px !important;
-      }
-      
-      .skills_content section {
-        height: 490px !important;
-      }
-      
-      .creations_content {
-        position: relative;
-        bottom: 20px;
-      }
-      
-      .creations_content_carrousel {
-        max-height: 540px !important;
-      }
-      
-      .creations_content_carrousel-txt-description {
-        overflow: scroll;
-      }
-      
-      .ocean {
-        height: 900px !important;
-      }
-      
-      .contact_content {
-        &_lower-main {
-          height: 420px !important;
-        }
-      }
-      
-      .contact_content_lower-main-txt-content {
+/* Desktop - 1440px */
+@media (max-width: 1440px) {
+  .importantComponent {
+    position: relative;
+    bottom: 20px;
+    height: 920px !important;
+  }
+
+  .header_content {
+    background: linear-gradient(
+      105deg,
+      rgb(5, 46, 34) 320px,
+      #fafafa 325px
+    ) !important;
+    &-ul {
+      gap: 2rem !important;
+      white-space: nowrap;
+    }
+  }
+
+  .bootes {
+    &_container {
+      margin: 45px 0 105px 0;
+    }
+    &_content {
+      top: 0px !important;
+    }
+  }
+
+  .skills {
+    &_container {
+      height: 920px !important;
+    }
+    &_content section {
+      height: 520px !important;
+    }
+  }
+
+  .creations {
+    &_content_carrousel {
+      max-height: 540px !important;
+    }
+    &_container {
+      min-height: 920px !important;
+    }
+  }
+
+  .ocean {
+    min-height: 820px !important;
+  }
+
+  .contact_content {
+    &_lower-main {
+      height: 420px !important;
+      &-txt-content {
         gap: 0px !important;
+        &-subtitle p:nth-child(2) {
+          display: none;
+        }
       }
-      
-      .contact_content_lower-main-txt-content-subtitle p:nth-child(2) {
-        display: none;
-      }
+    }
+  }
 }
 
-// Low Desktop - 1366 x 768
-@media (min-width: 1281px) and (max-width: 1366px) {
-    .importantComponent {
-        padding: 0 40px;
-        position: relative;
-        bottom: 20px; 
-        height: 1080px !important;
-      }
-      
-      .header {
-        &_content {
-          background: linear-gradient(105deg, rgb(5, 46, 34) 320px, #fafafa 325px) !important;
-        }
-        &_content-ul {
-          gap: 2rem !important;
-          white-space: nowrap;
-        }
-      }
-      
-      .bootes {
-        &_content {
-            align-items: center;
-          top: 0px !important;
-          grid-template-columns: 3fr 0.5fr 3fr;
-          &-picture {
-            width: 300px !important;
-          }
-          &-article-txt {
-            overflow: scroll !important;
-          }
-        }
-      }
-      
-      .skills_container {
-        height: 920px !important;
-      }
-      
-      .skills_content{
+/* Low Desktop - 1366px */
+@media (max-width: 1366px) {
+  .importantComponent {
+    height: 1080px !important;
+  }
+
+  .bootes {
+    &_content {
+      align-items: center;
+      grid-template-columns: 3fr 0.5fr 3fr;
+    }
+    &_content-picture {
+      width: 300px !important;
+    }
+    &_content-article-txt {
+      overflow: scroll !important;
+    }
+  }
+
+  .skills {
+    &_subTitle {
+      margin-top: 5px !important;
+    }
+    &_content {
+      bottom: 20px !important;
       & section {
-        height: 460px !important;
+        height: 450px !important;
+        padding: 0 5px !important;
       }
       &-description {
         display: none !important;
       }
     }
-      
-      .creations_content {
-        position: relative;
-        bottom: 20px;
-      }
-      
-      .creations_content_carrousel {
+  }
+
+  .creations {
+    &_content {
+      position: relative;
+      bottom: 20px;
+      &_carrousel {
         max-height: 500px !important;
-      }
-      
-      .creations_content_carrousel-txt-description {
-        overflow: scroll;
-      }
-      
-      .ocean {
-        height: 900px !important;
-      }
-      
-      .contact_content {
-        &_lower-main {
-          height: 400px !important;
-        }
-        &_title {
-            display: initial !important;
+        &-txt-description {
+          overflow: scroll;
         }
       }
-      
-      .contact_content_lower-main-txt-content {
-        gap: 0px !important;
-      }
-      
-      .contact_content_lower-main-txt-content-subtitle p:nth-child(2) {
-        display: none;
-      }
+    }
+  }
+
+  .contact_content {
+    &_lower-main {
+      height: 400px !important;
+    }
+    &_title {
+      display: initial !important;
+    }
+  }
 }
 
-// // Very Low Desktop - 1280 x 720
-// COMING SOON.
+/* Very Low Desktop - 1280px */
+@media (max-width: 1280px) {
+  /* COMING SOON */
+}

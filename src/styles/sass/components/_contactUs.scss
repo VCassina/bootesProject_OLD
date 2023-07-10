@@ -132,6 +132,7 @@
 .ocean {
   position: relative;
   height: 100vh;
+  min-height: 900px;
   background-image: $darkGreen;
   overflow: hidden;
 }

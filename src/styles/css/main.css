@@ -58,14 +58,17 @@ input[type=radio] {
   background-color: #031a13;
 }
 
-@media (min-width: 1441px) and (max-width: 1679px) {
+/* HD Desktop - 1680px */
+@media (max-width: 1680px) {
   .importantComponent {
     padding: 0 40px;
+    position: relative;
+    bottom: 20px;
   }
 }
-@media (min-width: 1367px) and (max-width: 1440px) {
+/* Desktop - 1440px */
+@media (max-width: 1440px) {
   .importantComponent {
-    padding: 0 40px;
     position: relative;
     bottom: 20px;
     height: 920px !important;
@@ -87,20 +90,16 @@ input[type=radio] {
     height: 920px !important;
   }
   .skills_content section {
-    height: 490px !important;
-  }
-  .creations_content {
-    position: relative;
-    bottom: 20px;
+    height: 520px !important;
   }
   .creations_content_carrousel {
     max-height: 540px !important;
   }
-  .creations_content_carrousel-txt-description {
-    overflow: scroll;
+  .creations_container {
+    min-height: 920px !important;
   }
   .ocean {
-    height: 900px !important;
+    min-height: 820px !important;
   }
   .contact_content_lower-main {
     height: 420px !important;
@@ -112,23 +111,13 @@ input[type=radio] {
     display: none;
   }
 }
-@media (min-width: 1281px) and (max-width: 1366px) {
+/* Low Desktop - 1366px */
+@media (max-width: 1366px) {
   .importantComponent {
-    padding: 0 40px;
-    position: relative;
-    bottom: 20px;
     height: 1080px !important;
-  }
-  .header_content {
-    background: linear-gradient(105deg, rgb(5, 46, 34) 320px, #fafafa 325px) !important;
-  }
-  .header_content-ul {
-    gap: 2rem !important;
-    white-space: nowrap;
   }
   .bootes_content {
     align-items: center;
-    top: 0px !important;
     grid-template-columns: 3fr 0.5fr 3fr;
   }
   .bootes_content-picture {
@@ -137,11 +126,15 @@ input[type=radio] {
   .bootes_content-article-txt {
     overflow: scroll !important;
   }
-  .skills_container {
-    height: 920px !important;
+  .skills_subTitle {
+    margin-top: 5px !important;
+  }
+  .skills_content {
+    bottom: 20px !important;
   }
   .skills_content section {
-    height: 460px !important;
+    height: 450px !important;
+    padding: 0 5px !important;
   }
   .skills_content-description {
     display: none !important;
@@ -156,21 +149,16 @@ input[type=radio] {
   .creations_content_carrousel-txt-description {
     overflow: scroll;
   }
-  .ocean {
-    height: 900px !important;
-  }
   .contact_content_lower-main {
     height: 400px !important;
   }
   .contact_content_title {
     display: initial !important;
   }
-  .contact_content_lower-main-txt-content {
-    gap: 0px !important;
-  }
-  .contact_content_lower-main-txt-content-subtitle p:nth-child(2) {
-    display: none;
-  }
+}
+/* Very Low Desktop - 1280px */
+@media (max-width: 1280px) {
+  /* COMING SOON */
 }
 @keyframes vibing--bootesProject {
   0% {
@@ -893,6 +881,7 @@ input[type=radio] {
 .ocean {
   position: relative;
   height: 100vh;
+  min-height: 900px;
   background-image: #031a13;
   overflow: hidden;
 }
