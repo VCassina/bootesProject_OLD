@@ -1,15 +1,26 @@
-@media (min-width: 1681px) {
-  .importantComponent,
-  .darkComponent,
-  .creations_container {
-    display: flex;
-  }
+/* ------------------------------------
+DESKTOP
+------------------------------------ */
+
+.importantComponent,
+.darkComponent,
+.creations_container {
+  display: flex;
 }
 
-/* HD Desktop - 1680px (x1050) */
+/* HD Desktop - 1680px (x1050 / x900) */
 @media (max-width: 1680px) {
   .importantComponent {
     padding: 0 40px;
+  }
+
+  .skills_content {
+    position: relative;
+    bottom: 40px !important;
+    &_low {
+      align-items: center;
+      width: 90vw;
+    }
   }
 }
 
@@ -21,11 +32,10 @@
   }
 
   .header_content {
-    background: linear-gradient(
-      105deg,
-      rgb(5, 46, 34) 320px,
-      #fafafa 325px
-    ) !important;
+    background: linear-gradient(105deg,
+        rgb(5, 46, 34) 320px,
+        #fafafa 325px) !important;
+
     &-ul {
       gap: 2rem !important;
       white-space: nowrap;
@@ -36,14 +46,15 @@
     &_container {
       margin: 45px 0 105px 0;
     }
+
     &_content {
       top: 0px !important;
     }
   }
 
   .skills {
-    &_content section {
-      height: 520px !important;
+    &_content {
+    bottom: 20px !important;
     }
   }
 
@@ -52,15 +63,11 @@
     bottom: 60px !important;
   }
 
-  .skills_content {
-    position: relative;
-    bottom: 40px !important;
-  }
-
   .creations {
     &_content_carrousel {
       max-height: 540px !important;
     }
+
     &_container {
       min-height: 920px !important;
     }
@@ -73,8 +80,10 @@
   .contact_content {
     &_lower-main {
       height: 420px !important;
+
       &-txt-content {
         gap: 0px !important;
+
         &-subtitle p:nth-child(2) {
           display: none;
         }
@@ -87,20 +96,23 @@
 @media (max-width: 1366px) {
   .bootes {
     &_container {
-      justify-content: end;
+      top: -100px;
     }
     &_content {
       top: -40px !important;
       align-items: center;
       grid-template-columns: 3fr 0.5fr 3fr;
+
       &-picture {
         width: 300px !important;
       }
+
       &-article {
         &-txt {
           overflow: scroll !important;
           font-size: 16px !important;
         }
+
         &-title {
           font-size: 34px !important;
         }
@@ -112,12 +124,19 @@
     &_subTitle {
       margin-top: 5px !important;
     }
+
     &_content {
-      bottom: 20px !important;
+      top: -20px !important;
+
+      &-img {
+        height: 100px !important;
+        width: 100px !important;
+      }
       & section {
         height: 450px !important;
         padding: 0 5px !important;
       }
+
       &-description {
         display: none !important;
       }
@@ -142,8 +161,10 @@
     &_content {
       position: relative;
       bottom: 20px;
+
       &_carrousel {
         max-height: 500px !important;
+
         &-txt-description {
           overflow: scroll;
           overflow-x: hidden !important;
@@ -157,148 +178,132 @@
     &_lower-main {
       height: 400px !important;
     }
+
     &_title {
       display: initial !important;
     }
   }
 }
 
+/* ------------------------------------
+TABLETTE
+------------------------------------ */
+
 /* Full HD Tablette / Very low Desktop - 1280px (x800) */
-@media (max-width: 1280px) {
-  .bootes_content {
-    top: -40px !important;
-    &-article-txt {
-      overflow: visible !important;
-      max-height: 400px;
-    }
-  }
-  .header {
-    &_nav {
-      &-prefixe {
-        display: none;
-      }
-      &-unit {
-        text-transform: capitalize;
-      }
-    }
-
-    &_content {
-      &-ul {
-        padding: 0 0px !important;
-        gap: 1rem !important;
-        text-align: initial !important;
-      }
-      &-li {
-        width: 200px;
-      }
-      &-miniLogo {
-        width: 75px;
-      }
-    }
-  }
-  .skills {
-    &_content {
-      bottom: 40px !important;
-    }
-  }
-
-  @media (max-width: 1160px) {
-    .header_content {
-      background: linear-gradient(
-        105deg,
-        rgb(5, 46, 34) 180px,
-        #fafafa 190px
-      ) !important;
-    }
-    .creations_content_carrousel-txt-title-main {
-      white-space: nowrap;
-    }
-    .header_content {
-      &-logo {
-        display: none;
-      }
-      &-miniLogo {
-        display: initial !important;
-      }
-    }
-    .bootes_content-article-title {
-      width: 100% !important;
-      text-align: center !important;
-    }
-    .skills_content-articleListing {
-      font-size: 20px !important;
-    }
-    .contact_content_lower-main-txt-content-title b {
-      white-space: nowrap;
-    }
-    .contact_content_lower-main-links {
-      padding: 0 15px !important;
-      & div a span {
-        display: none;
-      }
-    }
-  }
-}
-
-/* Je ne parviens pas à être satisfait, on passe en disposition d'affichage mobile en dessous de 1024px et basta ! */
+@media (max-width: 1280px) {}
 
 /* Low Tablette - 1024 (x768) */
-@media (max-width: 1024px) {
-}
+@media (max-width: 1024px) {}
+
+/* ------------------------------------
+MOBILE
+------------------------------------ */
 
 // /* Smartphone - 768 (x576) */
-@media (max-width: 768px) {
-}
+@media (max-width: 768px) {}
 
-/* --- --- --- --- --- --- --- --- --- --- --- ---
---- OLD DISPOSITION --
-Quand j'essayais encore de faire un mode tablette/mobile qui ressemblait à du desktop...
---- --- --- --- --- --- --- --- --- --- --- --- */
 
-// /* Low Tablette - 1024 (x768) */
-// @media (max-width: 1024px) {
-//   .header_content-logo {
-//     display: none;
-//   }
-//   .header_content-ul {
-//     gap: 10px !important;
-//     text-align: initial !important;
-//   }
-//   .header_content-li {
-//     width: 100px !important;
-//   }
-//   .contact_content_lower-main-links {
-//     padding: 0 15px !important;
-//     & div a span {
-//       display: none;
+/* ------------------------------------
+OLD !
+------------------------------------ */
+
+
+// @media (max-width: 1280px) {
+//   .bootes_content {
+//     top: -40px !important;
+
+//     &-article-txt {
+//       overflow: visible !important;
+//       max-height: 400px;
 //     }
 //   }
-//   .bootes_content-article-txt {
-//     overflow: scroll !important;
-//     overflow-x: hidden !important;
-//     scrollbar-width: thin;
-//     padding: 0 15px !important;
-//     max-height: 50vh !important;
-//   }
-//   .bootes_content-picture {
-//     width: 200px !important;
-//   }
-//   .contact_content_lower-main-txt-content-title b {
-//     white-space: nowrap;
+
+//   .header {
+//     &_nav {
+//       &-prefixe {
+//         display: none;
+//       }
+
+//       &-unit {
+//         text-transform: capitalize;
+//       }
+//     }
+
+//     &_content {
+//       &-ul {
+//         padding: 0 0px !important;
+//         gap: 1rem !important;
+//         text-align: initial !important;
+//       }
+
+//       &-li {
+//         width: 200px;
+//       }
+
+//       &-miniLogo {
+//         width: 75px;
+//       }
+//     }
 //   }
 
-//   .creations_content_carrousel-txt-description span {
-//     padding: 0 5px;
+//   .skills {
+//     &_content {
+//       bottom: 40px !important;
+//     }
 //   }
 
-//   .creations_content_carrousel-img {
-//     flex: 2.5 !important;
+//   @media (max-width: 1160px) {
+//     .header_content {
+//       background: linear-gradient(105deg,
+//           rgb(5, 46, 34) 180px,
+//           #fafafa 190px) !important;
+//     }
+
+//     .creations_content_carrousel-txt-title-main {
+//       white-space: nowrap;
+//     }
+
+//     .header_content {
+//       &-logo {
+//         display: none;
+//       }
+
+//       &-miniLogo {
+//         display: initial !important;
+//       }
+//     }
+
+//     .bootes_content-article {
+//       &-title {
+//         width: 100% !important;
+//         text-align: center !important;
+//       }
+
+//       &-txt {
+//         max-height: 400px;
+//         overflow: scroll !important;
+//         padding-right: 10px;
+//       }
+//     }
+
+//     .bootes_content-picture {
+//       width: 200px !important;
+//     }
+
+//     .skills_content-articleListing {
+//       font-size: 20px !important;
+//     }
+
+//     .contact_content_lower-main-txt-content-title b {
+//       white-space: nowrap;
+//     }
+
+//     .contact_content_lower-main-links {
+//       padding: 0 15px !important;
+
+//       & div a span {
+//         display: none;
+//       }
+//     }
 //   }
-
-//   /* Tenir bon jusqu'à 768px ... Seems hard. */
-//   /* Je pense qu'on va viser 960px et passer en mode smartphone... */
-// }
-
-// /* Smartphone - 768 (x576) */
-// @media (max-width: 768px) {
 // }
