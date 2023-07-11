@@ -1,3 +1,4 @@
+/* En dehors des résolutions prévues (où le rendu se veut optimal), tous les formats sont tolérés, du ridiculement large au ridiculement long.
 /* ------------------------------------
 DESKTOP
 ------------------------------------ */
@@ -9,17 +10,6 @@ DESKTOP
   .creations_container {
     display: flex;
     min-height: 900px;
-  }
-
-  .bootes_container {
-    margin-top: 60px;
-  }
-
-  .skills {
-    &_content {
-      position: relative;
-      bottom: 20px !important;
-    }
   }
 }
 
@@ -35,13 +25,9 @@ DESKTOP
     padding: 0 40px;
   }
 
-  .bootes_container {
-    margin-top: 60px;
-  }
-
   .skills_content {
     position: relative;
-    bottom: 80px !important;
+    bottom: 40px !important;
     &_low {
       align-items: center;
       width: 95vw;
@@ -52,22 +38,10 @@ DESKTOP
     position: relative;
     bottom: 40px !important;
   }
-
-  .creations_content {
-    position: relative;
-    bottom: 40px !important;
-  }
-
-
 }
 
 /* Desktop - 1440px (x900) */
 @media (max-width: 1440px) {
-  .importantComponent {
-    position: relative;
-    bottom: 20px;
-  }
-
   .header_content {
     background: linear-gradient(
       105deg,
@@ -81,31 +55,9 @@ DESKTOP
     }
   }
 
-  .bootes {
-    &_container {
-      margin-top: 80px !important;
-    }
-
-    &_content {
-      top: 0px !important;
-    }
-  }
-
-  .skills {
-    &_content {
-      bottom: 20px !important;
-    }
-  }
-
-  .creations {
-    &_content {
-      position: initial;
-  }
-}
-
-  .ocean {
-    min-height: 820px !important;
-  }
+  // .ocean {
+  //   min-height: 820px !important;
+  // }
 
   .contact_content {
     &_lower-main {
@@ -124,14 +76,14 @@ DESKTOP
 
 /* Low Desktop - 1366px (x768) */
 @media (max-width: 1366px) {
-
   .bootes {
-    &_container {
-      margin-top: 40px !important;
+    &_title {
+      position: relative;
+      top: -20px !important;
     }
     &_content {
+      position: relative;
       top: -40px !important;
-      align-items: center;
       grid-template-columns: 3fr 0.5fr 3fr;
 
       &-picture {
@@ -140,7 +92,6 @@ DESKTOP
 
       &-article {
         &-txt {
-          overflow: scroll !important;
           font-size: 16px !important;
         }
 
@@ -157,8 +108,7 @@ DESKTOP
     }
 
     &_content {
-      top: -60px !important;
-
+      bottom: 100px !important;
       &-articleListing {
         font-size: 20px !important;
       }
@@ -182,22 +132,14 @@ DESKTOP
     }
   }
 
-  .title-skills {
-    position: relative;
-    bottom: 40px !important;
-  }
-
-  .skills_content {
-    position: relative;
-    bottom: 60px !important;
-  }
-
   figcaption.skills_content-credit {
     top: 10px !important;
   }
 
   .creations {
     &_content {
+      position: relative;
+      bottom: 80px !important;
       &_carrousel {
         max-height: 500px !important;
 

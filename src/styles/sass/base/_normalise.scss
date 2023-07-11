@@ -54,11 +54,11 @@ input[type="radio"] {
 
 .importantComponent {
   max-width: 1600px;
-  margin: 0 auto;
+
 }
 
 .darkComponent {
-  margin: -60px 0;
+
   background-color: #031a13;
 }
 
@@ -66,4 +66,5 @@ input[type="radio"] {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 40px auto;
 }

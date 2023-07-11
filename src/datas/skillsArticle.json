@@ -5,9 +5,9 @@
     "description": "La partie visible de votre site.",
     "skills": [
       "HTML / CSS",
-      "SASS & Tailwind",
+      "SASS, Bootstrap & Tailwind",
       "Javascript / TypeScript",
-      "React JS & Redux",
+      "React JS, Redux & ReactQuery",
       "Intégration d'API"
     ]
   },

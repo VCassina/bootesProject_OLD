@@ -1,3 +1,4 @@
+@charset "UTF-8";
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   scroll-behavior: smooth;
@@ -55,11 +56,9 @@ input[type=radio] {
 
 .importantComponent {
   max-width: 1600px;
-  margin: 0 auto;
 }
 
 .darkComponent {
-  margin: -60px 0;
   background-color: #031a13;
 }
 
@@ -67,8 +66,10 @@ input[type=radio] {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  margin: 40px auto;
 }
 
+/* En dehors des résolutions prévues (où le rendu se veut optimal), tous les formats sont tolérés, du ridiculement large au ridiculement long.
 /* ------------------------------------
 DESKTOP
 ------------------------------------ */
@@ -79,13 +80,6 @@ DESKTOP
   .creations_container {
     display: flex;
     min-height: 900px;
-  }
-  .bootes_container {
-    margin-top: 60px;
-  }
-  .skills_content {
-    position: relative;
-    bottom: 20px !important;
   }
 }
 /* HD Desktop - 1680px (x1050 / x900) */
@@ -99,12 +93,9 @@ DESKTOP
   .importantComponent {
     padding: 0 40px;
   }
-  .bootes_container {
-    margin-top: 60px;
-  }
   .skills_content {
     position: relative;
-    bottom: 80px !important;
+    bottom: 40px !important;
   }
   .skills_content_low {
     align-items: center;
@@ -114,38 +105,15 @@ DESKTOP
     position: relative;
     bottom: 40px !important;
   }
-  .creations_content {
-    position: relative;
-    bottom: 40px !important;
-  }
 }
 /* Desktop - 1440px (x900) */
 @media (max-width: 1440px) {
-  .importantComponent {
-    position: relative;
-    bottom: 20px;
-  }
   .header_content {
     background: linear-gradient(105deg, rgb(5, 46, 34) 320px, #fafafa 325px) !important;
   }
   .header_content-ul {
     gap: 2rem !important;
     white-space: nowrap;
-  }
-  .bootes_container {
-    margin-top: 80px !important;
-  }
-  .bootes_content {
-    top: 0px !important;
-  }
-  .skills_content {
-    bottom: 20px !important;
-  }
-  .creations_content {
-    position: initial;
-  }
-  .ocean {
-    min-height: 820px !important;
   }
   .contact_content_lower-main {
     height: 420px !important;
@@ -159,19 +127,19 @@ DESKTOP
 }
 /* Low Desktop - 1366px (x768) */
 @media (max-width: 1366px) {
-  .bootes_container {
-    margin-top: 40px !important;
+  .bootes_title {
+    position: relative;
+    top: -20px !important;
   }
   .bootes_content {
+    position: relative;
     top: -40px !important;
-    align-items: center;
     grid-template-columns: 3fr 0.5fr 3fr;
   }
   .bootes_content-picture {
     width: 300px !important;
   }
   .bootes_content-article-txt {
-    overflow: scroll !important;
     font-size: 16px !important;
   }
   .bootes_content-article-title {
@@ -181,7 +149,7 @@ DESKTOP
     margin: 5px 0 5px 0 !important;
   }
   .skills_content {
-    top: -60px !important;
+    bottom: 100px !important;
   }
   .skills_content-articleListing {
     font-size: 20px !important;
@@ -200,16 +168,12 @@ DESKTOP
   .skills_content-description + .contentBar-horizontal {
     margin: 0 !important;
   }
-  .title-skills {
-    position: relative;
-    bottom: 40px !important;
-  }
-  .skills_content {
-    position: relative;
-    bottom: 60px !important;
-  }
   figcaption.skills_content-credit {
     top: 10px !important;
+  }
+  .creations_content {
+    position: relative;
+    bottom: 80px !important;
   }
   .creations_content_carrousel {
     max-height: 500px !important;
@@ -462,10 +426,10 @@ MOBILE
   }
 }
 .anchor-target {
-  height: 100px;
+  height: 0px;
 }
 .anchor-first {
-  height: calc(100px - 20px);
+  height: 0px;
 }
 
 .contentBar-horizontal {
@@ -487,19 +451,15 @@ MOBILE
 
 .bootes_container {
   display: flex;
-  flex-direction: column;
   align-items: center;
+  justify-content: center !important;
   color: #031a13;
   height: 110vh;
   background-color: white;
-  position: relative;
-  bottom: 180px;
 }
 .bootes_content {
   display: grid;
   grid-template-columns: 2fr 1fr 2fr;
-  position: relative;
-  top: 20px;
 }
 .bootes_content-picture {
   width: 380px;
@@ -762,7 +722,7 @@ MOBILE
 }
 .creations_content_carrousel {
   position: relative;
-  bottom: 30px;
+  bottom: 20px;
   height: 600px;
   max-width: 100%;
   display: flex;

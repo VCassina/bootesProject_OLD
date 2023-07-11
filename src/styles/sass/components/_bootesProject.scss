@@ -1,20 +1,16 @@
 .bootes {
     &_container {
         display: flex;
-        flex-direction: column;
         align-items: center;
+        justify-content: center !important;
         color: $darkGreen;
         height: $majorComponentHeight;
         background-color: white;
-            position: relative;
-            bottom: 180px;
     }
 
     &_content {
         display: grid;
         grid-template-columns: 2fr 1fr 2fr;
-        position: relative;
-        top: 20px;
 
         &-picture {
             width: 380px;

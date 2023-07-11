@@ -1,9 +1,10 @@
 $darkGreen: #031a13;
 $lightGreen: #0CA876;
-$anchorMargin: 100px;
+$anchorMargin: 0px;
 $majorComponentHeight: 110vh;
 $majorComponentDarkAfterLight: 60px;
-$anchorMarginFirst: calc(#{$anchorMargin} - 20px);
+// $anchorMarginFirst: calc(#{$anchorMargin} - 20px);
+$anchorMarginFirst: $anchorMargin;
 $titleFontSize: 72px;
 $maxWidhtDesktop: 1600px;
 $transitionButtonTime: 0.125s;
