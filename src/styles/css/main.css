@@ -72,24 +72,51 @@ input[type=radio] {
 /* ------------------------------------
 DESKTOP
 ------------------------------------ */
-.importantComponent,
-.darkComponent,
-.creations_container {
-  display: flex;
-}
-
-/* HD Desktop - 1680px (x1050 / x900) */
-@media (max-width: 1680px) {
-  .importantComponent {
-    padding: 0 40px;
+/* HD Desktop - 1680px + */
+@media (min-width: 1681px) {
+  .importantComponent,
+  .darkComponent,
+  .creations_container {
+    display: flex;
+    min-height: 900px;
+  }
+  .bootes_container {
+    margin-top: 40px;
   }
   .skills_content {
     position: relative;
-    bottom: 40px !important;
+    bottom: 20px !important;
+  }
+}
+/* HD Desktop - 1680px (x1050 / x900) */
+@media (max-width: 1680px) {
+  .importantComponent,
+  .darkComponent,
+  .creations_container {
+    min-height: 920px;
+    display: flex;
+  }
+  .importantComponent {
+    padding: 0 40px;
+  }
+  .bootes_container {
+    margin-top: 20px;
+  }
+  .skills_content {
+    position: relative;
+    bottom: 80px !important;
   }
   .skills_content_low {
     align-items: center;
-    width: 90vw;
+    width: 95vw;
+  }
+  .contact_content {
+    position: relative;
+    bottom: 40px !important;
+  }
+  .creations_content {
+    position: relative;
+    bottom: 40px !important;
   }
 }
 /* Desktop - 1440px (x900) */
@@ -106,7 +133,7 @@ DESKTOP
     white-space: nowrap;
   }
   .bootes_container {
-    margin: 45px 0 105px 0;
+    margin-top: 80px !important;
   }
   .bootes_content {
     top: 0px !important;
@@ -114,15 +141,8 @@ DESKTOP
   .skills_content {
     bottom: 20px !important;
   }
-  .title-skills {
-    position: relative;
-    bottom: 60px !important;
-  }
-  .creations_content_carrousel {
-    max-height: 540px !important;
-  }
-  .creations_container {
-    min-height: 920px !important;
+  .creations_content {
+    position: initial;
   }
   .ocean {
     min-height: 820px !important;
@@ -140,7 +160,7 @@ DESKTOP
 /* Low Desktop - 1366px (x768) */
 @media (max-width: 1366px) {
   .bootes_container {
-    top: -100px;
+    margin-top: 40px !important;
   }
   .bootes_content {
     top: -40px !important;
@@ -158,21 +178,27 @@ DESKTOP
     font-size: 34px !important;
   }
   .skills_subTitle {
-    margin-top: 5px !important;
+    margin: 5px 0 5px 0 !important;
   }
   .skills_content {
-    top: -20px !important;
+    top: -60px !important;
+  }
+  .skills_content-articleListing {
+    font-size: 20px !important;
   }
   .skills_content-img {
-    height: 100px !important;
+    height: 90px !important;
     width: 100px !important;
   }
   .skills_content section {
-    height: 450px !important;
+    height: 420px !important;
     padding: 0 5px !important;
   }
   .skills_content-description {
     display: none !important;
+  }
+  .skills_content-description + .contentBar-horizontal {
+    margin: 0 !important;
   }
   .title-skills {
     position: relative;
@@ -185,10 +211,6 @@ DESKTOP
   figcaption.skills_content-credit {
     top: 10px !important;
   }
-  .creations_content {
-    position: relative;
-    bottom: 20px;
-  }
   .creations_content_carrousel {
     max-height: 500px !important;
   }
@@ -196,6 +218,7 @@ DESKTOP
     overflow: scroll;
     overflow-x: hidden !important;
     scrollbar-width: thin;
+    font-size: 18px !important;
   }
   .contact_content_lower-main {
     height: 400px !important;
@@ -211,9 +234,6 @@ TABLETTE
 /* Low Tablette - 1024 (x768) */
 /* ------------------------------------
 MOBILE
------------------------------------- */
-/* ------------------------------------
-OLD !
 ------------------------------------ */
 @keyframes vibing--bootesProject {
   0% {

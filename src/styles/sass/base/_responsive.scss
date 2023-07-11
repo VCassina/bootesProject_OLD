@@ -2,26 +2,63 @@
 DESKTOP
 ------------------------------------ */
 
-.importantComponent,
-.darkComponent,
-.creations_container {
-  display: flex;
+/* HD Desktop - 1680px + */
+@media (min-width: 1681px) {
+  .importantComponent,
+  .darkComponent,
+  .creations_container {
+    display: flex;
+    min-height: 900px;
+  }
+
+  .bootes_container {
+    margin-top: 40px;
+  }
+
+  .skills {
+    &_content {
+      position: relative;
+      bottom: 20px !important;
+    }
+  }
 }
 
 /* HD Desktop - 1680px (x1050 / x900) */
 @media (max-width: 1680px) {
+  .importantComponent,
+  .darkComponent,
+  .creations_container {
+    min-height: 920px;
+    display: flex;
+  }
   .importantComponent {
     padding: 0 40px;
   }
 
+  .bootes_container {
+    margin-top: 20px;
+  }
+
   .skills_content {
     position: relative;
-    bottom: 40px !important;
+    bottom: 80px !important;
     &_low {
       align-items: center;
-      width: 90vw;
+      width: 95vw;
     }
   }
+
+  .contact_content {
+    position: relative;
+    bottom: 40px !important;
+  }
+
+  .creations_content {
+    position: relative;
+    bottom: 40px !important;
+  }
+
+
 }
 
 /* Desktop - 1440px (x900) */
@@ -32,9 +69,11 @@ DESKTOP
   }
 
   .header_content {
-    background: linear-gradient(105deg,
-        rgb(5, 46, 34) 320px,
-        #fafafa 325px) !important;
+    background: linear-gradient(
+      105deg,
+      rgb(5, 46, 34) 320px,
+      #fafafa 325px
+    ) !important;
 
     &-ul {
       gap: 2rem !important;
@@ -44,7 +83,7 @@ DESKTOP
 
   .bootes {
     &_container {
-      margin: 45px 0 105px 0;
+      margin-top: 80px !important;
     }
 
     &_content {
@@ -54,24 +93,15 @@ DESKTOP
 
   .skills {
     &_content {
-    bottom: 20px !important;
+      bottom: 20px !important;
     }
-  }
-
-  .title-skills {
-    position: relative;
-    bottom: 60px !important;
   }
 
   .creations {
-    &_content_carrousel {
-      max-height: 540px !important;
-    }
-
-    &_container {
-      min-height: 920px !important;
-    }
+    &_content {
+      position: initial;
   }
+}
 
   .ocean {
     min-height: 820px !important;
@@ -94,9 +124,10 @@ DESKTOP
 
 /* Low Desktop - 1366px (x768) */
 @media (max-width: 1366px) {
+
   .bootes {
     &_container {
-      top: -100px;
+      margin-top: 40px !important;
     }
     &_content {
       top: -40px !important;
@@ -122,23 +153,31 @@ DESKTOP
 
   .skills {
     &_subTitle {
-      margin-top: 5px !important;
+      margin: 5px 0 5px 0 !important;
     }
 
     &_content {
-      top: -20px !important;
+      top: -60px !important;
+
+      &-articleListing {
+        font-size: 20px !important;
+      }
 
       &-img {
-        height: 100px !important;
+        height: 90px !important;
         width: 100px !important;
       }
       & section {
-        height: 450px !important;
+        height: 420px !important;
         padding: 0 5px !important;
       }
 
       &-description {
         display: none !important;
+
+        & + .contentBar-horizontal {
+          margin: 0 !important;
+        }
       }
     }
   }
@@ -159,9 +198,6 @@ DESKTOP
 
   .creations {
     &_content {
-      position: relative;
-      bottom: 20px;
-
       &_carrousel {
         max-height: 500px !important;
 
@@ -169,6 +205,7 @@ DESKTOP
           overflow: scroll;
           overflow-x: hidden !important;
           scrollbar-width: thin;
+          font-size: 18px !important;
         }
       }
     }
@@ -190,120 +227,17 @@ TABLETTE
 ------------------------------------ */
 
 /* Full HD Tablette / Very low Desktop - 1280px (x800) */
-@media (max-width: 1280px) {}
+@media (max-width: 1280px) {
+}
 
 /* Low Tablette - 1024 (x768) */
-@media (max-width: 1024px) {}
+@media (max-width: 1024px) {
+}
 
 /* ------------------------------------
 MOBILE
 ------------------------------------ */
 
 // /* Smartphone - 768 (x576) */
-@media (max-width: 768px) {}
-
-
-/* ------------------------------------
-OLD !
------------------------------------- */
-
-
-// @media (max-width: 1280px) {
-//   .bootes_content {
-//     top: -40px !important;
-
-//     &-article-txt {
-//       overflow: visible !important;
-//       max-height: 400px;
-//     }
-//   }
-
-//   .header {
-//     &_nav {
-//       &-prefixe {
-//         display: none;
-//       }
-
-//       &-unit {
-//         text-transform: capitalize;
-//       }
-//     }
-
-//     &_content {
-//       &-ul {
-//         padding: 0 0px !important;
-//         gap: 1rem !important;
-//         text-align: initial !important;
-//       }
-
-//       &-li {
-//         width: 200px;
-//       }
-
-//       &-miniLogo {
-//         width: 75px;
-//       }
-//     }
-//   }
-
-//   .skills {
-//     &_content {
-//       bottom: 40px !important;
-//     }
-//   }
-
-//   @media (max-width: 1160px) {
-//     .header_content {
-//       background: linear-gradient(105deg,
-//           rgb(5, 46, 34) 180px,
-//           #fafafa 190px) !important;
-//     }
-
-//     .creations_content_carrousel-txt-title-main {
-//       white-space: nowrap;
-//     }
-
-//     .header_content {
-//       &-logo {
-//         display: none;
-//       }
-
-//       &-miniLogo {
-//         display: initial !important;
-//       }
-//     }
-
-//     .bootes_content-article {
-//       &-title {
-//         width: 100% !important;
-//         text-align: center !important;
-//       }
-
-//       &-txt {
-//         max-height: 400px;
-//         overflow: scroll !important;
-//         padding-right: 10px;
-//       }
-//     }
-
-//     .bootes_content-picture {
-//       width: 200px !important;
-//     }
-
-//     .skills_content-articleListing {
-//       font-size: 20px !important;
-//     }
-
-//     .contact_content_lower-main-txt-content-title b {
-//       white-space: nowrap;
-//     }
-
-//     .contact_content_lower-main-links {
-//       padding: 0 15px !important;
-
-//       & div a span {
-//         display: none;
-//       }
-//     }
-//   }
-// }
+@media (max-width: 768px) {
+}
