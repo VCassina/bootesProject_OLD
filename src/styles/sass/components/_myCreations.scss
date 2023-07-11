@@ -21,7 +21,7 @@
                 justify-content: right;
                 color: $lightGreen;
                 text-shadow: 0 1px 2px rgb(0, 0, 0);
-                font-family: 'Segoe UI', sans-serif;
+                font-family: $titleFontFamily;
                 font-size: $titleFontSize;
 
                 &-sleepingAnimation {
@@ -32,7 +32,7 @@
 
             &-label {
                 font-size: 40px;
-                font-family: "acme", sans-serif;
+                font-family: $boldFontFamily;
                 cursor: pointer;
                 transition: $transitionButtonTime;
 
@@ -149,11 +149,11 @@
 }
 
 .slidein-animation {
-    animation: slideIn--myCreations 0.25s forwards;
+    animation: slideIn--myCreations 0.35s forwards;
 }
 
 .slideout-animation {
-    animation: slideOut--myCreations 0.25s forwards;
+    animation: slideOut--myCreations 0.35s forwards;
 }
 
 .checked {

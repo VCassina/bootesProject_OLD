@@ -1,4 +1,8 @@
 @charset "UTF-8";
+/* COLORS ! */
+/* DIMENSIONS ! */
+/* ANIMTIONS ! */
+/* TEXTES ! */
 @import url("https://fonts.googleapis.com/css2?family=Acme&family=Indie+Flower&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
 html {
   scroll-behavior: smooth;
@@ -10,7 +14,7 @@ html ::-webkit-scrollbar {
 }
 
 body {
-  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-family: "Segoe UI", sans-serif, Tahoma, Geneva, Verdana, sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow: hidden;
@@ -66,7 +70,8 @@ input[type=radio] {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  margin: 40px auto;
+  margin: 0px auto;
+  padding: 0px 0;
 }
 
 /* En dehors des résolutions prévues (où le rendu se veut optimal), tous les formats sont tolérés, du ridiculement large au ridiculement long.
@@ -92,10 +97,6 @@ DESKTOP
   }
   .importantComponent {
     padding: 0 40px;
-  }
-  .skills_content {
-    position: relative;
-    bottom: 40px !important;
   }
   .skills_content_low {
     align-items: center;
@@ -149,7 +150,8 @@ DESKTOP
     margin: 5px 0 5px 0 !important;
   }
   .skills_content {
-    bottom: 100px !important;
+    position: relative;
+    bottom: 60px !important;
   }
   .skills_content-articleListing {
     font-size: 20px !important;
@@ -173,7 +175,7 @@ DESKTOP
   }
   .creations_content {
     position: relative;
-    bottom: 80px !important;
+    bottom: 20px !important;
   }
   .creations_content_carrousel {
     max-height: 500px !important;
@@ -528,7 +530,7 @@ MOBILE
 .header_content-li {
   counter-increment: number;
   min-width: 190px;
-  transition: transform 0.125s;
+  transition: transform 0.25s;
 }
 .header_content-li:hover {
   transform: scale(1.025);
@@ -626,7 +628,7 @@ MOBILE
   flex-direction: column;
   gap: 10px;
   font-size: 24px;
-  font-family: "Montserrat", sans-serif;
+  font-family: "Segoe UI", sans-serif;
   margin: auto;
 }
 .skills_content-description {
@@ -651,7 +653,6 @@ MOBILE
   width: 100%;
   margin-bottom: 20px;
   color: #fff;
-  padding: 50px 0 0 50px;
   text-shadow: 0 -20px 100px, 0 0 2px, 0 0 1em #0CA876, 0 0 0.5em #0CA876, 0 0 0.1em #0CA876, 0 10px 3px #000;
   font-size: 72px;
 }
@@ -659,7 +660,6 @@ MOBILE
   animation: blink--mySkills linear infinite 2s;
 }
 .title-skills span:nth-of-type(2) {
-  font-family: "Segoe UI", sans-serif;
   animation: blink--mySkills linear infinite 3s;
 }
 
@@ -690,9 +690,9 @@ MOBILE
 }
 .creations_content_upper-label {
   font-size: 40px;
-  font-family: "acme", sans-serif;
+  font-family: "Acme", sans-serif;
   cursor: pointer;
-  transition: 0.125s;
+  transition: 0.25s;
 }
 .creations_content_upper-label:hover {
   transform: scale(1.125);
@@ -769,7 +769,7 @@ MOBILE
 }
 .creations_content_carrousel-txt-links svg {
   height: 25px;
-  transition: 0.125s;
+  transition: 0.25s;
   color: #0CA876;
 }
 .creations_content_carrousel-txt-links svg:hover {
@@ -787,11 +787,11 @@ MOBILE
 }
 
 .slidein-animation {
-  animation: slideIn--myCreations 0.25s forwards;
+  animation: slideIn--myCreations 0.35s forwards;
 }
 
 .slideout-animation {
-  animation: slideOut--myCreations 0.25s forwards;
+  animation: slideOut--myCreations 0.35s forwards;
 }
 
 .checked {
@@ -900,7 +900,6 @@ MOBILE
 }
 .contact_content_lower-main-txt-content-title b {
   font-size: 46px;
-  font-family: "Acme", sans-serif;
 }
 .contact_content_lower-main-txt-content-subtitle {
   display: flex;

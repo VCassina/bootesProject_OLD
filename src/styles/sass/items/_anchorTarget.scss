@@ -5,7 +5,7 @@
     }
 
     &-first {
-        // Adjusting the absolute position of the Header.
-        height: $anchorMarginFirst;
+        // Adjusting the absolute position of the Header - No need an other value anymore.
+        height: $anchorMargin;
     }
 }

@@ -26,8 +26,6 @@ DESKTOP
   }
 
   .skills_content {
-    position: relative;
-    bottom: 40px !important;
     &_low {
       align-items: center;
       width: 95vw;
@@ -108,7 +106,8 @@ DESKTOP
     }
 
     &_content {
-      bottom: 100px !important;
+      position: relative;
+      bottom: 60px !important;
       &-articleListing {
         font-size: 20px !important;
       }
@@ -139,7 +138,7 @@ DESKTOP
   .creations {
     &_content {
       position: relative;
-      bottom: 80px !important;
+      bottom: 20px !important;
       &_carrousel {
         max-height: 500px !important;
 
