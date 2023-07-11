@@ -456,6 +456,7 @@ MOBILE
   color: #031a13;
   height: 110vh;
   background-color: white;
+  margin-top: -20px;
 }
 .bootes_content {
   display: grid;
@@ -786,11 +787,11 @@ MOBILE
 }
 
 .slidein-animation {
-  animation: slideIn--myCreations 0.5s forwards;
+  animation: slideIn--myCreations 0.25s forwards;
 }
 
 .slideout-animation {
-  animation: slideOut--myCreations 0.5s forwards;
+  animation: slideOut--myCreations 0.25s forwards;
 }
 
 .checked {

@@ -27,7 +27,7 @@ function MyCreations() {
     setSelectedElement(index);
     setTimeout(() => {
       setAnimateOut(false);
-    }, 500);
+    }, 250);
   };
 
   // Gestion de la mise à jour des données du carrousel & gestion du temps.
@@ -39,7 +39,7 @@ function MyCreations() {
       }
       timeoutId = setTimeout(() => {
         setNewData(dataSlider[selectedElement]);
-      }, 500);
+      }, 250);
     }
     return () => clearTimeout(timeoutId);
   }, [selectedElement, dataSlider]);
