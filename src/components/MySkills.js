@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import SkillsArticle from "../items/SkillsArticle";
 import data from "../datas/skillsArticle.json";
 import AnchorTarget from "../items/AnchorTarget";
@@ -8,6 +8,16 @@ import seoIcon from "../assets/seoByMacrovector.webp";
 
 function MySkills() {
   const imgSrc = [frontEndIcon, backEndIcon, seoIcon];
+  const [tabletteDisplay, setTabletteDisplay] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setTabletteDisplay(window.innerWidth < 1280);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   return (
     <article className="skills_container darkComponent">
@@ -18,18 +28,40 @@ function MySkills() {
             <span>_</span>
             <span>Nos competences</span>
           </h2>
-          <div className="skills_content_low">
-            {data.map((article, index) => (
-              <SkillsArticle
-                key={index}
-                alt={article.alt}
-                img={imgSrc[index]}
-                title={article.title}
-                description={article.description}
-                skills={article.skills}
-              />
-            ))}
-          </div>
+          {tabletteDisplay ? (
+  <div className="skills_content_low">
+    <div className="skills_carousel_wrapper">
+      <div className="skills_carousel_content">
+      <div className="skills_content_low">
+    {data.map((article, index) => (
+      <SkillsArticle
+        key={index}
+        alt={article.alt}
+        img={imgSrc[index]}
+        title={article.title}
+        description={article.description}
+        skills={article.skills}
+      />
+    ))}
+  </div>
+      </div>
+    </div>
+  </div>
+) : (
+  <div className="skills_content_low">
+    {data.map((article, index) => (
+      <SkillsArticle
+        key={index}
+        alt={article.alt}
+        img={imgSrc[index]}
+        title={article.title}
+        description={article.description}
+        skills={article.skills}
+      />
+    ))}
+  </div>
+)}
+
           <figcaption className="skills_content-credit">
             Icones designed by Macrovector - Thank you !
           </figcaption>

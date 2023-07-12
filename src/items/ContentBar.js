@@ -1,6 +1,5 @@
 function ContentBar({side}) {
-  console.log(side)
-
+  
   return (
     <>
       {side === "horizontal" && <div className="contentBar-horizontal"></div>}
