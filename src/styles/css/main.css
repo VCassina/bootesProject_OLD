@@ -168,7 +168,11 @@ DESKTOP
     bottom: 20px !important;
   }
   .creations_content_carrousel {
+    height: initial !important;
     max-height: 440px !important;
+  }
+  .creations_content_carrousel-img {
+    width: 0px !important;
   }
   .creations_content_carrousel-txt-description {
     overflow: scroll;
@@ -192,6 +196,9 @@ TABLETTE
   }
   figure {
     justify-content: center !important;
+  }
+  figcaption.skills_content-credit {
+    top: -20px !important;
   }
   .header_nav-prefixe {
     display: none;
@@ -282,7 +289,6 @@ TABLETTE
   }
   .skills_content_low {
     gap: 30px !important;
-    position: initial !important;
     justify-content: initial !important;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
@@ -293,7 +299,16 @@ TABLETTE
     width: 100%;
     min-width: 50%;
     scroll-snap-align: center;
-    box-shadow: -5px 5px 10px, 0 0 2px, 0 0 1em #0CA876, 0 0 0.5em #0CA876, 0 0 1em #0CA876, 0 10px 3px #000 !important;
+    box-shadow: -5px 5px 10px, 0 0 2px, 0 0 1em #0ca876, 0 0 0.5em #0ca876, 0 0 1em #0ca876, 0 10px 3px #000 !important;
+  }
+  .creations_content_upper-nav {
+    flex: 1.5 !important;
+  }
+  .creations_content_carrousel {
+    gap: 10px !important;
+  }
+  .creations_content_carrousel-txt-description {
+    padding: 0 10px 0 0;
   }
   .creations_content_carrousel-txt-title {
     white-space: nowrap;
@@ -311,7 +326,6 @@ TABLETTE
     height: 300px !important;
   }
 }
-/* Low Tablette - 1024 (x768) */
 /* ------------------------------------
 MOBILE
 ------------------------------------ */
