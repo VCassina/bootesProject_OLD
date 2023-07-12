@@ -275,7 +275,6 @@ TABLETTE
   }
   .skills_content-articleListing {
     gap: 5px !important;
-    overflow: scroll !important;
   }
   .skills_content_carrousel {
     display: flex;
