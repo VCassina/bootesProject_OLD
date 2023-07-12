@@ -185,10 +185,91 @@ DESKTOP
 /* ------------------------------------
 TABLETTE
 ------------------------------------ */
-/* Low Tablette - 1024 (x600 / x 768) - Still landscape though */
+/* Low Tablette - 1024 (x 768 - x600 toléré seulement) - Still landscape though */
 @media (max-width: 1279px) {
-  * {
-    background-color: red;
+  .importantComponent {
+    min-height: initial !important;
+  }
+  .header_nav-prefixe {
+    display: none;
+  }
+  .header_nav-unit {
+    color: white;
+  }
+  .header_nav-svg {
+    box-shadow: 0 0px 5px rgb(255, 255, 255) !important;
+  }
+  .header_content {
+    background: rgb(5, 46, 34) !important;
+  }
+  .header_content-logo {
+    display: none;
+  }
+  .header_content-ul {
+    text-align: initial !important;
+  }
+  .header_content-miniLogo {
+    display: initial !important;
+    width: 75px;
+  }
+  .bootes_container {
+    margin-top: 0px !important;
+    min-height: 1180px !important;
+  }
+  .bootes_content {
+    grid-template-columns: 1fr 0.5fr !important;
+  }
+  .bootes_content-article.second-element {
+    grid-column: 1/3;
+    align-items: end;
+  }
+  .bootes_content-article-title {
+    text-align: center !important;
+  }
+  .bootes_content-article-title.second-title {
+    position: initial !important;
+    animation: none;
+    width: 50%;
+  }
+  .skills_content {
+    position: initial !important;
+  }
+  .skills_content-titleGroup {
+    flex-direction: row !important;
+    justify-content: center;
+    padding: 10px;
+    margin-top: 0px !important;
+  }
+  .skills_content-articleListing {
+    gap: 5px !important;
+    overflow: scroll !important;
+  }
+  .skills_content_low {
+    display: grid !important;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px !important;
+    position: initial !important;
+    width: 90vw !important;
+  }
+  .skills_content section {
+    width: auto !important;
+    height: 300px !important;
+    padding: 10px !important;
+  }
+  .creations_content_carrousel-txt-title {
+    white-space: nowrap;
+  }
+  .contact_content_lower-main-links {
+    flex: initial !important;
+  }
+  .contact_content_lower-main-links span {
+    display: none;
+  }
+  .contact_content_title p {
+    display: none;
+  }
+  .contact_content_lower-main {
+    height: 300px !important;
   }
 }
 /* Low Tablette - 1024 (x768) */
