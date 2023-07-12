@@ -1,11 +1,36 @@
-import { Markup } from 'interweave';
+import { Markup } from "interweave";
 
-function BootesArticle({ title, description, titleIndex, secondElement }) {
-  const sectionClasses = `bootes_content-article ${secondElement ? 'second-element' : 'first-element'}`;
+function BootesArticle({
+  title,
+  description,
+  titleIndex,
+  secondElement,
+  tabletteDisplay,
+  data,
+  selectedItemIndex,
+  setSelectedItemIndex
+}) {
+  const sectionClasses = `bootes_content-article ${
+    secondElement ? "second-element" : "first-element"
+  }`;
 
   return (
     <section className={sectionClasses}>
-      <h3 className={`bootes_content-article-title ${titleIndex}`}>{title}</h3>
+      {tabletteDisplay && data ? (
+        <div className="bootes_titleBundle">
+          {data.map((item, index) => (
+            <h3
+              key={index}
+              onClick={() => setSelectedItemIndex(index)}
+              className={index === selectedItemIndex ? "active bootes_content-article-title" : "unactive bootes_content-article-title"}
+            >
+              {item.titleShort}
+            </h3>
+          ))}
+        </div>
+      ) : (
+        <h3 className={`bootes_content-article-title ${titleIndex}`}>{title}</h3>
+      )}
       <div className="bootes_content-article-txt">
         <Markup content={description} />
       </div>

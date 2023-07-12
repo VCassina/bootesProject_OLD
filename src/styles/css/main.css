@@ -188,13 +188,18 @@ TABLETTE
 /* Low Tablette - 1024 (x 768 - x600 toléré seulement) - Still landscape though */
 @media (max-width: 1279px) {
   .importantComponent {
-    min-height: initial !important;
+    min-height: 840px !important;
+  }
+  figure {
+    justify-content: center !important;
   }
   .header_nav-prefixe {
     display: none;
   }
   .header_nav-unit {
     color: white;
+    text-transform: capitalize;
+    text-shadow: 0px 0px 5px #0CA876;
   }
   .header_nav-svg {
     box-shadow: 0 0px 5px rgb(255, 255, 255) !important;
@@ -212,12 +217,32 @@ TABLETTE
     display: initial !important;
     width: 75px;
   }
+  .bootes_titleBundle {
+    display: flex;
+    justify-content: space-around;
+    white-space: nowrap;
+    border-bottom: 2px solid #031a13;
+    cursor: pointer;
+  }
+  .bootes_titleBundle h3 {
+    transition: transform 0.25s, color 0.25s;
+    color: #031a13;
+  }
+  .bootes_titleBundle h3.unactive {
+    color: rgba(12, 168, 118, 0.35);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  }
+  .bootes_titleBundle h3.active {
+    transform: scale(1.05);
+  }
   .bootes_container {
     margin-top: 0px !important;
-    min-height: 1180px !important;
   }
   .bootes_content {
     grid-template-columns: 1fr 0.5fr !important;
+  }
+  .bootes_content-article-txt {
+    height: 300px;
   }
   .bootes_content-article.second-element {
     grid-column: 1/3;
@@ -230,9 +255,6 @@ TABLETTE
     position: initial !important;
     animation: none;
     width: 50%;
-  }
-  .skills_content {
-    position: initial !important;
   }
   .skills_content-titleGroup {
     flex-direction: row !important;
@@ -253,7 +275,7 @@ TABLETTE
   }
   .skills_content section {
     width: auto !important;
-    height: 300px !important;
+    height: 400px !important;
     padding: 10px !important;
   }
   .creations_content_carrousel-txt-title {
