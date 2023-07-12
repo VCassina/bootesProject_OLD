@@ -72,7 +72,7 @@ DESKTOP
   }
 }
 
-/* Low Desktop - 1366px (x768) */
+/* Low Desktop - 1366px (x768) - Full HD Tablette / Very low Desktop - 1280px (x800) */ 
 @media (max-width: 1366px) {
   .bootes {
     &_title {
@@ -87,16 +87,6 @@ DESKTOP
       &-picture {
         width: 300px !important;
       }
-
-      &-article {
-        &-txt {
-          font-size: 16px !important;
-        }
-
-        &-title {
-          font-size: 34px !important;
-        }
-      }
     }
   }
 
@@ -108,9 +98,6 @@ DESKTOP
     &_content {
       position: relative;
       bottom: 60px !important;
-      &-articleListing {
-        font-size: 20px !important;
-      }
 
       &-img {
         height: 90px !important;
@@ -140,13 +127,12 @@ DESKTOP
       position: relative;
       bottom: 20px !important;
       &_carrousel {
-        max-height: 500px !important;
+        max-height: 440px !important;
 
         &-txt-description {
           overflow: scroll;
           overflow-x: hidden !important;
           scrollbar-width: thin;
-          font-size: 18px !important;
         }
       }
     }
@@ -167,13 +153,19 @@ DESKTOP
 TABLETTE
 ------------------------------------ */
 
-/* Full HD Tablette / Very low Desktop - 1280px (x800) */
-@media (max-width: 1280px) {
+/* Low Tablette - 1024 (x600 / x 768) - Still landscape though */
+@media (max-width: 1279px) {
+  * {
+    background-color: red;
+  }
 }
 
 /* Low Tablette - 1024 (x768) */
-@media (max-width: 1024px) {
-}
+// @media (max-width: 1024px) {
+//   * {
+//     background-color: yellow;
+//   }
+// }
 
 /* ------------------------------------
 MOBILE
@@ -181,4 +173,7 @@ MOBILE
 
 // /* Smartphone - 768 (x576) */
 @media (max-width: 768px) {
+  * {
+    background-color: blue;
+  }
 }

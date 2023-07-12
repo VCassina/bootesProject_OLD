@@ -39,8 +39,7 @@ figcaption {
 }
 
 b {
-  font-family: "Acme", sans-serif;
-  font-size: large;
+  font-family: "Segoe UI", sans-serif;
 }
 
 a {
@@ -126,7 +125,7 @@ DESKTOP
     display: none;
   }
 }
-/* Low Desktop - 1366px (x768) */
+/* Low Desktop - 1366px (x768) - Full HD Tablette / Very low Desktop - 1280px (x800) */
 @media (max-width: 1366px) {
   .bootes_title {
     position: relative;
@@ -140,21 +139,12 @@ DESKTOP
   .bootes_content-picture {
     width: 300px !important;
   }
-  .bootes_content-article-txt {
-    font-size: 16px !important;
-  }
-  .bootes_content-article-title {
-    font-size: 34px !important;
-  }
   .skills_subTitle {
     margin: 5px 0 5px 0 !important;
   }
   .skills_content {
     position: relative;
     bottom: 60px !important;
-  }
-  .skills_content-articleListing {
-    font-size: 20px !important;
   }
   .skills_content-img {
     height: 90px !important;
@@ -178,13 +168,12 @@ DESKTOP
     bottom: 20px !important;
   }
   .creations_content_carrousel {
-    max-height: 500px !important;
+    max-height: 440px !important;
   }
   .creations_content_carrousel-txt-description {
     overflow: scroll;
     overflow-x: hidden !important;
     scrollbar-width: thin;
-    font-size: 18px !important;
   }
   .contact_content_lower-main {
     height: 400px !important;
@@ -196,11 +185,21 @@ DESKTOP
 /* ------------------------------------
 TABLETTE
 ------------------------------------ */
-/* Full HD Tablette / Very low Desktop - 1280px (x800) */
+/* Low Tablette - 1024 (x600 / x 768) - Still landscape though */
+@media (max-width: 1279px) {
+  * {
+    background-color: red;
+  }
+}
 /* Low Tablette - 1024 (x768) */
 /* ------------------------------------
 MOBILE
 ------------------------------------ */
+@media (max-width: 768px) {
+  * {
+    background-color: blue;
+  }
+}
 @keyframes vibing--bootesProject {
   0% {
     transform: translate(2%, 0) rotate(-1deg);
@@ -482,7 +481,7 @@ MOBILE
   font-weight: bold;
 }
 .bootes_content-article-txt {
-  font-size: 18px;
+  font-size: 20px;
 }
 .bootes_title {
   animation: fallFromSky--bootesProject 0.4s ease-in forwards;
@@ -620,14 +619,14 @@ MOBILE
 }
 .skills_content-titleGroup h3 {
   position: relative;
-  font-size: 30px;
+  font-size: 36px;
   font-family: "Indie Flower", cursive;
 }
 .skills_content-articleListing {
   display: flex;
   flex-direction: column;
   gap: 10px;
-  font-size: 24px;
+  font-size: 22px;
   font-family: "Segoe UI", sans-serif;
   margin: auto;
 }
@@ -667,7 +666,7 @@ MOBILE
   height: 110vh;
 }
 .creations_content b {
-  font-size: 22px;
+  font-size: 20px;
 }
 .creations_content_upper {
   display: flex;
@@ -689,8 +688,9 @@ MOBILE
   animation: sleepingAnimation--myCreations 4s forwards ease-in-out;
 }
 .creations_content_upper-label {
-  font-size: 40px;
-  font-family: "Acme", sans-serif;
+  font-size: 36px;
+  font-family: "Segoe UI", sans-serif;
+  font-weight: bold;
   cursor: pointer;
   transition: 0.25s;
 }
@@ -735,7 +735,7 @@ MOBILE
 .creations_content_carrousel-img {
   flex: 3;
   width: 100%;
-  height: 95%;
+  height: 100%;
   box-shadow: 0px 0px 5px #0CA876;
   border-radius: 5px;
   box-sizing: border-box;
@@ -781,7 +781,6 @@ MOBILE
   flex: 6;
   display: flex;
   flex-direction: column;
-  letter-spacing: 0.25px;
   font-size: 20px;
   height: 100%;
 }
@@ -887,7 +886,6 @@ MOBILE
 .contact_content_lower-main-txt {
   flex: 1.5;
   padding: 10px;
-  line-height: 200%;
 }
 .contact_content_lower-main-txt-content {
   text-align: left;
@@ -899,12 +897,13 @@ MOBILE
   text-align: center;
 }
 .contact_content_lower-main-txt-content-title b {
-  font-size: 46px;
+  font-size: 36px;
 }
 .contact_content_lower-main-txt-content-subtitle {
   display: flex;
   flex-direction: column;
-  font-size: 18px;
+  font-size: 20px;
+  text-align: justify;
 }
 .contact_content_lower-mascot {
   flex: 1;

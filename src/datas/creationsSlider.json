@@ -1,26 +1,22 @@
 [
   {
-    "webSiteScreen": "jsonPicture/BankArgent.webp",
     "altScreen": "Capture de la page d'accueil du projet bankArgent",
     "title": "Bank Argent",
     "description": "<p>Ce site a été <b>sécurisé</b> - avec un lecteur d'empreinte digitale ? Et non, via la gestion de l'authentification sous <b>Redux</b> !</p><p>C'est également un insubmesible résistant aux terribles <b>injections SQL</b> en tout genre.</p>",
-    "siteUrl": "COMING SOON",
     "gitUrl": "https://github.com/VCassina/projet-11-front-end/tree/master"
   },
   {
-    "webSiteScreen": "jsonPicture/NinaCarducci.webp",
     "altScreen": "Capture de la page d'accueil projet Nina Carducci, le site d'une photographe profesionnelle",
     "title": "Nina Carducci",
-    "description": "<p>Lui, il était très lourd, comportant énormément de photos <b>haute résolution</b>, et maintenant, il est <b>très léger</b>. C'est à n'y rien comprendre. En réalité... Nous y sommes pour quelque chose.</p><p>Tant que j'y pense, nous sommes également responsables des micro-données qui lui permettent un <b>meilleur référencement</b>.</p>",
+    "description": "<p>Lui, il était très lourd, énormément de photos <b>haute résolution</b>, et maintenant, il est <b>très léger</b>. C'est grâce à nous.</p><p>Tant que j'y pense, nous sommes également responsables des <b>micro-données</b> qui lui permettent un <b>meilleur référencement</b>.</p>",
     "siteUrl": "https://vcassina.github.io/projet-9/",
     "gitUrl": "https://github.com/VCassina/projet-9/tree/master"
   },
   {
-    "webSiteScreen": "jsonPicture/NinaCarducci.webp",
-    "altScreen": "Capture de la page d'accueil projet Nina Carducci, le site d'une photographe profesionnelle",
-    "title": "Nina Carducci",
-    "description": "<p>Lui, il était très lourd, comportant énormément de photos <b>haute résolution</b>, et maintenant, il est <b>très léger</b>. C'est à n'y rien comprendre. En réalité... Nous y sommes pour quelque chose.</p><p>Tant que j'y pense, nous sommes également responsables des micro-données qui lui permettent un <b>meilleur référencement</b>.</p>",
-    "siteUrl": "https://vcassina.github.io/projet-9/",
-    "gitUrl": "https://github.com/VCassina/projet-9/tree/master"
+    "altScreen": "Capture de la page d'accueil de Boötes Dev, notre site",
+    "title": "Boötes Dev",
+    "description": "<p>Notre petit protégé, notre bébé.</p><p> Il démontre les moyens que nous pouvons mettre en place au cours d'un projet standard comme <b>React</b>, <b>SASS</b>, quelques <b>animations mignonnettes</b> ainsi qu'une bonne <b>optimisation</b>.</p>",
+    "siteUrl": "https://vcassina.github.io/Projet-12/",
+    "gitUrl": "https://github.com/VCassina/projet-12"
   }
 ]

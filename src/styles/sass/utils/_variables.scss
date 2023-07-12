@@ -13,11 +13,15 @@ $transitionButtonTime: 0.25s;
 
 /* TEXTES ! */
 $titleFontSize: 72px;
-// $subtitleFontSize: ;
-// $boldFontSize: ;
-// $standardFontSize: ;
+$subtitleFontSize: 36px;
+$standardFontSize: 20px;
+$linksFontSize: 28px;
+$boldFontSize: $standardFontSize;
+$listingFontSize: $standardFontSize + 2px;
 $titleFontFamily: "Segoe UI", sans-serif;
 $subtitleFontFamily: "Indie Flower", cursive;
-$boldFontFamily: "Acme", sans-serif;
+$boldFontFamily: "Segoe UI", sans-serif;
 $standardFontFamily: "Segoe UI", sans-serif;
 $linksFontFamily: "Montserrat", sans-serif;
+
+
