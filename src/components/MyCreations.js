@@ -9,6 +9,17 @@ import ninaCarducci from "../assets/NinaCarducci.webp";
 import devBootes from "../assets/BootesDev.webp";
 
 function MyCreations() {
+  const [lowTabletteDisplay, setLowTabletteDisplay] = useState(false);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setLowTabletteDisplay(window.innerWidth < 1024);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const imgSrc = [bankArgent, ninaCarducci, devBootes];
   const dataSlider = data;
   const sleepingRef = useRef(null);
@@ -76,20 +87,39 @@ function MyCreations() {
               ))}
             </nav>
           </div>
-
-          <div className="creations_content_carrousel">
-            <CreationsBottomArticle
-              webSiteScreen={imgSrc[selectedImage]}
-              altScreen={newData?.altScreen}
-              description={newData?.description}
-              title={newData?.title}
-              siteUrl={newData?.siteUrl}
-              gitUrl={newData?.gitUrl}
-              animateOut={animateOut}
-              nextElement={nextElement}
-              setNextElement={setNextElement}
-            />
-          </div>
+          {!lowTabletteDisplay ? (
+            <div className="creations_content_carrousel">
+              <CreationsBottomArticle
+                webSiteScreen={imgSrc[selectedImage]}
+                altScreen={newData?.altScreen}
+                description={newData?.description}
+                title={newData?.title}
+                siteUrl={newData?.siteUrl}
+                gitUrl={newData?.gitUrl}
+                animateOut={animateOut}
+                nextElement={nextElement}
+                setNextElement={setNextElement}
+              />
+            </div>
+          ) : (
+            <div className="creations_content_carrousel_wrapper">
+              <div className="creations_content_carrousel_items">
+                {data.map((newData, index) => (
+                  <CreationsBottomArticle
+                    key={index}
+                    webSiteScreen={imgSrc[index]}
+                    altScreen={newData?.altScreen}
+                    description={newData?.description}
+                    title={newData?.title}
+                    siteUrl={newData?.siteUrl}
+                    gitUrl={newData?.gitUrl}
+                    nextElement={nextElement}
+                    setNextElement={setNextElement}
+                  />
+                ))}
+              </div>
+            </div>
+          )}
         </div>
       </div>
     </article>

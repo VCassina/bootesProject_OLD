@@ -1,10 +1,20 @@
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgba(255, 255, 255, 0.096);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: $lightGreen;
+  border-radius: 4px;
+}
+
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
   scrollbar-width: thin;
-  ::-webkit-scrollbar {
-    width: 5px;
-  }
 }
 
 body {

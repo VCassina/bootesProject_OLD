@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState, useEffect} from "react";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { Markup } from "interweave";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
@@ -14,10 +14,28 @@ function CreationsBottomArticle({
   title,
   siteUrl,
   gitUrl,
-}) {
-  const classNames = `creations_content_carrousel ${
-    animateOut ? "slideout-animation" : "slidein-animation"
-  }`;
+}) 
+{
+  const [lowTabletteDisplay, setLowTabletteDisplay] = useState(false);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setLowTabletteDisplay(window.innerWidth < 1024);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+  
+  const classNames = lowTabletteDisplay
+  ? "creations_content_carrousel-unit"
+  : `creations_content_carrousel ${
+      animateOut ? "slideout-animation" : "slidein-animation"
+    }`;
+
+
+
 
   return (
     <div className={classNames}>

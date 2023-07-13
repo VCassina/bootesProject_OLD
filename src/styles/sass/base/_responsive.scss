@@ -53,7 +53,6 @@ DESKTOP
     }
   }
 
-
   .contact_content {
     &_lower-main {
       height: 420px !important;
@@ -73,7 +72,7 @@ DESKTOP
   }
 }
 
-/* Low Desktop - 1366px (x768) - Full HD Tablette / Very low Desktop - 1280px (x800) */
+/* Low Desktop - 1366px (x768) - Very low Desktop - 1280px (x800) */
 @media (max-width: 1366px) {
   .bootes {
     &_title {
@@ -161,7 +160,7 @@ DESKTOP
 TABLETTE
 ------------------------------------ */
 
-/* Low Tablette - 1024 (x 768 - x600 toléré seulement) - Still landscape though */
+/* HD Tablette - 1024 (x 768 - x600 toléré seulement) - Still landscape/square though */
 @media (max-width: 1279px) {
   .importantComponent {
     // Native x768 is 844.
@@ -174,30 +173,40 @@ TABLETTE
     top: -20px !important;
   }
 
-  .header_nav {
-    &-prefixe {
-      display: none;
-    }
-    &-unit {
-      color: white;
-      text-transform: capitalize;
-      text-shadow: 0px 0px 5px $lightGreen;
-    }
-    &-svg {
-      box-shadow: 0 0px 5px rgba(255, 255, 255, 1) !important;
-    }
-  }
-
   .header {
+    &_nav {
+      width: fit-content !important;
+
+      &-prefixe {
+        display: none;
+      }
+      &-unit {
+        color: white;
+        text-transform: capitalize;
+        text-shadow: 0px 0px 5px $lightGreen;
+      }
+      &-svg {
+        box-shadow: 0 0px 5px rgba(255, 255, 255, 1) !important;
+      }
+    }
+
     &_content {
       background: rgb(5, 46, 34) !important;
       box-shadow: 0 0px 2px rgba($lightGreen, 0.75),
         0 2px 10px rgba(white, 0.25) !important;
+      &-nav {
+        width: 100% !important;
+      }
       &-logo {
         display: none;
       }
       &-ul {
         text-align: initial !important;
+        display: flex;
+        justify-content: space-around;
+      }
+      &-li {
+        min-width: auto !important;
       }
 
       &-miniLogo {
@@ -280,7 +289,6 @@ TABLETTE
 
       &_low {
         gap: 30px !important;
-        // position: initial !important;
         justify-content: initial !important;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
@@ -298,6 +306,10 @@ TABLETTE
     }
   }
 
+  figcaption.skills_content-credit {
+    top: 10px !important;
+  }
+  
   .creations {
     &_content {
       &_upper-nav {
@@ -305,11 +317,13 @@ TABLETTE
       }
       &_carrousel {
         gap: 40px !important;
-
-
-        &-txt {
+        &-txt { 
+              &-title, &-links {
+                line-height: 0%;
+              }
           &-description {
             padding: 0 10px 0 0;
+            max-height: 300px !important;
           }
           &-title {
             white-space: nowrap;
@@ -336,13 +350,170 @@ TABLETTE
   }
 }
 
+/* Low Tablette- 768 - Square - portrait though */
+@media (max-width: 1023px) {
+  .importantComponent {
+    min-height: 960px !important;
+    height: 110vh !important;
+  }
+  .header_content {
+    padding: 10px 10px !important;
+    &-ul {
+      gap: 40px !important;
+    }
+  }
+
+  .bootes {
+    &_title {
+      top: 40px !important;
+    }
+    &_container {
+      min-height: 960px !important;
+    }
+    &_content {
+      position: initial;
+      display: flex !important;
+      flex-direction: column;
+      align-items: center;
+      &-article-txt {
+        height: 260px !important;
+      }
+      &-picture {
+        width: 240px !important;
+      }
+    }
+  }
+
+  .skills_content {
+    bottom: 0px !important;
+    &-titleGroup {
+      flex-direction: column !important;
+    }
+    &_low {
+      gap: 60px !important;
+    }
+  }
+
+  figcaption.skills_content-credit {
+    top: 0px !important;
+  }
+
+  .creations {
+    &_content {
+      &_carrousel {
+        // scroll-snap-type: x mandatory;
+        // cursor: grab;
+        // cursor: -webkit-grab;
+        // overflow-x: auto !important;
+
+        &-txt {
+          // height: 100% !important;
+        &-title, &-links {
+          line-height: 0%;
+        }
+        &-description {
+          max-height: 300px !important;
+          overflow: hidden;
+          padding: 0px;
+          line-height: 125%;
+        }
+
+      }
+        &_items {
+          display: flex;
+          gap: 30px !important;
+          justify-content: initial !important;
+          overflow-x: auto;
+          scroll-snap-type: x mandatory;
+          align-items: center;
+          width: 90vw;
+        }
+
+        &-unit {
+          width: 100vw;
+          display: flex;
+          gap: 20px;
+          flex-direction: row-reverse;
+          text-align: center;
+          border-radius: 15px;
+          margin: 30px !important;
+          flex: 0 0 95%;
+          scroll-snap-align: center;
+          height: 420px !important;
+          padding: 0px !important;
+        }
+      }
+
+      &_upper {
+        flex-direction: column !important;
+        align-items: initial !important;
+        &-nav {
+          display: none !important;
+          width: 75%;
+          margin: 0 auto;
+        }
+      }
+    }
+  }
+
+  .contact_content_lower {
+    &-main {
+      gap: 5px !important;
+    }
+    &-mascot {
+      & figure img {
+        min-width: 180px;
+      }
+    }
+    &-main {
+      height: auto !important;
+      &-txt {
+        display: flex;
+        flex-direction: column;
+        padding: 15px !important;
+        align-items: center;
+        &-content {
+          padding: 0 10px;
+          &-subtitle {
+            text-align: center !important;
+          }
+        }
+      }
+      &-links {
+        padding: 20px !important;
+        & div {
+          display: flex !important;
+          flex-direction: row !important;
+        }
+      }
+    }
+  }
+
+  @media (max-width: 879px) {
+    .header_content-li {
+      & .header_nav-unit {
+        font-size: 14px;
+        transition: $transitionButtonTime;
+      }
+      &.active {
+        & .header_nav-unit {
+          font-size: $standardFontSize;
+        }
+      }
+    }
+  }
+}
+
 /* ------------------------------------
 MOBILE
 ------------------------------------ */
 
-// /* Smartphone - 768 (x576) */
-@media (max-width: 1023px) {
-  * {
-    background-color: blue;
-  }
+/* HD smartphone - 480 */
+@media (max-width: 767px) {
 }
+
+/* HD smartphone - 320 */
+@media (max-width: 479px) {
+}
+
+/* OLD & TEMP */

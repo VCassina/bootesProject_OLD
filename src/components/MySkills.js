@@ -29,7 +29,6 @@ function MySkills() {
             <span>Nos competences</span>
           </h2>
           {tabletteDisplay ? (
-  <div className="skills_content_low">
     <div className="skills_carousel_wrapper">
       <div className="skills_carousel_content">
       <div className="skills_content_low">
@@ -46,7 +45,7 @@ function MySkills() {
   </div>
       </div>
     </div>
-  </div>
+
 ) : (
   <div className="skills_content_low">
     {data.map((article, index) => (

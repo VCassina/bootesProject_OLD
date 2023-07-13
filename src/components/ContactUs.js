@@ -1,4 +1,4 @@
-import React, { useRef } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import AnchorTarget from "../items/AnchorTarget";
 import titleAnimationHelper from "../helpers/titleAnimationHelper";
 import AllBubbles from "./AllBubbles";
@@ -12,6 +12,17 @@ library.add(faDiscord, faLinkedin, faEnvelope);
 
 function ContactUs() {
   const flowingRef = useRef(null);
+  const [lowTabletteDisplay, setLowTabletteDisplay] = useState(false);
+
+
+  useEffect(() => {
+    const handleResize = () => {
+      setLowTabletteDisplay(window.innerWidth < 1024);
+    };
+    handleResize();
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   titleAnimationHelper("contact_content_title-flowingAnimation", flowingRef);
 
@@ -35,8 +46,9 @@ function ContactUs() {
           </div>
           <div className="contact_content_lower">
             <div className="contact_content_lower-main">
-              <section className="contact_content_lower-main-links">
-                <div>
+            
+              {!lowTabletteDisplay ? (<section className="contact_content_lower-main-links">
+              <div>
                   <a href="mailto:BoötesDev@gmail.com">
                     <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
                     <span>BoötesDev@gmail.com</span>
@@ -51,7 +63,8 @@ function ContactUs() {
                   </a>
                 </div>
               </section>
-              <ContentBar side="vertical" />
+              ) : null }
+            {!lowTabletteDisplay ? (<ContentBar side="vertical" />) : null }
               <section className="contact_content_lower-main-txt">
                 <div className="contact_content_lower-main-txt-content">
                   <p className="contact_content_lower-main-txt-content-title">
@@ -69,6 +82,24 @@ function ContactUs() {
                     </p>
                   </span>
                 </div>
+                {lowTabletteDisplay ? (<ContentBar side="horizontal" />) : null }
+                {lowTabletteDisplay ? (<section className="contact_content_lower-main-links">
+              <div>
+                  <a href="mailto:BoötesDev@gmail.com">
+                    <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
+                    <span>BoötesDev@gmail.com</span>
+                  </a>
+                  <a href="https://www.linkedin.com/in/victor-cassina-032a5816b/">
+                    <FontAwesomeIcon icon="fa-brands fa-linkedin" /> <span>Victor
+                    Cassina</span>
+                  </a>
+                  <a href="https://www.facebook.com/profile.php?id=100006082485106">
+                    <FontAwesomeIcon icon="fa-brands fa-discord" /> <span>Victor
+                    Cassina</span>
+                  </a>
+                </div>
+              </section>
+              ) : null }
               </section>
               <section className="contact_content_lower-mascot">
                 <figure>
