@@ -53,9 +53,6 @@ DESKTOP
     }
   }
 
-  // .ocean {
-  //   min-height: 820px !important;
-  // }
 
   .contact_content {
     &_lower-main {
@@ -69,6 +66,10 @@ DESKTOP
         }
       }
     }
+  }
+
+  .creations_content_carrousel {
+    height: 500px !important;
   }
 }
 
@@ -127,19 +128,19 @@ DESKTOP
       position: relative;
       bottom: 20px !important;
       &_carrousel {
-        // display: block !important;
         height: initial !important;
         max-height: 440px !important;
         &-img {
-          // max-height: 440px !important;
           // Chrome FIX !!
-          width: 0px !important;
+          min-width: 300px !important;
         }
 
         &-txt-description {
+          max-height: 200px !important;
           overflow: scroll;
           overflow-x: hidden !important;
           scrollbar-width: thin;
+          padding: 0 10px;
         }
       }
     }
@@ -300,10 +301,11 @@ TABLETTE
   .creations {
     &_content {
       &_upper-nav {
-        flex: 1.5 !important;
+        flex: 1.25 !important;
       }
       &_carrousel {
-        gap: 10px !important;
+        gap: 40px !important;
+
 
         &-txt {
           &-description {
@@ -339,7 +341,7 @@ MOBILE
 ------------------------------------ */
 
 // /* Smartphone - 768 (x576) */
-@media (max-width: 768px) {
+@media (max-width: 1023px) {
   * {
     background-color: blue;
   }
