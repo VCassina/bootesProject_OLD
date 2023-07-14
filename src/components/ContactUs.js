@@ -14,6 +14,7 @@ library.add(faDiscord, faLinkedin, faEnvelope);
 function ContactUs() {
   const flowingRef = useRef(null);
   const isLowTabletteDisplay = useStore((state) => state.isLowTabletteDisplay);
+  const isMobileDisplay = useStore((state) => state.isMobileDisplay);
 
   titleAnimationHelper("contact_content_title-flowingAnimation", flowingRef);
   
@@ -38,7 +39,7 @@ function ContactUs() {
           <div className="contact_content_lower">
             <div className="contact_content_lower-main">
             
-              {!isLowTabletteDisplay ? (<section className="contact_content_lower-main-links">
+              {!isLowTabletteDisplay && !isMobileDisplay ? (<section className="contact_content_lower-main-links">
               <div>
                   <a href="mailto:BoötesDev@gmail.com">
                     <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
@@ -55,7 +56,7 @@ function ContactUs() {
                 </div>
               </section>
               ) : null }
-            {!isLowTabletteDisplay ? (<ContentBar side="vertical" />) : null }
+            {!isLowTabletteDisplay && !isMobileDisplay ? (<ContentBar side="vertical" />) : null }
               <section className="contact_content_lower-main-txt">
                 <div className="contact_content_lower-main-txt-content">
                   <p className="contact_content_lower-main-txt-content-title">
@@ -73,8 +74,8 @@ function ContactUs() {
                     </p>
                   </span>
                 </div>
-                {isLowTabletteDisplay ? (<ContentBar side="horizontal" />) : null }
-                {isLowTabletteDisplay ? (<section className="contact_content_lower-main-links">
+                {isLowTabletteDisplay || isMobileDisplay ? (<ContentBar side="horizontal" />) : null }
+                {isLowTabletteDisplay || isMobileDisplay ? (<section className="contact_content_lower-main-links">
               <div>
                   <a href="mailto:BoötesDev@gmail.com">
                     <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}

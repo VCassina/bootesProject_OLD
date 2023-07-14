@@ -12,8 +12,7 @@ import { useStore } from '../store';
 
 function MyCreations() {
   const isLowTabletteDisplay = useStore((state) => state.isLowTabletteDisplay);
-  console.log()
-
+  const isMobileDisplay = useStore((state) => state.isMobileDisplay);
   const imgSrc = [bankArgent, ninaCarducci, devBootes];
   const dataSlider = data;
   const sleepingRef = useRef(null);
@@ -28,14 +27,12 @@ function MyCreations() {
     sleepingRef
   );
 
-  const handleElementChange = (index) => {
+  const handleElementChangeWithTimer = (index) => {
     if (selectedElement === index) {
       return null;
     }
-
     setAnimateOut(true);
     setSelectedElement(index);
-
     setTimeout(() => {
       setSelectedImage(index);
       setAnimateOut(false);
@@ -75,13 +72,13 @@ function MyCreations() {
                   key={index}
                   item={item}
                   index={index}
-                  handleElementChange={() => handleElementChange(index)}
+                  handleElementChange={() => handleElementChangeWithTimer(index)}
                   selectedElement={selectedElement}
                 />
               ))}
             </nav>
           </div>
-          {!isLowTabletteDisplay ? (
+          {!isLowTabletteDisplay && !isMobileDisplay ? (
             <div className="creations_content_carrousel">
               <CreationsBottomArticle
                 webSiteScreen={imgSrc[selectedImage]}

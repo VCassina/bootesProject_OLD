@@ -44,7 +44,7 @@ DESKTOP
     background: linear-gradient(
       105deg,
       rgb(5, 46, 34) 320px,
-      #fafafa 325px
+      $brokenWhite 325px
     ) !important;
 
     &-ul {
@@ -290,6 +290,7 @@ TABLETTE
       &_low {
         gap: 30px !important;
         justify-content: initial !important;
+        overflow-y: hidden;
         overflow-x: auto;
         scroll-snap-type: x mandatory;
       }
@@ -309,7 +310,7 @@ TABLETTE
   figcaption.skills_content-credit {
     top: 10px !important;
   }
-  
+
   .creations {
     &_content {
       &_upper-nav {
@@ -317,10 +318,11 @@ TABLETTE
       }
       &_carrousel {
         gap: 40px !important;
-        &-txt { 
-              &-title, &-links {
-                line-height: 0%;
-              }
+        &-txt {
+          &-title,
+          &-links {
+            line-height: 0%;
+          }
           &-description {
             padding: 0 10px 0 0;
             max-height: 300px !important;
@@ -401,29 +403,24 @@ TABLETTE
   .creations {
     &_content {
       &_carrousel {
-        // scroll-snap-type: x mandatory;
-        // cursor: grab;
-        // cursor: -webkit-grab;
-        // overflow-x: auto !important;
-
         &-txt {
-          // height: 100% !important;
-        &-title, &-links {
-          line-height: 0%;
+          &-title,
+          &-links {
+            line-height: 0%;
+          }
+          &-description {
+            max-height: 300px !important;
+            overflow: hidden;
+            padding: 0px;
+            line-height: 125%;
+          }
         }
-        &-description {
-          max-height: 300px !important;
-          overflow: hidden;
-          padding: 0px;
-          line-height: 125%;
-        }
-
-      }
         &_items {
           display: flex;
           gap: 30px !important;
           justify-content: initial !important;
           overflow-x: auto;
+          overflow-y: hidden;
           scroll-snap-type: x mandatory;
           align-items: center;
           width: 90vw;
@@ -510,10 +507,195 @@ MOBILE
 
 /* HD smartphone - 480 */
 @media (max-width: 767px) {
+  .importantComponent {
+    padding: 0 20px !important;
+  }
+
+  .anchor {
+    &-target {
+      position: relative;
+      top: 100px;
+    }
+    &-first {
+      position: absolute;
+      top: 0;
+    }
+  }
+
+  h2 {
+    font-size: $mTitleFontSize !important;
+    white-space: nowrap;
+  }
+
+  h3,
+  .contact_content_lower-main-txt-content-title b {
+    font-size: $mSubtitleFontSize !important;
+  }
+
+  p,
+  b,
+  .skills_content-articleListing {
+    font-size: $mStandardFontSize !important;
+  }
+
+  .header {
+    &_content {
+      top: initial !important;
+      bottom: 0 !important;
+    }
+    &_nav {
+      &-unit::before {
+        display: none !important;
+      }
+      &-svg {
+        height: 40px !important;
+        width: 40px !important;
+        box-shadow: 0 0px 10px rgb(255, 255, 255) !important;
+        background-color: $brokenWhite;
+      }
+
+      &-mainTxt {
+        display: none;
+      }
+    }
+
+    &_content {
+      flex-direction: column;
+
+      &-logo {
+        display: none;
+      }
+      &-miniLogo {
+        display: none !important;
+      }
+      &-ul {
+        gap: initial !important;
+        padding: 0px !important;
+        position: initial !important;
+        display: flex;
+        justify-content: space-around !important;
+        width: 100% !important;
+      }
+      &-nav {
+        margin-right: 20px !important;
+      }
+    }
+  }
+
+  .bootes {
+    &_title {
+      display: none !important;
+    }
+
+    &_content {
+      position: relative;
+      top: -20px !important;
+    }
+    &_icn {
+      position: absolute;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 100vw;
+      background-color: $darkGreen;
+
+      &-img {
+        height: 100px;
+        padding: 10px;
+      }
+    }
+    &_content-article {
+      animation: none !important;
+    }
+  }
+
+  .skills_content {
+    &_low {
+      gap: 0px !important;
+    }
+
+    & section {
+      min-width: 75%;
+    }
+  }
+
+  .contact_content_lower {
+    &-mascot {
+      & figure {
+        margin: -40px auto -0px auto;
+      }
+    }
+    &-main {
+      flex-direction: column !important;
+      & img {
+        width: 100px !important;
+        margin: 0px auto !important;
+      }
+    }
+  }
+
+  .creations_content_carrousel {
+    &_items {
+      height: initial !important;
+    }
+    &-img {
+      height: initial !important;
+    }
+
+    &-unit {
+      flex-direction: column;
+      gap: 0px !important;
+      height: initial !important;
+    }
+  }
 }
 
 /* HD smartphone - 320 */
 @media (max-width: 479px) {
-}
+  h2 {
+    font-size: $lmTitleFontSize !important;
+    white-space: nowrap;
+  }
 
-/* OLD & TEMP */
+  h3,
+  .contact_content_lower-main-txt-content-title b {
+    font-size: $lmSubtitleFontSize !important;
+  }
+
+  p,
+  b,
+  .skills_content-articleListing {
+    font-size: $lmStandardFontSize !important;
+  }
+  .bootes {
+    &_icn {
+      width: 100vw !important;
+      height: 100px;
+      background-color: $darkGreen;
+      &-img {
+        padding: 0px !important;
+        box-sizing: content-box;
+        object-fit: contain;
+        height: 80%;
+      }
+    }
+    &_container {
+      min-height: 960px !important;
+      margin-top: 60px !important;
+    }
+
+    &_content {
+      position: sticky !important;
+      &-article {
+        padding: 0 20px;
+      }
+
+      &-article-txt {
+        padding-right: 10px;
+        height: 440px !important;
+        overflow: scroll;
+      }
+    }
+  }
+}

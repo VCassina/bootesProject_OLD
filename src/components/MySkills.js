@@ -10,6 +10,7 @@ import { useStore } from '../store';
 function MySkills() {
   const imgSrc = [frontEndIcon, backEndIcon, seoIcon];
   const isLowTabletteDisplay = useStore((state) => state.isLowTabletteDisplay);
+  const isMobileDisplay = useStore((state) => state.isMobileDisplay);
 
   return (
     <article className="skills_container darkComponent">
@@ -20,7 +21,7 @@ function MySkills() {
             <span>_</span>
             <span>Nos competences</span>
           </h2>
-          {isLowTabletteDisplay ? (
+          {isLowTabletteDisplay || isMobileDisplay ? (
     <div className="skills_carousel_wrapper">
       <div className="skills_carousel_content">
       <div className="skills_content_low">
