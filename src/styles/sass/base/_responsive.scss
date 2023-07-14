@@ -673,6 +673,17 @@ MOBILE
     flex-direction: column;
   }
 
+  .anchor {
+    &-target {
+      position: relative;
+      top: 140px;
+    }
+    &-first {
+      position: absolute;
+      top: 0;
+    }
+  }
+
   .bootes {
     &_icn {
       width: 100vw !important;
@@ -702,5 +713,9 @@ MOBILE
         overflow: scroll;
       }
     }
+  }
+
+  .contact_content {
+    position: initial !important;
   }
 }

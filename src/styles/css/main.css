@@ -617,6 +617,14 @@ MOBILE
   .header_content {
     flex-direction: column;
   }
+  .anchor-target {
+    position: relative;
+    top: 140px;
+  }
+  .anchor-first {
+    position: absolute;
+    top: 0;
+  }
   .bootes_icn {
     width: 100vw !important;
     height: 100px;
@@ -642,6 +650,9 @@ MOBILE
     padding-right: 10px;
     height: 440px !important;
     overflow: scroll;
+  }
+  .contact_content {
+    position: initial !important;
   }
 }
 @keyframes vibing--bootesProject {
