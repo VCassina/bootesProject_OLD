@@ -1,9 +1,8 @@
-let tabletteDisplay = false;
+import create from 'zustand';
 
-export function isTabletteDisplay() {
-  return tabletteDisplay;
-}
-
-export function setTabletteDisplay(newValue) {
-  tabletteDisplay = newValue;
-}
+export const useStore = create((set) => ({
+  isTabletteDisplay: false,
+  isLowTabletteDisplay: false,
+  setIsTabletteDisplay: (newVal) => set({ isTabletteDisplay: newVal }),
+  setIsLowTabletteDisplay: (newVal) => set({ isLowTabletteDisplay: newVal }),
+}));

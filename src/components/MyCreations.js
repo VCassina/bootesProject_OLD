@@ -7,18 +7,12 @@ import titleAnimationHelper from "../helpers/titleAnimationHelper";
 import bankArgent from "../assets/BankArgent.webp";
 import ninaCarducci from "../assets/NinaCarducci.webp";
 import devBootes from "../assets/BootesDev.webp";
+import { useStore } from '../store';
+
 
 function MyCreations() {
-  const [lowTabletteDisplay, setLowTabletteDisplay] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setLowTabletteDisplay(window.innerWidth < 1024);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const isLowTabletteDisplay = useStore((state) => state.isLowTabletteDisplay);
+  console.log()
 
   const imgSrc = [bankArgent, ninaCarducci, devBootes];
   const dataSlider = data;
@@ -87,7 +81,7 @@ function MyCreations() {
               ))}
             </nav>
           </div>
-          {!lowTabletteDisplay ? (
+          {!isLowTabletteDisplay ? (
             <div className="creations_content_carrousel">
               <CreationsBottomArticle
                 webSiteScreen={imgSrc[selectedImage]}

@@ -1,23 +1,15 @@
-import React, { useState, useEffect } from "react";
+import React from "react";
 import SkillsArticle from "../items/SkillsArticle";
 import data from "../datas/skillsArticle.json";
 import AnchorTarget from "../items/AnchorTarget";
 import frontEndIcon from "../assets/frontEndByMacrovector.webp";
 import backEndIcon from "../assets/backEndByMacrovector.webp";
 import seoIcon from "../assets/seoByMacrovector.webp";
+import { useStore } from '../store';
 
 function MySkills() {
   const imgSrc = [frontEndIcon, backEndIcon, seoIcon];
-  const [tabletteDisplay, setTabletteDisplay] = useState(false);
-
-  useEffect(() => {
-    const handleResize = () => {
-      setTabletteDisplay(window.innerWidth < 1280);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const isLowTabletteDisplay = useStore((state) => state.isLowTabletteDisplay);
 
   return (
     <article className="skills_container darkComponent">
@@ -28,7 +20,7 @@ function MySkills() {
             <span>_</span>
             <span>Nos competences</span>
           </h2>
-          {tabletteDisplay ? (
+          {isLowTabletteDisplay ? (
     <div className="skills_carousel_wrapper">
       <div className="skills_carousel_content">
       <div className="skills_content_low">

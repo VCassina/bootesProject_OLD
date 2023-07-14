@@ -22,7 +22,8 @@
     "react-router-dom": "^6.13.0",
     "react-scripts": "5.0.1",
     "react-svg": "^16.1.17",
-    "web-vitals": "^2.1.4"
+    "web-vitals": "^2.1.4",
+    "zustand": "^4.3.9"
   },
   "scripts": {
     "start": "react-scripts start",

@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useRef } from "react";
 import AnchorTarget from "../items/AnchorTarget";
 import titleAnimationHelper from "../helpers/titleAnimationHelper";
 import AllBubbles from "./AllBubbles";
@@ -8,24 +8,15 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
+import { useStore } from '../store';
 library.add(faDiscord, faLinkedin, faEnvelope);
 
 function ContactUs() {
   const flowingRef = useRef(null);
-  const [lowTabletteDisplay, setLowTabletteDisplay] = useState(false);
-
-
-  useEffect(() => {
-    const handleResize = () => {
-      setLowTabletteDisplay(window.innerWidth < 1024);
-    };
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
+  const isLowTabletteDisplay = useStore((state) => state.isLowTabletteDisplay);
 
   titleAnimationHelper("contact_content_title-flowingAnimation", flowingRef);
-
+  
   return (
     <article className="contact_container darkComponent ocean">
       <AllBubbles />
@@ -47,7 +38,7 @@ function ContactUs() {
           <div className="contact_content_lower">
             <div className="contact_content_lower-main">
             
-              {!lowTabletteDisplay ? (<section className="contact_content_lower-main-links">
+              {!isLowTabletteDisplay ? (<section className="contact_content_lower-main-links">
               <div>
                   <a href="mailto:BoötesDev@gmail.com">
                     <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
@@ -64,7 +55,7 @@ function ContactUs() {
                 </div>
               </section>
               ) : null }
-            {!lowTabletteDisplay ? (<ContentBar side="vertical" />) : null }
+            {!isLowTabletteDisplay ? (<ContentBar side="vertical" />) : null }
               <section className="contact_content_lower-main-txt">
                 <div className="contact_content_lower-main-txt-content">
                   <p className="contact_content_lower-main-txt-content-title">
@@ -82,8 +73,8 @@ function ContactUs() {
                     </p>
                   </span>
                 </div>
-                {lowTabletteDisplay ? (<ContentBar side="horizontal" />) : null }
-                {lowTabletteDisplay ? (<section className="contact_content_lower-main-links">
+                {isLowTabletteDisplay ? (<ContentBar side="horizontal" />) : null }
+                {isLowTabletteDisplay ? (<section className="contact_content_lower-main-links">
               <div>
                   <a href="mailto:BoötesDev@gmail.com">
                     <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
