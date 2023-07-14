@@ -46,9 +46,10 @@ b {
   font-family: $boldFontFamily;
 }
 
-a {
+a, div {
   text-decoration: none;
   color: #031a13;
+  -webkit-tap-highlight-color: transparent;
 }
 
 input[type="radio"] {

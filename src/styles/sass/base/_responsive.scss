@@ -668,6 +668,11 @@ MOBILE
   .skills_content-articleListing {
     font-size: $lmStandardFontSize !important;
   }
+
+  .header_content {
+    flex-direction: column;
+  }
+
   .bootes {
     &_icn {
       width: 100vw !important;

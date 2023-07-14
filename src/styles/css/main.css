@@ -54,9 +54,10 @@ b {
   font-family: "Segoe UI", sans-serif;
 }
 
-a {
+a, div {
   text-decoration: none;
   color: #031a13;
+  -webkit-tap-highlight-color: transparent;
 }
 
 input[type=radio] {
@@ -612,6 +613,9 @@ MOBILE
   b,
   .skills_content-articleListing {
     font-size: 18px !important;
+  }
+  .header_content {
+    flex-direction: column;
   }
   .bootes_icn {
     width: 100vw !important;
