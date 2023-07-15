@@ -1,7 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
-  "homepage": "https://vcassina.github.io/Projet-12",
+  "homepage": "https://vcassina.github.io/projet-12",
   "private": false,
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.4.0",
@@ -17,6 +17,7 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-fontawesome": "^1.7.1",
+    "react-helmet": "^6.1.0",
     "react-icons": "^4.10.1",
     "react-query": "^3.39.3",
     "react-router-dom": "^6.13.0",
