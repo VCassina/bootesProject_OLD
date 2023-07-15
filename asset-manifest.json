@@ -1,25 +1,25 @@
 {
   "files": {
-    "main.css": "/Projet-12/static/css/main.3090a5c0.css",
-    "main.js": "/Projet-12/static/js/main.1a5dd1a0.js",
-    "static/js/787.1ed0c42c.chunk.js": "/Projet-12/static/js/787.1ed0c42c.chunk.js",
-    "static/media/BootesDev.webp": "/Projet-12/static/media/BootesDev.1f865627164325af32fb.webp",
-    "static/media/NinaCarducci.webp": "/Projet-12/static/media/NinaCarducci.b4e36f1731bf482be221.webp",
-    "static/media/BankArgent.webp": "/Projet-12/static/media/BankArgent.45f63a0685f0e24e7983.webp",
-    "static/media/meByCatalysStuff.webp": "/Projet-12/static/media/meByCatalysStuff.2f2eaee4f354cc9e4410.webp",
-    "static/media/pralineByCatalysStuff.webp": "/Projet-12/static/media/pralineByCatalysStuff.2ac4ae9aa2dab48be33f.webp",
-    "static/media/bootesDevLogo.webp": "/Projet-12/static/media/bootesDevLogo.24c17c40e8f15fdb643d.webp",
-    "static/media/backEndByMacrovector.webp": "/Projet-12/static/media/backEndByMacrovector.ce2050c6c970c529bd89.webp",
-    "static/media/seoByMacrovector.webp": "/Projet-12/static/media/seoByMacrovector.f30fb04c1e117a20e815.webp",
-    "static/media/frontEndByMacrovector.webp": "/Projet-12/static/media/frontEndByMacrovector.4233328557ba4de47f0e.webp",
-    "static/media/bootesDevMiniLogo.webp": "/Projet-12/static/media/bootesDevMiniLogo.b1bdf102bdde4b1c2f5f.webp",
-    "index.html": "/Projet-12/index.html",
-    "main.3090a5c0.css.map": "/Projet-12/static/css/main.3090a5c0.css.map",
-    "main.1a5dd1a0.js.map": "/Projet-12/static/js/main.1a5dd1a0.js.map",
-    "787.1ed0c42c.chunk.js.map": "/Projet-12/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/projet-12/static/css/main.3090a5c0.css",
+    "main.js": "/projet-12/static/js/main.e6402573.js",
+    "static/js/787.1ed0c42c.chunk.js": "/projet-12/static/js/787.1ed0c42c.chunk.js",
+    "static/media/BootesDev.webp": "/projet-12/static/media/BootesDev.1f865627164325af32fb.webp",
+    "static/media/NinaCarducci.webp": "/projet-12/static/media/NinaCarducci.b4e36f1731bf482be221.webp",
+    "static/media/BankArgent.webp": "/projet-12/static/media/BankArgent.45f63a0685f0e24e7983.webp",
+    "static/media/meByCatalysStuff.webp": "/projet-12/static/media/meByCatalysStuff.2f2eaee4f354cc9e4410.webp",
+    "static/media/pralineByCatalysStuff.webp": "/projet-12/static/media/pralineByCatalysStuff.2ac4ae9aa2dab48be33f.webp",
+    "static/media/bootesDevLogo.webp": "/projet-12/static/media/bootesDevLogo.24c17c40e8f15fdb643d.webp",
+    "static/media/backEndByMacrovector.webp": "/projet-12/static/media/backEndByMacrovector.ce2050c6c970c529bd89.webp",
+    "static/media/seoByMacrovector.webp": "/projet-12/static/media/seoByMacrovector.f30fb04c1e117a20e815.webp",
+    "static/media/frontEndByMacrovector.webp": "/projet-12/static/media/frontEndByMacrovector.4233328557ba4de47f0e.webp",
+    "static/media/bootesDevMiniLogo.webp": "/projet-12/static/media/bootesDevMiniLogo.b1bdf102bdde4b1c2f5f.webp",
+    "index.html": "/projet-12/index.html",
+    "main.3090a5c0.css.map": "/projet-12/static/css/main.3090a5c0.css.map",
+    "main.e6402573.js.map": "/projet-12/static/js/main.e6402573.js.map",
+    "787.1ed0c42c.chunk.js.map": "/projet-12/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.3090a5c0.css",
-    "static/js/main.1a5dd1a0.js"
+    "static/js/main.e6402573.js"
   ]
 }
