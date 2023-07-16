@@ -155,6 +155,7 @@ DESKTOP
   }
   .bootes_content-picture {
     width: 300px !important;
+    height: auto;
   }
   .skills_subTitle {
     margin: 5px 0 5px 0 !important;
