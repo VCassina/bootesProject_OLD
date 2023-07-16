@@ -1,25 +1,36 @@
 {
   "files": {
-    "main.css": "/projet-12/static/css/main.bb453a66.css",
-    "main.js": "/projet-12/static/js/main.7a63d329.js",
+    "main.css": "/projet-12/static/css/main.80739ac1.css",
+    "main.js": "/projet-12/static/js/main.15100fe2.js",
     "static/js/787.1ed0c42c.chunk.js": "/projet-12/static/js/787.1ed0c42c.chunk.js",
-    "static/media/BootesDev.webp": "/projet-12/static/media/BootesDev.1f865627164325af32fb.webp",
-    "static/media/NinaCarducci.webp": "/projet-12/static/media/NinaCarducci.b4e36f1731bf482be221.webp",
-    "static/media/BankArgent.webp": "/projet-12/static/media/BankArgent.45f63a0685f0e24e7983.webp",
+    "static/media/NinaCarducci.webp": "/projet-12/static/media/NinaCarducci.831ad7ec1190e8d850ec.webp",
+    "static/media/lowDesktopNinaCarducci.webp": "/projet-12/static/media/lowDesktopNinaCarducci.862071abedb6e9121ae2.webp",
+    "static/media/tabletteNinaCarducci.webp": "/projet-12/static/media/tabletteNinaCarducci.fc2ba06aa6dced016616.webp",
+    "static/media/BootesDev.webp": "/projet-12/static/media/BootesDev.4910b2f8124e5c53c2ad.webp",
+    "static/media/mobileBootesDev.webp": "/projet-12/static/media/mobileBootesDev.2a166796812faf2a5949.webp",
+    "static/media/mobileNinaCarducci.webp": "/projet-12/static/media/mobileNinaCarducci.736bb5062143254bc55c.webp",
+    "static/media/lowDesktopBootesDev.webp": "/projet-12/static/media/lowDesktopBootesDev.490b45eba3af92987b61.webp",
+    "static/media/BankArgent.webp": "/projet-12/static/media/BankArgent.fd06536f7e71a84f2a32.webp",
+    "static/media/tabletteBootesDev.webp": "/projet-12/static/media/tabletteBootesDev.f4afb792d1c17ac0e96a.webp",
+    "static/media/lowDesktopBankArgent.webp": "/projet-12/static/media/lowDesktopBankArgent.ad5789b63cd0b2c6ee4a.webp",
+    "static/media/tabletteBankArgent.webp": "/projet-12/static/media/tabletteBankArgent.a001245582e8a49f7318.webp",
+    "static/media/mobileBankArgent.webp": "/projet-12/static/media/mobileBankArgent.298b63d4bc776100444c.webp",
     "static/media/meByCatalysStuff.webp": "/projet-12/static/media/meByCatalysStuff.2f2eaee4f354cc9e4410.webp",
+    "static/media/lowDesktopMeByCatalysStuff.webp": "/projet-12/static/media/lowDesktopMeByCatalysStuff.0edbbbf76ad5fde8fb4d.webp",
     "static/media/pralineByCatalysStuff.webp": "/projet-12/static/media/pralineByCatalysStuff.2ac4ae9aa2dab48be33f.webp",
     "static/media/bootesDevLogo.webp": "/projet-12/static/media/bootesDevLogo.24c17c40e8f15fdb643d.webp",
+    "static/media/mobileMeByCatalsStuff.webp": "/projet-12/static/media/mobileMeByCatalsStuff.fce9a7aa1ca59611ae53.webp",
     "static/media/backEndByMacrovector.webp": "/projet-12/static/media/backEndByMacrovector.ce2050c6c970c529bd89.webp",
     "static/media/seoByMacrovector.webp": "/projet-12/static/media/seoByMacrovector.f30fb04c1e117a20e815.webp",
     "static/media/frontEndByMacrovector.webp": "/projet-12/static/media/frontEndByMacrovector.4233328557ba4de47f0e.webp",
     "static/media/bootesDevMiniLogo.webp": "/projet-12/static/media/bootesDevMiniLogo.b1bdf102bdde4b1c2f5f.webp",
     "index.html": "/projet-12/index.html",
-    "main.bb453a66.css.map": "/projet-12/static/css/main.bb453a66.css.map",
-    "main.7a63d329.js.map": "/projet-12/static/js/main.7a63d329.js.map",
+    "main.80739ac1.css.map": "/projet-12/static/css/main.80739ac1.css.map",
+    "main.15100fe2.js.map": "/projet-12/static/js/main.15100fe2.js.map",
     "787.1ed0c42c.chunk.js.map": "/projet-12/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.bb453a66.css",
-    "static/js/main.7a63d329.js"
+    "static/css/main.80739ac1.css",
+    "static/js/main.15100fe2.js"
   ]
 }
