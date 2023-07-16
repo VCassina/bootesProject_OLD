@@ -24,6 +24,7 @@ function BootesProject() {
               src={Logo}
               alt="Bannière avec le logo de Boötes Dev"
               className="bootes_icn-img"
+              style={{ width: "250px", height: "auto" }}
             />
           </div>
         ) : null}
@@ -66,6 +67,7 @@ function BootesProject() {
               ${lowDesktopMeByCatalysStuff} 1366w,
               ${meByCatalysStuff} 1920w`}
               sizes="(max-width: 767px) 200px, (max-width: 1366) 300px, (min-width: 1367) 380px"
+              style={{ minWidth: "100%", height: "auto" }}
             />
             <figcaption>Designed by CatalysStuff - Thank you !</figcaption>
           </figure>
