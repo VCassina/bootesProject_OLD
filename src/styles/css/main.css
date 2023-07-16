@@ -990,6 +990,7 @@ MOBILE
 }
 .bootes_content-picture {
   width: 380px;
+  margin: 0 auto;
 }
 .bootes_content-article {
   animation: vibing--bootesProject 1.5s ease-in-out forwards 0.4s;

@@ -1,82 +1,76 @@
 .bootes {
-    &_container {
-        display: flex;
-        align-items: center;
-        justify-content: center !important;
-        color: $darkGreen;
-        height: $majorComponentHeight;
-        background-color: white;
-        margin-top: -20px;
+  &_container {
+    display: flex;
+    align-items: center;
+    justify-content: center !important;
+    color: $darkGreen;
+    height: $majorComponentHeight;
+    background-color: white;
+    margin-top: -20px;
+  }
+  &_content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 2fr;
+
+    &-picture {
+      width: 380px;
+      margin: 0 auto;
     }
-    &_content {
-        display: grid;
-        grid-template-columns: 2fr 1fr 2fr;
 
-        &-picture {
-            width: 380px;
-        }
+    &-article {
+      animation: vibing--bootesProject 1.5s ease-in-out forwards 0.4s;
 
-        &-article {
-            animation: vibing--bootesProject 1.5s ease-in-out forwards 0.4s;
+      & h2 {
+        position: relative;
+        bottom: 10px;
+      }
 
-            & h2 {
-                position: relative;
-                bottom: 10px;
-            }
+      & div {
+        text-align: justify;
+      }
 
-            & div {
-                text-align: justify;
-            }
-
-            &-title {
-                font-size: 40px;
-                font-weight: bold;
-            }
-            &-txt {
-                font-size: $standardFontSize;
-            }
-        }
+      &-title {
+        font-size: 40px;
+        font-weight: bold;
+      }
+      &-txt {
+        font-size: $standardFontSize;
+      }
     }
-    &_title {
-        animation: fallFromSky--bootesProject 0.4s ease-in forwards;
-        color: $lightGreen;
-        font-size: $titleFontSize;
-        text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        & p {
-            font-size: 30px;
-            text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
-        }
+  }
+  &_title {
+    animation: fallFromSky--bootesProject 0.4s ease-in forwards;
+    color: $lightGreen;
+    font-size: $titleFontSize;
+    text-shadow: 0 1px 2px rgba(0, 0, 0, 1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & p {
+      font-size: 30px;
+      text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
     }
+  }
 }
 
 .second-element {
-    animation: vibingMirror--bootesProject 1.5s ease-in-out forwards 0.4s;
+  animation: vibingMirror--bootesProject 1.5s ease-in-out forwards 0.4s;
 }
 
 .first-title {
-    align-self: left;
-    animation: slideInLeft--bootesProject 1.5s forwards;
+  align-self: left;
+  animation: slideInLeft--bootesProject 1.5s forwards;
 }
 
 .second-title {
-    text-align: right;
-    animation: slideInRight--bootesProject 1.5s forwards;
-    position: relative;
-    right: -100%;
+  text-align: right;
+  animation: slideInRight--bootesProject 1.5s forwards;
+  position: relative;
+  right: -100%;
 }
 
 .first-title,
 .second-title {
-    border-bottom: 2px solid $darkGreen;
-    white-space: nowrap;
+  border-bottom: 2px solid $darkGreen;
+  white-space: nowrap;
 }
-
-// .catch-sentence {
-//     font-size: 30px;
-//     line-height: -0px;
-//     color: $lightGreen;
-//     text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
-// }
