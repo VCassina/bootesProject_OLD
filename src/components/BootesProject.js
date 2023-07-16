@@ -22,7 +22,7 @@ function BootesProject() {
         </div>
       ) : null }
         <h1 className="bootes_title title">_Boötes Project<p>Commande accessible de sites associatifs modernes</p></h1>
-        {isMobileDisplay ? (<h1 className="bootes_title-mobile title">Commande accessible de sites associatifs modernes</h1>) : null }
+        {isMobileDisplay ? (<h1 className="bootes_title-mobile title">Commandez votre site associatif moderne</h1>) : null }
         <div className="bootes_content">
           {isTabletteDisplay || isLowTabletteDisplay || isMobileDisplay ? (
             <BootesArticle
