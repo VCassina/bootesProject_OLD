@@ -9,8 +9,12 @@ function Header() {
   return (
     <header className="header_container">
       <div className="header_content">
-        <img className="header_content-logo" src={Logo} alt="Logo de l'entreprise bootesDev" />
-        <img className="header_content-miniLogo" src={miniLogo} alt="Petit logo de l'entreprise bootesDev" />
+        <img className="header_content-logo" src={Logo} alt="Logo de l'entreprise bootesDev" 
+        width="250"
+        height="74"/>
+        <img className="header_content-miniLogo" src={miniLogo} alt="Petit logo de l'entreprise bootesDev" 
+                width="75"
+                height="75"/>
         <nav className="header_content-nav">
           <ul className="header_content-ul">
             <li className={`header_content-li ${activeIndex === 0 ? "active" : ""}`}>
