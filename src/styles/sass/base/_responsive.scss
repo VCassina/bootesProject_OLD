@@ -76,14 +76,16 @@ DESKTOP
 @media (max-width: 1366px) {
   .bootes {
     &_title {
-      position: relative;
-      top: -20px !important;
+     position: relative;
+     top: 20px;
     }
     &_content {
       position: relative;
       top: -40px !important;
       grid-template-columns: 3fr 0.5fr 3fr;
-
+      & figure {
+        align-self: center;
+      }
       &-picture {
         width: 300px !important;
       }
@@ -163,7 +165,6 @@ TABLETTE
 /* HD Tablette - 1024 (x 768 - x600 toléré seulement) - Still landscape/square though */
 @media (max-width: 1279px) {
   .importantComponent {
-    // Native x768 is 844.
     min-height: 840px !important;
   }
   figure {
@@ -253,7 +254,6 @@ TABLETTE
         &-title {
           text-align: center !important;
           &.second-title {
-            // display: none;
             position: initial !important;
             animation: none;
             width: 50%;
@@ -367,7 +367,12 @@ TABLETTE
 
   .bootes {
     &_title {
-      top: 40px !important;
+      & p {
+        white-space: nowrap;
+      }
+    }
+    &_titleBundle {
+      line-height: 0% !important;
     }
     &_container {
       min-height: 960px !important;
@@ -378,10 +383,10 @@ TABLETTE
       flex-direction: column;
       align-items: center;
       &-article-txt {
-        height: 260px !important;
+        height: 240px !important;
       }
       &-picture {
-        width: 240px !important;
+        width: 200px !important;
       }
     }
   }
@@ -511,6 +516,10 @@ MOBILE
     padding: 0 20px !important;
   }
 
+  .bootes_titleBundle {
+    line-height: 100% !important;
+  }
+
   .anchor {
     &-target {
       position: relative;
@@ -544,9 +553,7 @@ MOBILE
       bottom: 0 !important;
       padding: 0px !important;
     }
-
     &_nav {
-
       &-unit::before {
         display: none !important;
       }
@@ -586,9 +593,19 @@ MOBILE
   }
 
   .bootes {
+    &_container {
+      margin-top: 20px !important;
+    }
     &_title {
       display: none !important;
+      &-mobile {
+        font-size: 30px;
+        text-align: center;
+        color: $lightGreen;
+        text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
+      }
     }
+
 
     &_content {
       position: relative;
@@ -610,6 +627,10 @@ MOBILE
     }
     &_content-article {
       animation: none !important;
+      &-txt {
+        height: 260px !important;
+        // height: initial !important;
+      }
     }
   }
 
@@ -657,6 +678,14 @@ MOBILE
 
 /* HD smartphone - 320 */
 @media (max-width: 479px) {
+  @media (max-width: 349px) {
+    .bootes_title-mobile {
+      display: none !important;
+    }
+    .bootes_content-article {
+      padding: 0px !important;
+    }
+  }
   h2 {
     font-size: $lmTitleFontSize !important;
     white-space: nowrap;
@@ -702,7 +731,7 @@ MOBILE
     }
     &_container {
       min-height: 960px !important;
-      margin-top: 60px !important;
+      margin-top: 80px !important;
     }
 
     &_content {

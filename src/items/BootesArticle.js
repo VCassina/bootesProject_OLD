@@ -15,7 +15,7 @@ function BootesArticle({
   }`;
 console.log(tabletteDisplay)
   return (
-    <section className={sectionClasses}>
+    <article className={sectionClasses}>
       {tabletteDisplay && data ? (
         <div className="bootes_titleBundle">
           {data.map((item, index) => (
@@ -34,7 +34,7 @@ console.log(tabletteDisplay)
       <div className="bootes_content-article-txt">
         <Markup content={description} />
       </div>
-    </section>
+    </article>
   );
 }
 

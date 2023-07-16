@@ -15,13 +15,14 @@ function BootesProject() {
   return (
     <>
       <AnchorTarget id="bootes" isFirst={true} />
-      <article className="bootes_container importantComponent">
+      <section className="bootes_container importantComponent">
       { isMobileDisplay ? (
         <div className="bootes_icn">
           <img src={Logo} alt="Bannière avec le logo de Boötes Dev" className="bootes_icn-img"/>
         </div>
       ) : null }
-        <h2 className="bootes_title title">_Boötes Project</h2>
+        <h1 className="bootes_title title">_Boötes Project<p>Commande accessible de sites associatifs modernes</p></h1>
+        {isMobileDisplay ? (<h1 className="bootes_title-mobile title">Commande accessible de sites associatifs modernes</h1>) : null }
         <div className="bootes_content">
           {isTabletteDisplay || isLowTabletteDisplay || isMobileDisplay ? (
             <BootesArticle
@@ -60,7 +61,7 @@ function BootesProject() {
             />
           )}
         </div>
-      </article>
+      </section>
     </>
   );
 }

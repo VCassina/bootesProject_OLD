@@ -145,12 +145,15 @@ DESKTOP
 @media (max-width: 1366px) {
   .bootes_title {
     position: relative;
-    top: -20px !important;
+    top: 20px;
   }
   .bootes_content {
     position: relative;
     top: -40px !important;
     grid-template-columns: 3fr 0.5fr 3fr;
+  }
+  .bootes_content figure {
+    align-self: center;
   }
   .bootes_content-picture {
     width: 300px !important;
@@ -374,8 +377,11 @@ TABLETTE
   .header_content-ul {
     gap: 40px !important;
   }
-  .bootes_title {
-    top: 40px !important;
+  .bootes_title p {
+    white-space: nowrap;
+  }
+  .bootes_titleBundle {
+    line-height: 0% !important;
   }
   .bootes_container {
     min-height: 960px !important;
@@ -387,10 +393,10 @@ TABLETTE
     align-items: center;
   }
   .bootes_content-article-txt {
-    height: 260px !important;
+    height: 240px !important;
   }
   .bootes_content-picture {
-    width: 240px !important;
+    width: 200px !important;
   }
   .skills_content {
     bottom: 0px !important;
@@ -491,6 +497,9 @@ MOBILE
   .importantComponent {
     padding: 0 20px !important;
   }
+  .bootes_titleBundle {
+    line-height: 100% !important;
+  }
   .anchor-target {
     position: relative;
     top: 100px;
@@ -550,8 +559,17 @@ MOBILE
   .header_content-nav {
     margin-right: 20px !important;
   }
+  .bootes_container {
+    margin-top: 20px !important;
+  }
   .bootes_title {
     display: none !important;
+  }
+  .bootes_title-mobile {
+    font-size: 30px;
+    text-align: center;
+    color: #0CA876;
+    text-shadow: 0 1px 1px rgb(0, 0, 0);
   }
   .bootes_content {
     position: relative;
@@ -572,6 +590,9 @@ MOBILE
   }
   .bootes_content-article {
     animation: none !important;
+  }
+  .bootes_content-article-txt {
+    height: 260px !important;
   }
   .skills_content_low {
     gap: 0px !important;
@@ -603,6 +624,14 @@ MOBILE
   }
 }
 /* HD smartphone - 320 */
+@media (max-width: 479px) and (max-width: 349px) {
+  .bootes_title-mobile {
+    display: none !important;
+  }
+  .bootes_content-article {
+    padding: 0px !important;
+  }
+}
 @media (max-width: 479px) {
   h2 {
     font-size: 30px !important;
@@ -641,7 +670,7 @@ MOBILE
   }
   .bootes_container {
     min-height: 960px !important;
-    margin-top: 60px !important;
+    margin-top: 80px !important;
   }
   .bootes_content {
     position: sticky !important;
@@ -975,6 +1004,13 @@ MOBILE
   color: #0CA876;
   font-size: 72px;
   text-shadow: 0 1px 2px rgb(0, 0, 0);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bootes_title p {
+  font-size: 30px;
+  text-shadow: 0 1px 1px rgb(0, 0, 0);
 }
 
 .second-element {
