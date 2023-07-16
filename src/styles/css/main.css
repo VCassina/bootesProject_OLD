@@ -453,9 +453,6 @@ TABLETTE
   .contact_content_lower-main {
     gap: 5px !important;
   }
-  .contact_content_lower-mascot figure img {
-    min-width: 180px;
-  }
   .contact_content_lower-main {
     height: auto !important;
   }
@@ -606,7 +603,6 @@ MOBILE
     flex-direction: column !important;
   }
   .contact_content_lower-main img {
-    width: 100px !important;
     margin: 0px auto !important;
   }
   .creations_content_carrousel_items {
@@ -1445,6 +1441,7 @@ MOBILE
 }
 .contact_content_lower-mascot img {
   width: 100%;
+  height: auto;
 }
 .contact_content_lower-mascot figcaption {
   position: relative;

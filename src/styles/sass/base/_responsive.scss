@@ -461,11 +461,6 @@ TABLETTE
     &-main {
       gap: 5px !important;
     }
-    &-mascot {
-      & figure img {
-        min-width: 180px;
-      }
-    }
     &-main {
       height: auto !important;
       &-txt {
@@ -652,7 +647,6 @@ MOBILE
     &-main {
       flex-direction: column !important;
       & img {
-        width: 100px !important;
         margin: 0px auto !important;
       }
     }

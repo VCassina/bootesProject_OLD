@@ -4,6 +4,8 @@ import titleAnimationHelper from "../helpers/titleAnimationHelper";
 import AllBubbles from "./AllBubbles";
 import ContentBar from "../items/ContentBar";
 import pralinePicture from "../assets/pralineByCatalysStuff.webp";
+import lowDesktopMobilePralinePicture from "../assets/lowDesktopMobilePralinePicture.webp";
+import tablettePralinePicture from "../assets/tablettePralinePicture.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
@@ -95,10 +97,20 @@ function ContactUs() {
               </section>
               <section className="contact_content_lower-mascot">
                 <figure>
-                  <img
-                    src={pralinePicture}
-                    alt="Praline designed by CatalysStuff"
-                  />
+                <img
+  src={pralinePicture}
+  alt="Praline, la mascotte adorée, designed by CatalysStuff"
+  srcSet={`${pralinePicture} 312w,
+  ${lowDesktopMobilePralinePicture} 224w,
+  ${tablettePralinePicture} 295w,
+  ${lowDesktopMobilePralinePicture} 224w`}
+  sizes="(min-width: 1367px) 312px,
+  (min-width: 1280px) 224px,
+  (min-width: 768px) 295px,
+  224px"
+  width="312"
+  height="312"
+/>
                   <figcaption>
                     Designed by CatalysStuff - Thank you !
                   </figcaption>
