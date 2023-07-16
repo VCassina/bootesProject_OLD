@@ -58,21 +58,17 @@ function BootesProject() {
             />
           )}
           <figure>
-          <img
-  className="bootes_content-picture"
-  src={meByCatalysStuff}
-  alt="Représentation de Victor, le développeur, faite par un⸱e artiste nommé⸱e CatalysStuff"
-  srcSet={`${mobileMeByCatalsStuff} 777w,
-  ${lowDesktopMeByCatalysStuff} 1366w,
-  ${meByCatalysStuff} 1920w`}
-  sizes="(max-width: 767px) 200px, (max-width: 1366px) 300px, (min-width: 1367px) 380px"
-  width="380"
-  height="435"
-/>
-
-
-
-
+            <img
+              className="bootes_content-picture"
+              src={meByCatalysStuff}
+              alt="Représentation de Victor, le développeur, faite par un⸱e artiste nommé⸱e CatalysStuff"
+              srcSet={`${mobileMeByCatalsStuff} 777w,
+              ${lowDesktopMeByCatalysStuff} 1366w,
+              ${meByCatalysStuff} 1920w`}
+              sizes="(max-width: 767) 200px, (max-width: 1366) 300px, (min-width: 1367) 380px"
+              width="380"
+              height="435"
+            />
             <figcaption>Designed by CatalysStuff - Thank you !</figcaption>
           </figure>
           {isTabletteDisplay ||
