@@ -18,28 +18,28 @@ function Header() {
         <nav className="header_content-nav">
           <ul className="header_content-ul">
             <li className={`header_content-li ${activeIndex === 0 ? "active" : ""}`}>
-              <a href="#bootes" onClick={() => setActiveIndex(0)}>
+              <a href="#bootes"  aria-label="Lien vers la section Bootes" onClick={() => setActiveIndex(0)}>
                 <span className="header_nav-unit">
                   <FaLeaf className="header_nav-svg" /><span className="header_nav-mainTxt"> Boötes </span><span className="header_nav-prefixe">Project</span>
                 </span>
               </a>
             </li>
             <li className={`header_content-li ${activeIndex === 1 ? "active" : ""}`}>
-              <a href="#skills" onClick={() => setActiveIndex(1)}>
+              <a href="#skills" aria-label="Lien vers la section Compétences" onClick={() => setActiveIndex(1)}>
                 <span className="header_nav-unit">
                   <FaCode className="header_nav-svg" /> <span className="header_nav-prefixe">Nos</span><span className="header_nav-mainTxt"> compétences</span>
                 </span>
               </a>
             </li>
             <li className={`header_content-li ${activeIndex === 2 ? "active" : ""}`}>
-              <a href="#creations" onClick={() => setActiveIndex(2)}>
+              <a href="#creations" aria-label="Lien vers la section Créations" onClick={() => setActiveIndex(2)}>
                 <span className="header_nav-unit">
                   <FaFolderOpen className="header_nav-svg" /> <span className="header_nav-prefixe">Nos</span><span className="header_nav-mainTxt"> réalisations</span>
                 </span>
               </a>
             </li>
             <li className={`header_content-li ${activeIndex === 3 ? "active" : ""}`}>
-              <a href="#contact" onClick={() => setActiveIndex(3)}>
+              <a href="#contact" aria-label="Lien vers la section Contact" onClick={() => setActiveIndex(3)}>
                 <span className="header_nav-unit">
                   <FaComments className="header_nav-svg" /> <span className="header_nav-prefixe">Nous</span><span className="header_nav-mainTxt"> contact</span><span className="header_nav-prefixe">er</span>
                 </span>

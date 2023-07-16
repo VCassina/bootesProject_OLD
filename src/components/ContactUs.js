@@ -10,7 +10,7 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faDiscord, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
-import { useStore } from '../store';
+import { useStore } from "../store";
 library.add(faDiscord, faLinkedin, faEnvelope);
 
 function ContactUs() {
@@ -19,7 +19,7 @@ function ContactUs() {
   const isMobileDisplay = useStore((state) => state.isMobileDisplay);
 
   titleAnimationHelper("contact_content_title-flowingAnimation", flowingRef);
-  
+
   return (
     <article className="contact_container darkComponent ocean">
       <AllBubbles />
@@ -40,25 +40,27 @@ function ContactUs() {
           </div>
           <div className="contact_content_lower">
             <div className="contact_content_lower-main">
-            
-              {!isLowTabletteDisplay && !isMobileDisplay ? (<section className="contact_content_lower-main-links">
-              <div>
-                  <a href="mailto:BoötesDev@gmail.com">
-                    <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
-                    <span>BoötesDev@gmail.com</span>
-                  </a>
-                  <a href="https://www.linkedin.com/in/victor-cassina-032a5816b/">
-                    <FontAwesomeIcon icon="fa-brands fa-linkedin" /> <span>Victor
-                    Cassina</span>
-                  </a>
-                  <a href="https://www.facebook.com/profile.php?id=100006082485106">
-                    <FontAwesomeIcon icon="fa-brands fa-discord" /> <span>Victor
-                    Cassina</span>
-                  </a>
-                </div>
-              </section>
-              ) : null }
-            {!isLowTabletteDisplay && !isMobileDisplay ? (<ContentBar side="vertical" />) : null }
+              {!isLowTabletteDisplay && !isMobileDisplay ? (
+                <section className="contact_content_lower-main-links">
+                  <div>
+                    <a href="mailto:BoötesDev@gmail.com">
+                      <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
+                      <span>BoötesDev@gmail.com</span>
+                    </a>
+                    <a href="https://www.linkedin.com/in/victor-cassina-032a5816b/">
+                      <FontAwesomeIcon icon="fa-brands fa-linkedin" />{" "}
+                      <span>Victor Cassina</span>
+                    </a>
+                    <a href="https://www.facebook.com/profile.php?id=100006082485106">
+                      <FontAwesomeIcon icon="fa-brands fa-discord" />{" "}
+                      <span>Victor Cassina</span>
+                    </a>
+                  </div>
+                </section>
+              ) : null}
+              {!isLowTabletteDisplay && !isMobileDisplay ? (
+                <ContentBar side="vertical" />
+              ) : null}
               <section className="contact_content_lower-main-txt">
                 <div className="contact_content_lower-main-txt-content">
                   <p className="contact_content_lower-main-txt-content-title">
@@ -76,41 +78,44 @@ function ContactUs() {
                     </p>
                   </span>
                 </div>
-                {isLowTabletteDisplay || isMobileDisplay ? (<ContentBar side="horizontal" />) : null }
-                {isLowTabletteDisplay || isMobileDisplay ? (<section className="contact_content_lower-main-links">
-              <div>
-                  <a href="mailto:BoötesDev@gmail.com">
-                    <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
-                    <span>BoötesDev@gmail.com</span>
-                  </a>
-                  <a href="https://www.linkedin.com/in/victor-cassina-032a5816b/">
-                    <FontAwesomeIcon icon="fa-brands fa-linkedin" /> <span>Victor
-                    Cassina</span>
-                  </a>
-                  <a href="https://www.facebook.com/profile.php?id=100006082485106">
-                    <FontAwesomeIcon icon="fa-brands fa-discord" /> <span>Victor
-                    Cassina</span>
-                  </a>
-                </div>
-              </section>
-              ) : null }
+                {isLowTabletteDisplay || isMobileDisplay ? (
+                  <ContentBar side="horizontal" />
+                ) : null}
+                {isLowTabletteDisplay || isMobileDisplay ? (
+                  <section className="contact_content_lower-main-links">
+                    <div>
+                      <a href="mailto:BoötesDev@gmail.com" aria-label="Lien vers l'Email de la boite"> 
+                        <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
+                        <span>BoötesDev@gmail.com</span>
+                      </a>
+                      <a href="https://www.linkedin.com/in/victor-cassina-032a5816b/" aria-label="Lien vers mon profil LinkedIn">
+                        <FontAwesomeIcon icon="fa-brands fa-linkedin" />{" "}
+                        <span>Victor Cassina</span>
+                      </a>
+                      <a href="https://www.facebook.com/profile.php?id=100006082485106" aria-label="Lien vers mon facebook">
+                        <FontAwesomeIcon icon="fa-brands fa-discord" />{" "}
+                        <span>Victor Cassina</span>
+                      </a>
+                    </div>
+                  </section>
+                ) : null}
               </section>
               <section className="contact_content_lower-mascot">
                 <figure>
-                <img
-  src={pralinePicture}
-  alt="Praline, la mascotte adorée, designed by CatalysStuff"
-  srcSet={`${pralinePicture} 312w,
+                  <img
+                    src={pralinePicture}
+                    alt="Praline, la mascotte adorée, designed by CatalysStuff"
+                    srcSet={`${pralinePicture} 312w,
   ${lowDesktopMobilePralinePicture} 224w,
   ${tablettePralinePicture} 295w,
   ${lowDesktopMobilePralinePicture} 224w`}
-  sizes="(min-width: 1367px) 312px,
+                    sizes="(min-width: 1367px) 312px,
   (min-width: 1280px) 224px,
   (min-width: 768px) 295px,
   224px"
-  width="312"
-  height="312"
-/>
+                    width="312"
+                    height="312"
+                  />
                   <figcaption>
                     Designed by CatalysStuff - Thank you !
                   </figcaption>

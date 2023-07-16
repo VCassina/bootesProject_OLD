@@ -54,12 +54,13 @@ function CreationsBottomArticle({
           </div>
           <div className="creations_content_carrousel-txt-links">
           {gitUrl && (
-            <a href={gitUrl}>
+            <a href={gitUrl} aria-label="Lien vers le projet GitHub">
+
               <FontAwesomeIcon icon={faGithub} />
             </a>
           )}
           {siteUrl && (
-            <a href={siteUrl}>
+            <a href={siteUrl} aria-label="Lien vers le site en ligne">
               <FontAwesomeIcon icon={faGlobe} />
             </a>
           )}
