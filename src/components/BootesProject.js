@@ -1,9 +1,11 @@
 import React, { useState } from "react";
 import meByCatalysStuff from "../assets/meByCatalysStuff.webp";
+import lowDesktopMeByCatalysStuff from "../assets/lowDesktopMeByCatalysStuff.webp";
+import mobileMeByCatalsStuff from "../assets/mobileMeByCatalsStuff.webp";
 import AnchorTarget from "../items/AnchorTarget";
 import data from "../datas/bootesArticle.json";
 import BootesArticle from "../items/BootesArticle";
-import { useStore } from '../store';
+import { useStore } from "../store";
 import Logo from "../assets/bootesDevLogo.webp";
 
 function BootesProject() {
@@ -16,13 +18,24 @@ function BootesProject() {
     <>
       <AnchorTarget id="bootes" isFirst={true} />
       <section className="bootes_container importantComponent">
-      { isMobileDisplay ? (
-        <div className="bootes_icn">
-          <img src={Logo} alt="Bannière avec le logo de Boötes Dev" className="bootes_icn-img"/>
-        </div>
-      ) : null }
-        <h1 className="bootes_title title">_Boötes Project<p>Commande accessible de sites associatifs modernes</p></h1>
-        {isMobileDisplay ? (<h1 className="bootes_title-mobile title">Commandez votre site associatif moderne</h1>) : null }
+        {isMobileDisplay ? (
+          <div className="bootes_icn">
+            <img
+              src={Logo}
+              alt="Bannière avec le logo de Boötes Dev"
+              className="bootes_icn-img"
+            />
+          </div>
+        ) : null}
+        <h1 className="bootes_title title">
+          _Boötes Project
+          <p>Commande accessible de sites associatifs modernes</p>
+        </h1>
+        {isMobileDisplay ? (
+          <h1 className="bootes_title-mobile title">
+            Commandez votre site associatif moderne
+          </h1>
+        ) : null}
         <div className="bootes_content">
           {isTabletteDisplay || isLowTabletteDisplay || isMobileDisplay ? (
             <BootesArticle
@@ -48,11 +61,17 @@ function BootesProject() {
             <img
               className="bootes_content-picture"
               src={meByCatalysStuff}
-              alt="Représentation de Victor faites par un⸱e artiste nommé⸱e CatalysStuff"
+              alt="Représentation de Victor, le développeur, faite par un⸱e artiste nommé⸱e CatalysStuff"
+              srcSet={`${mobileMeByCatalsStuff} 777w,
+              ${lowDesktopMeByCatalysStuff} 1366w,
+              ${meByCatalysStuff} 1920w`}
+              sizes="(max-width: 767px) 200px, (max-width: 1366) 300px, (min-width: 1367) 380px"
             />
             <figcaption>Designed by CatalysStuff - Thank you !</figcaption>
           </figure>
-          {isTabletteDisplay || isLowTabletteDisplay || isMobileDisplay ? null : (
+          {isTabletteDisplay ||
+          isLowTabletteDisplay ||
+          isMobileDisplay ? null : (
             <BootesArticle
               title={data[1].title}
               description={data[1].description}

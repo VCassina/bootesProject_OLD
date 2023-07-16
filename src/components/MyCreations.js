@@ -6,14 +6,37 @@ import CreationsBottomArticle from "../components/CreationsBottomArticle";
 import titleAnimationHelper from "../helpers/titleAnimationHelper";
 import bankArgent from "../assets/BankArgent.webp";
 import ninaCarducci from "../assets/NinaCarducci.webp";
-import devBootes from "../assets/BootesDev.webp";
-import { useStore } from '../store';
-
+import bootesDev from "../assets/BootesDev.webp";
+import lowDesktopBankArgent from "../assets/lowDesktopBankArgent.webp";
+import lowDesktopNinaCarducci from "../assets/lowDesktopNinaCarducci.webp";
+import lowDesktoplowDesktopBootesDev from "../assets/lowDesktopBootesDev.webp";
+import tabletteBankArgent from "../assets/tabletteBankArgent.webp";
+import tabletteNinaCarducci from "../assets/tabletteNinaCarducci.webp";
+import tabletteBootesDev from "../assets/tabletteBootesDev.webp";
+import mobileBankArgent from "../assets/mobileBankArgent.webp";
+import mobileNinaCarducci from "../assets/mobileNinaCarducci.webp";
+import mobileBootesDev from "../assets/mobileBootesDev.webp";
+import { useStore } from "../store";
 
 function MyCreations() {
+  const isLowDesktopDisplay = useStore((state) => state.isLowDesktopDisplay);
+  const isTabletteDisplay = useStore((state) => state.isTabletteDisplay);
   const isLowTabletteDisplay = useStore((state) => state.isLowTabletteDisplay);
   const isMobileDisplay = useStore((state) => state.isMobileDisplay);
-  const imgSrc = [bankArgent, ninaCarducci, devBootes];
+  const imgSrc = [
+    bankArgent,
+    ninaCarducci,
+    bootesDev,
+    lowDesktopBankArgent,
+    lowDesktopNinaCarducci,
+    lowDesktoplowDesktopBootesDev,
+    tabletteBankArgent,
+    tabletteNinaCarducci,
+    tabletteBootesDev,
+    mobileBankArgent,
+    mobileNinaCarducci,
+    mobileBootesDev,
+  ];
   const dataSlider = data;
   const sleepingRef = useRef(null);
   const [selectedElement, setSelectedElement] = useState(0);
@@ -72,7 +95,9 @@ function MyCreations() {
                   key={index}
                   item={item}
                   index={index}
-                  handleElementChange={() => handleElementChangeWithTimer(index)}
+                  handleElementChange={() =>
+                    handleElementChangeWithTimer(index)
+                  }
                   selectedElement={selectedElement}
                 />
               ))}
@@ -95,19 +120,31 @@ function MyCreations() {
           ) : (
             <div className="creations_content_carrousel_wrapper">
               <div className="creations_content_carrousel_items">
-                {data.map((newData, index) => (
-                  <CreationsBottomArticle
-                    key={index}
-                    webSiteScreen={imgSrc[index]}
-                    altScreen={newData?.altScreen}
-                    description={newData?.description}
-                    title={newData?.title}
-                    siteUrl={newData?.siteUrl}
-                    gitUrl={newData?.gitUrl}
-                    nextElement={nextElement}
-                    setNextElement={setNextElement}
-                  />
-                ))}
+                {data.map((newData, index) => {
+                  let resultIndex = index;
+
+                  resultIndex += isLowDesktopDisplay
+                    ? 3
+                    : isTabletteDisplay || isLowTabletteDisplay
+                    ? 6
+                    : isMobileDisplay
+                    ? 9
+                    : 0;
+
+                  return (
+                    <CreationsBottomArticle
+                      key={index}
+                      webSiteScreen={imgSrc[resultIndex]}
+                      altScreen={newData?.altScreen}
+                      description={newData?.description}
+                      title={newData?.title}
+                      siteUrl={newData?.siteUrl}
+                      gitUrl={newData?.gitUrl}
+                      nextElement={nextElement}
+                      setNextElement={setNextElement}
+                    />
+                  );
+                })}
               </div>
             </div>
           )}

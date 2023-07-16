@@ -93,8 +93,7 @@ DESKTOP
 /* HD Desktop - 1680px + */
 @media (min-width: 1681px) {
   .importantComponent,
-  .darkComponent,
-  .creations_container {
+  .darkComponent {
     display: flex;
     min-height: 900px;
   }
@@ -102,8 +101,7 @@ DESKTOP
 /* HD Desktop - 1680px (x1050 / x900) */
 @media (max-width: 1680px) {
   .importantComponent,
-  .darkComponent,
-  .creations_container {
+  .darkComponent {
     min-height: 920px;
     display: flex;
   }
@@ -614,13 +612,15 @@ MOBILE
     height: initial !important;
   }
   .creations_content_carrousel-img {
-    height: initial !important;
+    height: 240px !important;
+    object-fit: cover !important;
+    flex: initial !important;
   }
   .creations_content_carrousel-unit {
     flex-direction: column;
     gap: 0px !important;
-    height: initial !important;
     margin: 10px !important;
+    height: 500px !important;
   }
 }
 /* HD smartphone - 320 */
@@ -633,6 +633,18 @@ MOBILE
   }
 }
 @media (max-width: 479px) {
+  .creations_container {
+    height: initial !important;
+  }
+  .creations_content {
+    top: 0px !important;
+  }
+  .creations_carrousel-unit {
+    min-height: 600px !important;
+  }
+  .creations_carrousel-img {
+    min-height: 240px;
+  }
   h2 {
     font-size: 30px !important;
     white-space: nowrap;
@@ -648,10 +660,6 @@ MOBILE
   }
   .header_content {
     flex-direction: column;
-  }
-  .anchor-target {
-    position: relative;
-    top: 140px;
   }
   .anchor-first {
     position: absolute;
@@ -1187,6 +1195,7 @@ MOBILE
 
 .creations_container {
   height: 110vh;
+  display: flex;
 }
 .creations_content b {
   font-size: 20px;
@@ -1248,7 +1257,6 @@ MOBILE
   position: relative;
   bottom: 20px;
   height: 600px;
-  max-width: 100%;
   display: flex;
   flex-direction: row-reverse;
   gap: 50px;
@@ -1258,11 +1266,11 @@ MOBILE
 .creations_content_carrousel-img {
   flex: 3;
   width: 100%;
-  height: 100%;
   box-shadow: 0px 0px 5px #0CA876;
   border-radius: 5px;
   box-sizing: border-box;
-  object-fit: contain;
+  object-fit: cover;
+  object-position: top;
 }
 .creations_content_carrousel-txt {
   display: flex;

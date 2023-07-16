@@ -6,8 +6,7 @@ DESKTOP
 /* HD Desktop - 1680px + */
 @media (min-width: 1681px) {
   .importantComponent,
-  .darkComponent,
-  .creations_container {
+  .darkComponent {
     display: flex;
     min-height: 900px;
   }
@@ -16,8 +15,7 @@ DESKTOP
 /* HD Desktop - 1680px (x1050 / x900) */
 @media (max-width: 1680px) {
   .importantComponent,
-  .darkComponent,
-  .creations_container {
+  .darkComponent{
     min-height: 920px;
     display: flex;
   }
@@ -664,14 +662,16 @@ MOBILE
       height: initial !important;
     }
     &-img {
-      height: initial !important;
+      height: 240px !important;
+      object-fit: cover !important;
+      flex: initial !important;
     }
 
     &-unit {
       flex-direction: column;
       gap: 0px !important;
-      height: initial !important;
       margin: 10px !important;
+      height: 500px !important;
     }
   }
 }
@@ -686,6 +686,22 @@ MOBILE
       padding: 0px !important;
     }
   }
+  .creations {
+
+  &_container {
+    height: initial !important;
+  }
+  &_content {
+    top: 0px !important;
+  }
+  &_carrousel {
+    &-unit {
+      min-height: 600px !important;
+    }  
+  &-img {
+    min-height: 240px;
+  }  }}
+
   h2 {
     font-size: $lmTitleFontSize !important;
     white-space: nowrap;
@@ -707,10 +723,6 @@ MOBILE
   }
 
   .anchor {
-    &-target {
-      position: relative;
-      top: 140px;
-    }
     &-first {
       position: absolute;
       top: 0;
@@ -747,6 +759,8 @@ MOBILE
       }
     }
   }
+
+
 
   .contact_content {
     position: initial !important;

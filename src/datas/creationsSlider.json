@@ -15,7 +15,7 @@
   {
     "altScreen": "Capture de la page d'accueil de Boötes Dev, notre site",
     "title": "Boötes Dev",
-    "description": "<p>Notre petit protégé.</p><p> Il démontre les moyens que nous pouvons mettre en place au cours d'un projet standard comme <b>React</b>, <b>SASS</b>, quelques <b>animations mignonnettes</b> ainsi qu'une bonne <b>optimisation</b>.</p>",
+    "description": "<p>Notre petit protégé.</p><p> Il démontre les moyens que nous pouvons mettre en place au cours d'un projet standard comme <b>React</b>, <b>SASS</b> ainsi qu'une bonne <b>optimisation</b>.</p>",
     "siteUrl": "https://vcassina.github.io/Projet-12/",
     "gitUrl": "https://github.com/VCassina/projet-12"
   }

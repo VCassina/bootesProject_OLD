@@ -13,7 +13,6 @@ function BootesArticle({
   const sectionClasses = `bootes_content-article ${
     secondElement ? "second-element" : "first-element"
   }`;
-console.log(tabletteDisplay)
   return (
     <article className={sectionClasses}>
       {tabletteDisplay && data ? (
