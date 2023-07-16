@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/projet-12/static/css/main.258a2de5.css",
-    "main.js": "/projet-12/static/js/main.51fb002b.js",
+    "main.css": "/projet-12/static/css/main.f95b620e.css",
+    "main.js": "/projet-12/static/js/main.db66d5aa.js",
     "static/js/787.1ed0c42c.chunk.js": "/projet-12/static/js/787.1ed0c42c.chunk.js",
     "static/media/NinaCarducci.webp": "/projet-12/static/media/NinaCarducci.831ad7ec1190e8d850ec.webp",
     "static/media/lowDesktopNinaCarducci.webp": "/projet-12/static/media/lowDesktopNinaCarducci.862071abedb6e9121ae2.webp",
@@ -17,20 +17,22 @@
     "static/media/mobileBankArgent.webp": "/projet-12/static/media/mobileBankArgent.298b63d4bc776100444c.webp",
     "static/media/meByCatalysStuff.webp": "/projet-12/static/media/meByCatalysStuff.cc79355f130321e42c95.webp",
     "static/media/lowDesktopMeByCatalysStuff.webp": "/projet-12/static/media/lowDesktopMeByCatalysStuff.0edbbbf76ad5fde8fb4d.webp",
-    "static/media/pralineByCatalysStuff.webp": "/projet-12/static/media/pralineByCatalysStuff.2ac4ae9aa2dab48be33f.webp",
     "static/media/bootesDevLogo.webp": "/projet-12/static/media/bootesDevLogo.24c17c40e8f15fdb643d.webp",
+    "static/media/pralineByCatalysStuff.webp": "/projet-12/static/media/pralineByCatalysStuff.f06b3bf05a513dae572e.webp",
+    "static/media/tablettePralinePicture.webp": "/projet-12/static/media/tablettePralinePicture.6e17619fb32a57a893b5.webp",
     "static/media/mobileMeByCatalsStuff.webp": "/projet-12/static/media/mobileMeByCatalsStuff.fce9a7aa1ca59611ae53.webp",
+    "static/media/lowDesktopMobilePralinePicture.webp": "/projet-12/static/media/lowDesktopMobilePralinePicture.d15d93cccc1b6e7c7a68.webp",
     "static/media/bootesDevMiniLogo.webp": "/projet-12/static/media/bootesDevMiniLogo.b1bdf102bdde4b1c2f5f.webp",
     "static/media/backEndByMacrovector.webp": "/projet-12/static/media/backEndByMacrovector.552552a125ee7fcb9758.webp",
     "index.html": "/projet-12/index.html",
     "static/media/seoByMacrovector.webp": "/projet-12/static/media/seoByMacrovector.502a8f5f408a0e34d6d1.webp",
     "static/media/frontEndByMacrovector.webp": "/projet-12/static/media/frontEndByMacrovector.f632dcefdc57ebafd4dc.webp",
-    "main.258a2de5.css.map": "/projet-12/static/css/main.258a2de5.css.map",
-    "main.51fb002b.js.map": "/projet-12/static/js/main.51fb002b.js.map",
+    "main.f95b620e.css.map": "/projet-12/static/css/main.f95b620e.css.map",
+    "main.db66d5aa.js.map": "/projet-12/static/js/main.db66d5aa.js.map",
     "787.1ed0c42c.chunk.js.map": "/projet-12/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.258a2de5.css",
-    "static/js/main.51fb002b.js"
+    "static/css/main.f95b620e.css",
+    "static/js/main.db66d5aa.js"
   ]
 }
