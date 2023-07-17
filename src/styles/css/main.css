@@ -178,9 +178,6 @@ DESKTOP
   .skills_content-description + .contentBar-horizontal {
     margin: 0 !important;
   }
-  figcaption.skills_content-credit {
-    top: 10px !important;
-  }
   .creations_content {
     position: relative;
     bottom: 20px !important;
@@ -211,14 +208,11 @@ TABLETTE
 ------------------------------------ */
 /* HD Tablette - 1024 (x 768 - x600 toléré seulement) - Still landscape/square though */
 @media (max-width: 1279px) {
-  .importantComponent {
+  .importantComponent, .skills_container, .ocean, .creations_container {
     min-height: 840px !important;
   }
   figure {
     justify-content: center !important;
-  }
-  figcaption.skills_content-credit {
-    top: -20px !important;
   }
   .header_nav {
     width: fit-content !important;
@@ -333,9 +327,6 @@ TABLETTE
     scroll-snap-align: center;
     box-shadow: -5px 5px 10px, 0 0 2px, 0 0 1em #0ca876, 0 0 0.5em #0ca876, 0 0 1em #0ca876, 0 10px 3px #000 !important;
   }
-  figcaption.skills_content-credit {
-    top: 10px !important;
-  }
   .creations_content_upper-nav {
     flex: 1.25 !important;
   }
@@ -368,8 +359,8 @@ TABLETTE
 /* Low Tablette- 768 - Square - portrait though */
 @media (max-width: 1023px) {
   .importantComponent {
-    min-height: 960px !important;
     height: 110vh !important;
+    min-height: 840px !important;
   }
   .header_content {
     padding: 10px 10px !important;
@@ -377,14 +368,14 @@ TABLETTE
   .header_content-ul {
     gap: 40px !important;
   }
+  .bootes_container {
+    min-height: 920px !important;
+  }
   .bootes_title p {
     white-space: nowrap;
   }
   .bootes_titleBundle {
     line-height: 0% !important;
-  }
-  .bootes_container {
-    min-height: 960px !important;
   }
   .bootes_content {
     position: initial;
@@ -393,10 +384,14 @@ TABLETTE
     align-items: center;
   }
   .bootes_content-article-txt {
-    height: 240px !important;
+    height: 220px !important;
+    font-size: 18px !important;
   }
   .bootes_content-picture {
     width: 200px !important;
+  }
+  .bootes_content figure img + figcaption {
+    position: initial !important;
   }
   .skills_content {
     bottom: 0px !important;
@@ -1212,7 +1207,7 @@ MOBILE
 .creations_container {
   height: 110vh;
   display: flex;
-  min-height: 920px;
+  min-height: 900px;
 }
 .creations_content b {
   font-size: 20px;
@@ -1464,7 +1459,7 @@ MOBILE
 }
 .contact_content_lower-mascot figcaption {
   position: relative;
-  bottom: 2rem;
+  bottom: 40px;
   text-align: center;
   white-space: nowrap;
 }

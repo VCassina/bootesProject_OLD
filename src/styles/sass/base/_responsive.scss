@@ -119,9 +119,9 @@ DESKTOP
     }
   }
 
-  figcaption.skills_content-credit {
-    top: 10px !important;
-  }
+  // figcaption.skills_content-credit {
+  //   top: 10px !important;
+  // }
 
   .creations {
     &_content {
@@ -163,15 +163,16 @@ TABLETTE
 
 /* HD Tablette - 1024 (x 768 - x600 toléré seulement) - Still landscape/square though */
 @media (max-width: 1279px) {
-  .importantComponent {
+  .importantComponent, .skills_container, .ocean, .creations_container {
     min-height: 840px !important;
+    // height: 840px !important;
   }
   figure {
     justify-content: center !important;
   }
-  figcaption.skills_content-credit {
-    top: -20px !important;
-  }
+  // figcaption.skills_content-credit {
+  //   top: -20px !important;
+  // }
 
   .header {
     &_nav {
@@ -307,9 +308,9 @@ TABLETTE
     }
   }
 
-  figcaption.skills_content-credit {
-    top: 10px !important;
-  }
+  // figcaption.skills_content-credit {
+  //   top: 10px !important;
+  // }
 
   .creations {
     &_content {
@@ -355,8 +356,9 @@ TABLETTE
 /* Low Tablette- 768 - Square - portrait though */
 @media (max-width: 1023px) {
   .importantComponent {
-    min-height: 960px !important;
+    // min-height: 960px !important;
     height: 110vh !important;
+    min-height: 840px !important;
   }
   .header_content {
     padding: 10px 10px !important;
@@ -366,6 +368,9 @@ TABLETTE
   }
 
   .bootes {
+    &_container {
+      min-height: 920px !important;
+    }
     &_title {
       & p {
         white-space: nowrap;
@@ -374,19 +379,23 @@ TABLETTE
     &_titleBundle {
       line-height: 0% !important;
     }
-    &_container {
-      min-height: 960px !important;
-    }
+
     &_content {
       position: initial;
       display: flex !important;
       flex-direction: column;
       align-items: center;
       &-article-txt {
-        height: 240px !important;
+        height: 220px !important;
+        font-size: $mStandardFontSize !important;
       }
       &-picture {
         width: 200px !important;
+      }
+      & figure img  {
+        & + figcaption {
+          position: initial !important;
+        }
       }
     }
   }
