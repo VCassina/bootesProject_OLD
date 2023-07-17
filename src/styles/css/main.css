@@ -264,7 +264,7 @@ TABLETTE
   }
   .bootes_titleBundle h2.unactive {
     color: rgba(12, 168, 118, 0.35);
-    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+    text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
   }
   .bootes_titleBundle h2.active {
     transform: scale(1.05);
@@ -291,7 +291,7 @@ TABLETTE
     width: 50%;
   }
   .skills_content {
-    bottom: 40px !important;
+    bottom: 0px !important;
   }
   .skills_content-titleGroup {
     flex-direction: row !important;
@@ -651,7 +651,7 @@ MOBILE
   }
   .creations_content_carrousel-txt {
     flex: initial !important;
-    gap: 0px !important;
+    gap: 10px !important;
   }
   .creations_content_carrousel_items {
     padding: 0px !important;

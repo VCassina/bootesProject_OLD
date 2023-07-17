@@ -231,7 +231,7 @@ TABLETTE
         font-size: $subtitleFontSize !important;
         &.unactive {
           color: rgba($lightGreen, 0.35);
-          text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+          text-shadow: 0 1px 1px rgba(0, 0, 0, 0.5);
         }
         &.active {
           transform: scale(1.05);
@@ -266,7 +266,7 @@ TABLETTE
 
   .skills {
     &_content {
-      bottom: 40px !important;
+      bottom: 0px !important;
       &-titleGroup {
         flex-direction: row !important;
         justify-content: center;
@@ -719,7 +719,7 @@ MOBILE
         }
         &-txt {
           flex: initial !important;
-          gap: 0px !important;
+          gap: 10px !important;
         }
         &_items {
           padding: 0px !important;
