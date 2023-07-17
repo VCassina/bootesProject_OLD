@@ -2,6 +2,7 @@
     &_container {
         height: $majorComponentHeight;
         display: flex;
+        min-height: 920px;
     }
 
     &_content {

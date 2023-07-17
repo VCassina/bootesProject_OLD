@@ -15,7 +15,7 @@ DESKTOP
 /* HD Desktop - 1680px (x1050 / x900) */
 @media (max-width: 1680px) {
   .importantComponent,
-  .darkComponent{
+  .darkComponent {
     min-height: 920px;
     display: flex;
   }
@@ -74,8 +74,8 @@ DESKTOP
 @media (max-width: 1366px) {
   .bootes {
     &_title {
-     position: relative;
-     top: 20px;
+      position: relative;
+      top: 20px;
     }
     &_content {
       position: relative;
@@ -224,9 +224,10 @@ TABLETTE
       border-bottom: 2px solid $darkGreen;
 
       cursor: pointer;
-      h3 {
+      h2 {
         transition: transform $transitionButtonTime, color $transitionButtonTime;
         color: $darkGreen;
+        font-size: $subtitleFontSize !important;
         &.unactive {
           color: rgba($lightGreen, 0.35);
           text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
@@ -400,10 +401,6 @@ TABLETTE
     }
   }
 
-  figcaption.skills_content-credit {
-    top: 0px !important;
-  }
-
   .creations {
     &_content {
       &_carrousel {
@@ -512,6 +509,11 @@ MOBILE
 
   .bootes_titleBundle {
     line-height: 100% !important;
+    margin: 10px 0;
+    & h2 {
+      font-size: $mSubtitleFontSize !important;
+      position: initial !important;
+    }
   }
 
   .anchor {
@@ -555,7 +557,8 @@ MOBILE
         height: 30px !important;
         width: 30px !important;
         box-shadow: 0 0px 10px rgb(255, 255, 255) !important;
-        background-color: $brokenWhite;min-width: 70%;
+        background-color: $brokenWhite;
+        min-width: 70%;
       }
 
       &-mainTxt {
@@ -599,7 +602,6 @@ MOBILE
         text-shadow: 0 1px 1px rgba(0, 0, 0, 1);
       }
     }
-
 
     &_content {
       position: relative;
@@ -655,6 +657,7 @@ MOBILE
   .creations_content_carrousel {
     &_items {
       height: initial !important;
+      padding: 10px 0;
     }
     &-img {
       height: 240px !important;
@@ -667,6 +670,10 @@ MOBILE
       gap: 0px !important;
       margin: 10px !important;
       height: 500px !important;
+    }
+
+    &-txt {
+      padding: 0 5px !important;
     }
   }
 }
@@ -681,21 +688,33 @@ MOBILE
       padding: 0px !important;
     }
   }
-  .creations {
 
-  &_container {
-    height: initial !important;
+  .bootes_titleBundle {
+    display: flex;
+    gap: 10px;
+    & h2 {
+      font-size: $lmSubtitleFontSize !important;
+    }
   }
-  &_content {
-    top: 0px !important;
+  .creations {
+    &_container {
+      height: initial !important;
+    }
+    &_content {
+      top: 0px !important;
+    
+    &_carrousel {
+      @media (max-width: 409px) {
+        &-unit {
+          height: 560px !important;
+        }
+      }
+
+      &-img {
+        min-height: 240px;
+      }
+    }}
   }
-  &_carrousel {
-    &-unit {
-      min-height: 600px !important;
-    }  
-  &-img {
-    min-height: 240px;
-  }  }}
 
   h2 {
     font-size: $lmTitleFontSize !important;
@@ -754,8 +773,6 @@ MOBILE
       }
     }
   }
-
-
 
   .contact_content {
     position: initial !important;

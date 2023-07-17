@@ -263,15 +263,16 @@ TABLETTE
     border-bottom: 2px solid #031a13;
     cursor: pointer;
   }
-  .bootes_titleBundle h3 {
+  .bootes_titleBundle h2 {
     transition: transform 0.25s, color 0.25s;
     color: #031a13;
+    font-size: 36px !important;
   }
-  .bootes_titleBundle h3.unactive {
+  .bootes_titleBundle h2.unactive {
     color: rgba(12, 168, 118, 0.35);
     text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
   }
-  .bootes_titleBundle h3.active {
+  .bootes_titleBundle h2.active {
     transform: scale(1.05);
   }
   .bootes_container {
@@ -406,9 +407,6 @@ TABLETTE
   .skills_content_low {
     gap: 60px !important;
   }
-  figcaption.skills_content-credit {
-    top: 0px !important;
-  }
   .creations_content_carrousel-txt-title, .creations_content_carrousel-txt-links {
     line-height: 0%;
   }
@@ -495,6 +493,11 @@ MOBILE
   }
   .bootes_titleBundle {
     line-height: 100% !important;
+    margin: 10px 0;
+  }
+  .bootes_titleBundle h2 {
+    font-size: 26px !important;
+    position: initial !important;
   }
   .anchor-target {
     position: relative;
@@ -607,6 +610,7 @@ MOBILE
   }
   .creations_content_carrousel_items {
     height: initial !important;
+    padding: 10px 0;
   }
   .creations_content_carrousel-img {
     height: 240px !important;
@@ -619,6 +623,9 @@ MOBILE
     margin: 10px !important;
     height: 500px !important;
   }
+  .creations_content_carrousel-txt {
+    padding: 0 5px !important;
+  }
 }
 /* HD smartphone - 320 */
 @media (max-width: 479px) and (max-width: 349px) {
@@ -630,16 +637,27 @@ MOBILE
   }
 }
 @media (max-width: 479px) {
+  .bootes_titleBundle {
+    display: flex;
+    gap: 10px;
+  }
+  .bootes_titleBundle h2 {
+    font-size: 24px !important;
+  }
   .creations_container {
     height: initial !important;
   }
   .creations_content {
     top: 0px !important;
   }
-  .creations_carrousel-unit {
-    min-height: 600px !important;
+}
+@media (max-width: 479px) and (max-width: 409px) {
+  .creations_content_carrousel-unit {
+    height: 560px !important;
   }
-  .creations_carrousel-img {
+}
+@media (max-width: 479px) {
+  .creations_content_carrousel-img {
     min-height: 240px;
   }
   h2 {
@@ -1194,6 +1212,7 @@ MOBILE
 .creations_container {
   height: 110vh;
   display: flex;
+  min-height: 920px;
 }
 .creations_content b {
   font-size: 20px;
