@@ -387,7 +387,6 @@ TABLETTE
       align-items: center;
       &-article-txt {
         height: 220px !important;
-        font-size: $mStandardFontSize !important;
       }
       &-picture {
         width: 200px !important;
@@ -716,6 +715,14 @@ MOBILE
       @media (max-width: 409px) {
         &-unit {
           height: 560px !important;
+
+        }
+        &-txt {
+          flex: initial !important;
+          gap: 0px !important;
+        }
+        &_items {
+          padding: 0px !important;
         }
       }
 

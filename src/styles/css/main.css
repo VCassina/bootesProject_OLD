@@ -385,7 +385,6 @@ TABLETTE
   }
   .bootes_content-article-txt {
     height: 220px !important;
-    font-size: 18px !important;
   }
   .bootes_content-picture {
     width: 200px !important;
@@ -649,6 +648,13 @@ MOBILE
 @media (max-width: 479px) and (max-width: 409px) {
   .creations_content_carrousel-unit {
     height: 560px !important;
+  }
+  .creations_content_carrousel-txt {
+    flex: initial !important;
+    gap: 0px !important;
+  }
+  .creations_content_carrousel_items {
+    padding: 0px !important;
   }
 }
 @media (max-width: 479px) {
