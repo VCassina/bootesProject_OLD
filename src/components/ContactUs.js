@@ -84,20 +84,28 @@ function ContactUs() {
                 {isLowTabletteDisplay || isMobileDisplay ? (
                   <article className="contact_content_lower-main-links">
                     <div>
-                      <a href="mailto:BoötesDev@gmail.com" aria-label="Lien vers l'Email de la boite"> 
+                      <a
+                        href="mailto:BoötesDev@gmail.com"
+                        aria-label="Lien vers l'Email de la boite"
+                      >
                         <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
                         <span>BoötesDev@gmail.com</span>
                       </a>
-                      <a href="https://www.linkedin.com/in/victor-cassina-032a5816b/" aria-label="Lien vers mon profil LinkedIn">
+                      <a
+                        href="https://www.linkedin.com/in/victor-cassina-032a5816b/"
+                        aria-label="Lien vers mon profil LinkedIn"
+                      >
                         <FontAwesomeIcon icon="fa-brands fa-linkedin" />{" "}
                         <span>Victor Cassina</span>
                       </a>
-                      <a href="https://www.facebook.com/profile.php?id=100006082485106" aria-label="Lien vers mon facebook">
+                      <a
+                        href="https://www.facebook.com/profile.php?id=100006082485106"
+                        aria-label="Lien vers mon facebook"
+                      >
                         <FontAwesomeIcon icon="fa-brands fa-discord" />{" "}
                         <span>Victor Cassina</span>
                       </a>
                     </div>
-                    
                   </article>
                 ) : null}
               </article>

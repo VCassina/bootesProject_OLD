@@ -1,5 +1,4 @@
 function AllBubbles() {
-
   return (
     <>
       <div className="bubble bubble--1"></div>
@@ -17,7 +16,7 @@ function AllBubbles() {
       <div className="bubble bubble--13"></div>
       <div className="bubble bubble--14"></div>
       <div className="bubble bubble--15"></div>
-      </>
+    </>
   );
 }
 
