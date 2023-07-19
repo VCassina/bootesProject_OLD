@@ -7,11 +7,11 @@ import pralinePicture from "../assets/pralineByCatalysStuff.webp";
 import lowDesktopMobilePralinePicture from "../assets/lowDesktopMobilePralinePicture.webp";
 import tablettePralinePicture from "../assets/tablettePralinePicture.webp";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faDiscord, faLinkedin } from "@fortawesome/free-brands-svg-icons";
+import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
 import { useStore } from "../store";
-library.add(faDiscord, faLinkedin, faEnvelope);
+library.add(faFacebook, faLinkedin, faEnvelope);
 
 function ContactUs() {
   const flowingRef = useRef(null);
@@ -43,7 +43,7 @@ function ContactUs() {
               {!isLowTabletteDisplay && !isMobileDisplay ? (
                 <article className="contact_content_lower-main-links">
                   <div>
-                    <a href="mailto:BoötesDev@gmail.com">
+                    <a href="mailto:victorCassina@gmail.com">
                       <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
                       <span>BoötesDev@gmail.com</span>
                     </a>
@@ -52,7 +52,7 @@ function ContactUs() {
                       <span>Victor Cassina</span>
                     </a>
                     <a href="https://www.facebook.com/profile.php?id=100006082485106">
-                      <FontAwesomeIcon icon="fa-brands fa-discord" />{" "}
+                      <FontAwesomeIcon icon="fa-brands fa-facebook" />{" "}
                       <span>Victor Cassina</span>
                     </a>
                   </div>
@@ -64,16 +64,16 @@ function ContactUs() {
               <article className="contact_content_lower-main-txt">
                 <div className="contact_content_lower-main-txt-content">
                   <p className="contact_content_lower-main-txt-content-title">
-                    <b>Ecrivez-nous !</b>
+                    <b>Contactez-nous !</b>
                   </p>
                   <span className="contact_content_lower-main-txt-content-subtitle">
                     <p>
-                      Nous pouvons voir ensemble la formule la plus adaptée à
-                      vos besoins, comment cela se passe pour l'hébergement, nos
-                      disponibilités, etc.
+                      Nous pouvons convenir ensemble de la formule la plus
+                      adaptée à vos besoins, discutons de votre projet
+                      ensemble, notre porte est ouverte !
                     </p>
                     <p>
-                      Si vous voulez simplement savoir comment se porte Praline,
+                      Et si vous voulez juste savoir comment se porte Praline,
                       c'est possible aussi...
                     </p>
                   </span>
@@ -85,11 +85,11 @@ function ContactUs() {
                   <article className="contact_content_lower-main-links">
                     <div>
                       <a
-                        href="mailto:BoötesDev@gmail.com"
+                        href="mailto:victorcassina@gmail.com"
                         aria-label="Lien vers l'Email de la boite"
                       >
                         <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
-                        <span>BoötesDev@gmail.com</span>
+                        <span>victorcassina@gmail.com</span>
                       </a>
                       <a
                         href="https://www.linkedin.com/in/victor-cassina-032a5816b/"
@@ -102,7 +102,7 @@ function ContactUs() {
                         href="https://www.facebook.com/profile.php?id=100006082485106"
                         aria-label="Lien vers mon facebook"
                       >
-                        <FontAwesomeIcon icon="fa-brands fa-discord" />{" "}
+                        <FontAwesomeIcon icon="fa-brands fa-facebook" />{" "}
                         <span>Victor Cassina</span>
                       </a>
                     </div>

@@ -1,10 +1,14 @@
-import { useEffect } from 'react';
-import { useStore } from '../store';
+import { useEffect } from "react";
+import { useStore } from "../store";
 
 export const useWindowResize = () => {
-  const setIsLowDesktopDisplay = useStore((state) => state.setIsLowDesktopDisplay);
+  const setIsLowDesktopDisplay = useStore(
+    (state) => state.setIsLowDesktopDisplay
+  );
   const setIsTabletteDisplay = useStore((state) => state.setIsTabletteDisplay);
-  const setIsLowTabletteDisplay = useStore((state) => state.setIsLowTabletteDisplay);
+  const setIsLowTabletteDisplay = useStore(
+    (state) => state.setIsLowTabletteDisplay
+  );
   const setIsMobileDisplay = useStore((state) => state.setIsMobileDisplay);
 
   useEffect(() => {
@@ -18,10 +22,15 @@ export const useWindowResize = () => {
 
     handleResize();
 
-    window.addEventListener('resize', handleResize);
+    window.addEventListener("resize", handleResize);
 
     return () => {
-      window.removeEventListener('resize', handleResize);
+      window.removeEventListener("resize", handleResize);
     };
-  }, [setIsLowDesktopDisplay, setIsTabletteDisplay, setIsLowTabletteDisplay, setIsMobileDisplay]);
+  }, [
+    setIsLowDesktopDisplay,
+    setIsTabletteDisplay,
+    setIsLowTabletteDisplay,
+    setIsMobileDisplay,
+  ]);
 };

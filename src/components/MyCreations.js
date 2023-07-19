@@ -1,21 +1,10 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useRef } from "react";
 import data from "../datas/creationsSlider.json";
 import AnchorTarget from "../items/AnchorTarget";
 import CreationsUpperArticle from "../components/CreationsUpperArticle";
 import CreationsBottomArticle from "../components/CreationsBottomArticle";
 import titleAnimationHelper from "../helpers/titleAnimationHelper";
-import bankArgent from "../assets/BankArgent.webp";
-import ninaCarducci from "../assets/NinaCarducci.webp";
-import bootesDev from "../assets/BootesDev.webp";
-import lowDesktopBankArgent from "../assets/lowDesktopBankArgent.webp";
-import lowDesktopNinaCarducci from "../assets/lowDesktopNinaCarducci.webp";
-import lowDesktoplowDesktopBootesDev from "../assets/lowDesktopBootesDev.webp";
-import tabletteBankArgent from "../assets/tabletteBankArgent.webp";
-import tabletteNinaCarducci from "../assets/tabletteNinaCarducci.webp";
-import tabletteBootesDev from "../assets/tabletteBootesDev.webp";
-import mobileBankArgent from "../assets/mobileBankArgent.webp";
-import mobileNinaCarducci from "../assets/mobileNinaCarducci.webp";
-import mobileBootesDev from "../assets/mobileBootesDev.webp";
+import { handleElementChangeWithTimer } from "../helpers/delayCreationsHelper";
 import { useStore } from "../store";
 
 function MyCreations() {
@@ -23,26 +12,24 @@ function MyCreations() {
   const isTabletteDisplay = useStore((state) => state.isTabletteDisplay);
   const isLowTabletteDisplay = useStore((state) => state.isLowTabletteDisplay);
   const isMobileDisplay = useStore((state) => state.isMobileDisplay);
-  const imgSrc = [
-    bankArgent,
-    ninaCarducci,
-    bootesDev,
-    lowDesktopBankArgent,
-    lowDesktopNinaCarducci,
-    lowDesktoplowDesktopBootesDev,
-    tabletteBankArgent,
-    tabletteNinaCarducci,
-    tabletteBootesDev,
-    mobileBankArgent,
-    mobileNinaCarducci,
-    mobileBootesDev,
-  ];
+  const imgSrc = [];
+  let maxImages = 0;
+  data.forEach((item) => {
+    maxImages = Math.max(maxImages, item.imgUrl.length);
+  });
+  for (let i = 0; i < maxImages; i++) {
+    data.forEach((item) => {
+      if (item.imgUrl.length > i) {
+        imgSrc.push(item.imgUrl[i]);
+      }
+    });
+  }
   const dataSlider = data;
   const sleepingRef = useRef(null);
   const [selectedElement, setSelectedElement] = useState(0);
   const [animateOut, setAnimateOut] = useState(false);
   const [nextElement, setNextElement] = useState(null);
-  const [newData, setNewData] = useState(null);
+  const [newData, setNewData] = useState(dataSlider[0]);
   const [selectedImage, setSelectedImage] = useState(0);
 
   titleAnimationHelper(
@@ -50,35 +37,20 @@ function MyCreations() {
     sleepingRef
   );
 
-  const handleElementChangeWithTimer = (index) => {
-    if (selectedElement === index) {
-      return null;
-    }
-    setAnimateOut(true);
-    setSelectedElement(index);
-    setTimeout(() => {
-      setSelectedImage(index);
-      setAnimateOut(false);
-    }, 350);
+  const handleElementChange = (index) => {
+    handleElementChangeWithTimer(
+      index,
+      selectedElement,
+      setSelectedElement,
+      setSelectedImage,
+      setAnimateOut,
+      dataSlider,
+      setNewData
+    );
   };
 
-  useEffect(() => {
-    let timeoutId = null;
-
-    if (selectedElement !== null) {
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-      timeoutId = setTimeout(() => {
-        setNewData(dataSlider[selectedElement]);
-      }, 350);
-    }
-
-    return () => clearTimeout(timeoutId);
-  }, [selectedElement, dataSlider]);
-
   return (
-    <section className="creations_container">
+    <article className="creations_container">
       <AnchorTarget id="creations" />
       <div className="importantComponent">
         <div className="creations_content">
@@ -95,9 +67,7 @@ function MyCreations() {
                   key={index}
                   item={item}
                   index={index}
-                  handleElementChange={() =>
-                    handleElementChangeWithTimer(index)
-                  }
+                  handleElementChange={() => handleElementChange(index)}
                   selectedElement={selectedElement}
                 />
               ))}
@@ -150,7 +120,7 @@ function MyCreations() {
           )}
         </div>
       </div>
-    </section>
+    </article>
   );
 }
 

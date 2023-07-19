@@ -1,317 +1,310 @@
 @keyframes vibing--bootesProject {
-    0% {
-        transform: translate(2%, 0) rotate(-1deg);
-    }
+  0% {
+    transform: translate(2%, 0) rotate(-1deg);
+  }
 
-    10% {
-        transform: translate(0, 7%) rotate(1deg);
-    }
+  10% {
+    transform: translate(0, 7%) rotate(1deg);
+  }
 
-    20% {
-        transform: translate(1%, 0) rotate(-1deg);
-    }
+  20% {
+    transform: translate(1%, 0) rotate(-1deg);
+  }
 
-    30% {
-        transform: translate(0, 3.5%) rotate(1deg);
-    }
+  30% {
+    transform: translate(0, 3.5%) rotate(1deg);
+  }
 
-    40% {
-        transform: translate(0.5%, 0) rotate(-0.5deg);
-    }
+  40% {
+    transform: translate(0.5%, 0) rotate(-0.5deg);
+  }
 
-    50% {
-        transform: translate(0, 1.5%) rotate(0.5deg);
-    }
+  50% {
+    transform: translate(0, 1.5%) rotate(0.5deg);
+  }
 
-    60% {
-        transform: translate(0, 0) rotate(-0.5deg);
-    }
+  60% {
+    transform: translate(0, 0) rotate(-0.5deg);
+  }
 
-    70% {
-        transform: translate(0, 0.5%) rotate(0.1deg);
-    }
+  70% {
+    transform: translate(0, 0.5%) rotate(0.1deg);
+  }
 
-    80% {
-        transform: translate(0, 0) rotate(0.0deg);
-    }
+  80% {
+    transform: translate(0, 0) rotate(0deg);
+  }
 }
 
 @keyframes vibingMirror--bootesProject {
-    0% {
-        transform: translate(-2%, 0) rotate(1deg);
-    }
+  0% {
+    transform: translate(-2%, 0) rotate(1deg);
+  }
 
-    10% {
-        transform: translate(0, 7%) rotate(-1deg);
-    }
+  10% {
+    transform: translate(0, 7%) rotate(-1deg);
+  }
 
-    20% {
-        transform: translate(-1%, 0) rotate(1deg);
-    }
+  20% {
+    transform: translate(-1%, 0) rotate(1deg);
+  }
 
-    30% {
-        transform: translate(0, 3.5%) rotate(-1deg);
-    }
+  30% {
+    transform: translate(0, 3.5%) rotate(-1deg);
+  }
 
-    40% {
-        transform: translate(-0.5%, 0) rotate(0.5deg);
-    }
+  40% {
+    transform: translate(-0.5%, 0) rotate(0.5deg);
+  }
 
-    50% {
-        transform: translate(0, 1.5%) rotate(-0.5deg);
-    }
+  50% {
+    transform: translate(0, 1.5%) rotate(-0.5deg);
+  }
 
-    60% {
-        transform: translate(0, 0) rotate(0.5deg);
-    }
+  60% {
+    transform: translate(0, 0) rotate(0.5deg);
+  }
 
-    70% {
-        transform: translate(0, 0.5%) rotate(-0.1deg);
-    }
+  70% {
+    transform: translate(0, 0.5%) rotate(-0.1deg);
+  }
 
-    80% {
-        transform: translate(0, 0) rotate(0.0deg);
-    }
+  80% {
+    transform: translate(0, 0) rotate(0deg);
+  }
 }
 
 @keyframes fallFromSky--bootesProject {
-    0% {
-        opacity: 0;
-        transform: translateY(-500%);
-    }
+  0% {
+    opacity: 0;
+    transform: translateY(-500%);
+  }
 
-    80% {
-        opacity: 0
-    }
+  80% {
+    opacity: 0;
+  }
 
-    ;
+  85% {
+    opacity: 1;
+  }
 
-    85% {
-        opacity: 1
-    }
-
-    ;
-
-    100% {
-        transform: translateY(0);
-    }
+  100% {
+    transform: translateY(0);
+  }
 }
 
 @keyframes slideInLeft--bootesProject {
-    0% {
-        width: 0;
-        opacity: 0;
-    }
+  0% {
+    width: 0;
+    opacity: 0;
+  }
 
-    25% {
-        width: 50%;
-        opacity: 0;
-    }
+  25% {
+    width: 50%;
+    opacity: 0;
+  }
 
-    45% {
-        opacity: 0.45;
-    }
+  45% {
+    opacity: 0.45;
+  }
 
-    100% {
-        width: 75%;
-        opacity: 1;
-    }
+  100% {
+    width: 75%;
+    opacity: 1;
+  }
 }
 
-
 @keyframes slideInRight--bootesProject {
-    0% {
-        width: 0;
-        opacity: 0;
-        transform: translateX(-100%);
-    }
+  0% {
+    width: 0;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 
-    25% {
-        width: 60%;
-        opacity: 0;
-        transform: translateX(-100%);
-    }
+  25% {
+    width: 60%;
+    opacity: 0;
+    transform: translateX(-100%);
+  }
 
-    45% {
-        opacity: 0.45;
-    }
+  45% {
+    opacity: 0.45;
+  }
 
-    100% {
-        width: 75%;
-        opacity: 1;
-        transform: translateX(-100%);
-    }
+  100% {
+    width: 75%;
+    opacity: 1;
+    transform: translateX(-100%);
+  }
 }
 
 @keyframes blink--mySkills {
-    78% {
-        color: inherit;
-        text-shadow: inherit;
-    }
+  78% {
+    color: inherit;
+    text-shadow: inherit;
+  }
 
-    79% {
-        color: #333;
-    }
+  79% {
+    color: #333;
+  }
 
-    80% {
-        text-shadow: none;
-    }
+  80% {
+    text-shadow: none;
+  }
 
-    81% {
-        color: inherit;
-        text-shadow: inherit;
-    }
+  81% {
+    color: inherit;
+    text-shadow: inherit;
+  }
 
-    82% {
-        color: #333;
-        text-shadow: none;
-    }
+  82% {
+    color: #333;
+    text-shadow: none;
+  }
 
-    83% {
-        color: inherit;
-        text-shadow: inherit;
-    }
+  83% {
+    color: inherit;
+    text-shadow: inherit;
+  }
 
-    92% {
-        color: #333;
-        text-shadow: none;
-    }
+  92% {
+    color: #333;
+    text-shadow: none;
+  }
 
-    92.5% {
-        color: inherit;
-        text-shadow: inherit;
-    }
+  92.5% {
+    color: inherit;
+    text-shadow: inherit;
+  }
 }
 
 @keyframes slideIn--myCreations {
-    0% {
-        transform: translateX(-100vw);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(-100vw);
+    opacity: 1;
+  }
 
-    100% {
-        opacity: 1;
-        transform: translateX(0);
-    }
+  100% {
+    opacity: 1;
+    transform: translateX(0);
+  }
 }
 
 @keyframes slideOut--myCreations {
-    0% {
-        transform: translateX(0);
-        opacity: 1;
-    }
+  0% {
+    transform: translateX(0);
+    opacity: 1;
+  }
 
-    100% {
-        transform: translateX(100vw);
-        opacity: 1;
-    }
+  100% {
+    transform: translateX(100vw);
+    opacity: 1;
+  }
 }
 
 // Solo-runner.
 @keyframes sleepingAnimation--myCreations {
-    0% {
-        transform: translateY(80px) translateX(0px);
-        opacity: 0;
-    }
+  0% {
+    transform: translateY(80px) translateX(0px);
+    opacity: 0;
+  }
 
-    6% {
-        transform: translateY(60px) translateX(0px);
-        opacity: 0;
-    }
+  6% {
+    transform: translateY(60px) translateX(0px);
+    opacity: 0;
+  }
 
-    13% {
-        transform: translateY(-20px) translateX(0px) rotate(0deg);
-        opacity: 1;
-    }
+  13% {
+    transform: translateY(-20px) translateX(0px) rotate(0deg);
+    opacity: 1;
+  }
 
-    18% {
-        transform: translateY(0px) rotate(0deg);
-        transform-origin: right center;
-    }
-
+  18% {
+    transform: translateY(0px) rotate(0deg);
+    transform-origin: right center;
+  }
 }
 
 @keyframes bubble--contactUs {
-    0% {
-        transform: translateX(0) translateY(0%);
-        opacity: 0.06;
-    }
-
-    100% {
-        transform: translateX(200px) translateY(-120vh);
-        opacity: 1;
-    }
-}
-
-
-@keyframes waterEffect--contactUs {
-    0% {
-      transform: translateY(-300%) rotate(45deg);
-    }
-
-    30% {
-        transform: translateY(-100%) rotate(25deg);
-    }
-
-    41.5% {
-        transform: translateY(-70%) rotate(16deg);
-    }
-
-    55% {
-        transform: translateY(-40%) rotate(8deg);
-    }
-    70% {
-        transform: translateY(-1%) rotate(0deg);
-    }
-    78% {
-        transform: translateY(-1%) rotate(1deg);
-    }
-    80% {
-        transform: translateY(-1%) rotate(1deg);
-    }
-    82% {
-        transform: translateY(-1%) rotate(1deg);
-    }
-
-    95% {
-        transform: translateY(0%) rotate(0deg);
-    }
+  0% {
+    transform: translateX(0) translateY(0%);
+    opacity: 0.06;
   }
 
-  @keyframes soloRunVibing--bootesProject {
-    0% {
-        transform: translate(10px, 0) ;
-    }
+  100% {
+    transform: translateX(200px) translateY(-120vh);
+    opacity: 1;
+  }
+}
 
-    10% {
-        transform: translate(0, 10px) ;
-    }
+@keyframes waterEffect--contactUs {
+  0% {
+    transform: translateY(-300%) rotate(45deg);
+  }
 
-    20% {
-        transform: translate(5px, 0) ;
-    }
+  30% {
+    transform: translateY(-100%) rotate(25deg);
+  }
 
-    30% {
-        transform: translate(0, 5px) ;
-    }
+  41.5% {
+    transform: translateY(-70%) rotate(16deg);
+  }
 
-    40% {
-        transform: translate(2px, 0);
-    }
+  55% {
+    transform: translateY(-40%) rotate(8deg);
+  }
+  70% {
+    transform: translateY(-1%) rotate(0deg);
+  }
+  78% {
+    transform: translateY(-1%) rotate(1deg);
+  }
+  80% {
+    transform: translateY(-1%) rotate(1deg);
+  }
+  82% {
+    transform: translateY(-1%) rotate(1deg);
+  }
 
-    50% {
-        transform: translate(0, 2px);
-    }
+  95% {
+    transform: translateY(0%) rotate(0deg);
+  }
+}
 
-    60% {
-        transform: translate(1px, 0) ;
-    }
+@keyframes soloRunVibing--bootesProject {
+  0% {
+    transform: translate(10px, 0);
+  }
 
-    70% {
-        transform: translate(0, 1px);
-    }
+  10% {
+    transform: translate(0, 10px);
+  }
 
-    80% {
-        transform: translate(0, 0);
-    }
+  20% {
+    transform: translate(5px, 0);
+  }
+
+  30% {
+    transform: translate(0, 5px);
+  }
+
+  40% {
+    transform: translate(2px, 0);
+  }
+
+  50% {
+    transform: translate(0, 2px);
+  }
+
+  60% {
+    transform: translate(1px, 0);
+  }
+
+  70% {
+    transform: translate(0, 1px);
+  }
+
+  80% {
+    transform: translate(0, 0);
+  }
 }

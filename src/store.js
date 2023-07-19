@@ -1,4 +1,4 @@
-import create from 'zustand';
+import create from "zustand";
 
 export const useStore = create((set) => ({
   isLowDesktopDisplay: false,
@@ -8,5 +8,5 @@ export const useStore = create((set) => ({
   setIsLowDesktopDisplay: (newVal) => set({ isLowDesktopDisplay: newVal }),
   setIsTabletteDisplay: (newVal) => set({ isTabletteDisplay: newVal }),
   setIsLowTabletteDisplay: (newVal) => set({ isLowTabletteDisplay: newVal }),
-  setIsMobileDisplay: (newVal) => set ({ isMobileDisplay: newVal }),
+  setIsMobileDisplay: (newVal) => set({ isMobileDisplay: newVal }),
 }));

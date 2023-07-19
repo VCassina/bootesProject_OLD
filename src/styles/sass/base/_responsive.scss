@@ -163,7 +163,10 @@ TABLETTE
 
 /* HD Tablette - 1024 (x 768 - x600 toléré seulement) - Still landscape/square though */
 @media (max-width: 1279px) {
-  .importantComponent, .skills_container, .ocean, .creations_container {
+  .importantComponent,
+  .skills_container,
+  .ocean,
+  .creations_container {
     min-height: 840px !important;
     // height: 840px !important;
   }
@@ -391,7 +394,7 @@ TABLETTE
       &-picture {
         width: 200px !important;
       }
-      & figure img  {
+      & figure img {
         & + figcaption {
           position: initial !important;
         }
@@ -710,25 +713,25 @@ MOBILE
     }
     &_content {
       top: 0px !important;
-    &_carrousel {
-      @media (max-width: 409px) {
-        &-unit {
-          height: 560px !important;
+      &_carrousel {
+        @media (max-width: 409px) {
+          &-unit {
+            height: 560px !important;
+          }
+          &-txt {
+            flex: initial !important;
+            gap: 10px !important;
+          }
+          &_items {
+            padding: 0px !important;
+          }
+        }
 
-        }
-        &-txt {
-          flex: initial !important;
-          gap: 10px !important;
-        }
-        &_items {
-          padding: 0px !important;
+        &-img {
+          min-height: 240px;
         }
       }
-
-      &-img {
-        min-height: 240px;
-      }
-    }}
+    }
   }
 
   h2 {
