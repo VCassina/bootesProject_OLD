@@ -38,8 +38,8 @@ function CreationsBottomArticle({
 
 
   return (
-    <div className={classNames}>
-      <>
+    <article className={classNames}>
+
         <img
           src={webSiteScreen}
           alt={altScreen}
@@ -69,8 +69,7 @@ function CreationsBottomArticle({
             <Markup content={description} />
           </div>
         </div>
-      </>
-    </div>
+    </article>
   );
 }
 

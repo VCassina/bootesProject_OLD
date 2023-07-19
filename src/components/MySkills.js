@@ -13,7 +13,7 @@ function MySkills() {
   const isMobileDisplay = useStore((state) => state.isMobileDisplay);
 
   return (
-    <article className="skills_container darkComponent">
+    <section className="skills_container darkComponent">
       <AnchorTarget id="skills" />
       <div className="importantComponent">
         <div className="skills_content">
@@ -54,7 +54,7 @@ function MySkills() {
           </figcaption>
         </div>
       </div>
-    </article>
+    </section>
   );
 }
 

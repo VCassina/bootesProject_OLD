@@ -104,7 +104,7 @@ DESKTOP
         height: 90px !important;
         width: 100px !important;
       }
-      & section {
+      & article {
         height: 420px !important;
         padding: 0 5px !important;
       }
@@ -296,7 +296,7 @@ TABLETTE
         scroll-snap-type: x mandatory;
       }
 
-      & section {
+      & article {
         margin: 30px !important;
         flex: 0 0 100%;
         width: 100%;
@@ -643,7 +643,7 @@ MOBILE
       gap: 0px !important;
     }
 
-    & section {
+    & article {
       min-width: 70%;
     }
   }
@@ -710,7 +710,6 @@ MOBILE
     }
     &_content {
       top: 0px !important;
-    
     &_carrousel {
       @media (max-width: 409px) {
         &-unit {
@@ -781,11 +780,11 @@ MOBILE
       &-article {
         padding: 0 20px;
       }
-
       &-article-txt {
         padding-right: 10px;
         min-height: 440px !important;
         overflow: scroll;
+        text-align: center !important;
       }
     }
   }

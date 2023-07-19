@@ -168,7 +168,7 @@ DESKTOP
     height: 90px !important;
     width: 100px !important;
   }
-  .skills_content section {
+  .skills_content article {
     height: 420px !important;
     padding: 0 5px !important;
   }
@@ -319,7 +319,7 @@ TABLETTE
     overflow-x: auto;
     scroll-snap-type: x mandatory;
   }
-  .skills_content section {
+  .skills_content article {
     margin: 30px !important;
     flex: 0 0 100%;
     width: 100%;
@@ -590,7 +590,7 @@ MOBILE
   .skills_content_low {
     gap: 0px !important;
   }
-  .skills_content section {
+  .skills_content article {
     min-width: 70%;
   }
   .contact_content_lower-mascot figure {
@@ -706,6 +706,7 @@ MOBILE
     padding-right: 10px;
     min-height: 440px !important;
     overflow: scroll;
+    text-align: center !important;
   }
   .contact_content {
     position: initial !important;
@@ -1135,7 +1136,7 @@ MOBILE
   justify-content: space-evenly;
   gap: 60px;
 }
-.skills_content section {
+.skills_content article {
   width: 100vw;
   display: flex;
   flex-direction: column;

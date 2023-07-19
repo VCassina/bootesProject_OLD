@@ -78,7 +78,7 @@ function MyCreations() {
   }, [selectedElement, dataSlider]);
 
   return (
-    <article className="creations_container">
+    <section className="creations_container">
       <AnchorTarget id="creations" />
       <div className="importantComponent">
         <div className="creations_content">
@@ -150,7 +150,7 @@ function MyCreations() {
           )}
         </div>
       </div>
-    </article>
+    </section>
   );
 }
 

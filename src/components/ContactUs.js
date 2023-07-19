@@ -21,7 +21,7 @@ function ContactUs() {
   titleAnimationHelper("contact_content_title-flowingAnimation", flowingRef);
 
   return (
-    <article className="contact_container darkComponent ocean">
+    <section className="contact_container darkComponent ocean">
       <AllBubbles />
       <AnchorTarget id="contact" />
       <div className="importantComponent">
@@ -41,7 +41,7 @@ function ContactUs() {
           <div className="contact_content_lower">
             <div className="contact_content_lower-main">
               {!isLowTabletteDisplay && !isMobileDisplay ? (
-                <section className="contact_content_lower-main-links">
+                <article className="contact_content_lower-main-links">
                   <div>
                     <a href="mailto:BoötesDev@gmail.com">
                       <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
@@ -56,12 +56,12 @@ function ContactUs() {
                       <span>Victor Cassina</span>
                     </a>
                   </div>
-                </section>
+                </article>
               ) : null}
               {!isLowTabletteDisplay && !isMobileDisplay ? (
                 <ContentBar side="vertical" />
               ) : null}
-              <section className="contact_content_lower-main-txt">
+              <article className="contact_content_lower-main-txt">
                 <div className="contact_content_lower-main-txt-content">
                   <p className="contact_content_lower-main-txt-content-title">
                     <b>Ecrivez-nous !</b>
@@ -82,7 +82,7 @@ function ContactUs() {
                   <ContentBar side="horizontal" />
                 ) : null}
                 {isLowTabletteDisplay || isMobileDisplay ? (
-                  <section className="contact_content_lower-main-links">
+                  <article className="contact_content_lower-main-links">
                     <div>
                       <a href="mailto:BoötesDev@gmail.com" aria-label="Lien vers l'Email de la boite"> 
                         <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
@@ -98,10 +98,10 @@ function ContactUs() {
                       </a>
                     </div>
                     
-                  </section>
+                  </article>
                 ) : null}
-              </section>
-              <section className="contact_content_lower-mascot">
+              </article>
+              <article className="contact_content_lower-mascot">
                 <figure>
                   <img
                     src={pralinePicture}
@@ -121,12 +121,12 @@ function ContactUs() {
                     Designed by CatalysStuff - Thank you !
                   </figcaption>
                 </figure>
-              </section>
+              </article>
             </div>
           </div>
         </div>
       </div>
-    </article>
+    </section>
   );
 }
 
