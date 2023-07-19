@@ -1,26 +1,26 @@
 {
   "files": {
     "main.css": "/projet-12/static/css/main.c4f77960.css",
-    "main.js": "/projet-12/static/js/main.eb82753f.js",
+    "main.js": "/projet-12/static/js/main.f191b989.js",
     "static/js/787.1ed0c42c.chunk.js": "/projet-12/static/js/787.1ed0c42c.chunk.js",
     "static/media/NinaCarducci.webp": "/projet-12/static/media/NinaCarducci.831ad7ec1190e8d850ec.webp",
     "static/media/lowDesktopNinaCarducci.webp": "/projet-12/static/media/lowDesktopNinaCarducci.862071abedb6e9121ae2.webp",
     "static/media/tabletteNinaCarducci.webp": "/projet-12/static/media/tabletteNinaCarducci.fc2ba06aa6dced016616.webp",
     "static/media/BootesDev.webp": "/projet-12/static/media/BootesDev.4910b2f8124e5c53c2ad.webp",
-    "static/media/mobileBootesDev.webp": "/projet-12/static/media/mobileBootesDev.2a166796812faf2a5949.webp",
-    "static/media/mobileNinaCarducci.webp": "/projet-12/static/media/mobileNinaCarducci.736bb5062143254bc55c.webp",
     "static/media/lowDesktopBootesDev.webp": "/projet-12/static/media/lowDesktopBootesDev.490b45eba3af92987b61.webp",
     "static/media/BankArgent.webp": "/projet-12/static/media/BankArgent.fd06536f7e71a84f2a32.webp",
     "static/media/tabletteBootesDev.webp": "/projet-12/static/media/tabletteBootesDev.f4afb792d1c17ac0e96a.webp",
+    "static/media/mobileNinaCarducci.webp": "/projet-12/static/media/mobileNinaCarducci.54d4fb45ed8c53d74960.webp",
     "static/media/lowDesktopBankArgent.webp": "/projet-12/static/media/lowDesktopBankArgent.ad5789b63cd0b2c6ee4a.webp",
     "static/media/tabletteBankArgent.webp": "/projet-12/static/media/tabletteBankArgent.a001245582e8a49f7318.webp",
-    "static/media/mobileBankArgent.webp": "/projet-12/static/media/mobileBankArgent.298b63d4bc776100444c.webp",
+    "static/media/mobileBootesDev.webp": "/projet-12/static/media/mobileBootesDev.2cd6d69a32ebf452cc6b.webp",
+    "static/media/mobileBankArgent.webp": "/projet-12/static/media/mobileBankArgent.f760b2006ebeba946f04.webp",
     "static/media/meByCatalysStuff.webp": "/projet-12/static/media/meByCatalysStuff.cc79355f130321e42c95.webp",
     "static/media/lowDesktopMeByCatalysStuff.webp": "/projet-12/static/media/lowDesktopMeByCatalysStuff.0edbbbf76ad5fde8fb4d.webp",
-    "static/media/bootesDevLogo.webp": "/projet-12/static/media/bootesDevLogo.24c17c40e8f15fdb643d.webp",
     "static/media/pralineByCatalysStuff.webp": "/projet-12/static/media/pralineByCatalysStuff.f06b3bf05a513dae572e.webp",
     "static/media/tablettePralinePicture.webp": "/projet-12/static/media/tablettePralinePicture.6e17619fb32a57a893b5.webp",
     "static/media/mobileMeByCatalsStuff.webp": "/projet-12/static/media/mobileMeByCatalsStuff.fce9a7aa1ca59611ae53.webp",
+    "static/media/bootesDevLogo.webp": "/projet-12/static/media/bootesDevLogo.b07de866d261cf2acf8f.webp",
     "static/media/lowDesktopMobilePralinePicture.webp": "/projet-12/static/media/lowDesktopMobilePralinePicture.d15d93cccc1b6e7c7a68.webp",
     "static/media/bootesDevMiniLogo.webp": "/projet-12/static/media/bootesDevMiniLogo.b1bdf102bdde4b1c2f5f.webp",
     "static/media/backEndByMacrovector.webp": "/projet-12/static/media/backEndByMacrovector.552552a125ee7fcb9758.webp",
@@ -28,11 +28,11 @@
     "static/media/seoByMacrovector.webp": "/projet-12/static/media/seoByMacrovector.502a8f5f408a0e34d6d1.webp",
     "static/media/frontEndByMacrovector.webp": "/projet-12/static/media/frontEndByMacrovector.f632dcefdc57ebafd4dc.webp",
     "main.c4f77960.css.map": "/projet-12/static/css/main.c4f77960.css.map",
-    "main.eb82753f.js.map": "/projet-12/static/js/main.eb82753f.js.map",
+    "main.f191b989.js.map": "/projet-12/static/js/main.f191b989.js.map",
     "787.1ed0c42c.chunk.js.map": "/projet-12/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.c4f77960.css",
-    "static/js/main.eb82753f.js"
+    "static/js/main.f191b989.js"
   ]
 }
