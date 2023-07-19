@@ -276,7 +276,7 @@ TABLETTE
     grid-template-columns: 1fr 0.5fr !important;
   }
   .bootes_content-article-txt {
-    height: 300px;
+    min-height: 300px;
   }
   .bootes_content-article.second-element {
     grid-column: 1/3;
@@ -384,7 +384,7 @@ TABLETTE
     align-items: center;
   }
   .bootes_content-article-txt {
-    height: 220px !important;
+    min-height: 220px !important;
   }
   .bootes_content-picture {
     width: 200px !important;
@@ -585,7 +585,7 @@ MOBILE
     animation: none !important;
   }
   .bootes_content-article-txt {
-    height: 260px !important;
+    min-height: 260px !important;
   }
   .skills_content_low {
     gap: 0px !important;
@@ -704,7 +704,7 @@ MOBILE
   }
   .bootes_content-article-txt {
     padding-right: 10px;
-    height: 440px !important;
+    min-height: 440px !important;
     overflow: scroll;
   }
   .contact_content {
@@ -891,21 +891,14 @@ MOBILE
     transform-origin: right center;
   }
 }
-@keyframes sideWays--contactUs {
-  0% {
-    margin-left: 0px;
-  }
-  100% {
-    margin-left: 200px;
-  }
-}
 @keyframes bubble--contactUs {
   0% {
-    transform: translateY(0%);
+    transform: translateX(0) translateY(0%);
     opacity: 0.06;
   }
   100% {
-    transform: translateY(-120vh);
+    transform: translateX(200px) translateY(-120vh);
+    opacity: 1;
   }
 }
 @keyframes waterEffect--contactUs {
@@ -1485,7 +1478,7 @@ MOBILE
   background-color: white;
   bottom: -30px;
   opacity: 0.2;
-  animation: bubble--contactUs 15s ease-in-out infinite, sideWays--contactUs 4s ease-in-out infinite alternate;
+  animation: bubble--contactUs 15s ease-in-out infinite;
 }
 .bubble--1 {
   left: 10%;

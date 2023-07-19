@@ -5,7 +5,7 @@ import AnchorTarget from "../items/AnchorTarget";
 import frontEndIcon from "../assets/frontEndByMacrovector.webp";
 import backEndIcon from "../assets/backEndByMacrovector.webp";
 import seoIcon from "../assets/seoByMacrovector.webp";
-import { useStore } from '../store';
+import { useStore } from "../store";
 
 function MySkills() {
   const imgSrc = [frontEndIcon, backEndIcon, seoIcon];
@@ -22,37 +22,32 @@ function MySkills() {
             <span>Nos competences</span>
           </h2>
           {isLowTabletteDisplay || isMobileDisplay ? (
-    <div className="skills_carousel_wrapper">
-      <div className="skills_carousel_content">
-      <div className="skills_content_low">
-    {data.map((article, index) => (
-      <SkillsArticle
-        key={index}
-        alt={article.alt}
-        img={imgSrc[index]}
-        title={article.title}
-        description={article.description}
-        skills={article.skills}
-      />
-    ))}
-  </div>
-      </div>
-    </div>
-
-) : (
-  <div className="skills_content_low">
-    {data.map((article, index) => (
-      <SkillsArticle
-        key={index}
-        alt={article.alt}
-        img={imgSrc[index]}
-        title={article.title}
-        description={article.description}
-        skills={article.skills}
-      />
-    ))}
-  </div>
-)}
+            <div className="skills_content_low">
+              {data.map((article, index) => (
+                <SkillsArticle
+                  key={index}
+                  alt={article.alt}
+                  img={imgSrc[index]}
+                  title={article.title}
+                  description={article.description}
+                  skills={article.skills}
+                />
+              ))}
+            </div>
+          ) : (
+            <div className="skills_content_low">
+              {data.map((article, index) => (
+                <SkillsArticle
+                  key={index}
+                  alt={article.alt}
+                  img={imgSrc[index]}
+                  title={article.title}
+                  description={article.description}
+                  skills={article.skills}
+                />
+              ))}
+            </div>
+          )}
 
           <figcaption className="skills_content-credit">
             Icones designed by Macrovector - Thank you !

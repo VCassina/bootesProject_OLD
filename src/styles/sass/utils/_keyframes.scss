@@ -231,24 +231,15 @@
 
 }
 
-@keyframes sideWays--contactUs {
-    0% {
-        margin-left: 0px;
-    }
-
-    100% {
-        margin-left: 200px;
-    }
-}
-
 @keyframes bubble--contactUs {
     0% {
-        transform: translateY(0%);
+        transform: translateX(0) translateY(0%);
         opacity: 0.06;
     }
 
     100% {
-        transform: translateY(-120vh);
+        transform: translateX(200px) translateY(-120vh);
+        opacity: 1;
     }
 }
 

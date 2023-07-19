@@ -245,7 +245,7 @@ TABLETTE
       grid-template-columns: 1fr 0.5fr !important;
       &-article {
         &-txt {
-          height: 300px;
+          min-height: 300px;
         }
         &.second-element {
           grid-column: 1 / 3;
@@ -386,7 +386,7 @@ TABLETTE
       flex-direction: column;
       align-items: center;
       &-article-txt {
-        height: 220px !important;
+        min-height: 220px !important;
       }
       &-picture {
         width: 200px !important;
@@ -632,7 +632,7 @@ MOBILE
     &_content-article {
       animation: none !important;
       &-txt {
-        height: 260px !important;
+        min-height: 260px !important;
         // height: initial !important;
       }
     }
@@ -784,7 +784,7 @@ MOBILE
 
       &-article-txt {
         padding-right: 10px;
-        height: 440px !important;
+        min-height: 440px !important;
         overflow: scroll;
       }
     }

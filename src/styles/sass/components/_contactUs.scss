@@ -145,8 +145,7 @@
   background-color: white;
   bottom: -30px;
   opacity: 0.2;
-  animation: bubble--contactUs 15s ease-in-out infinite,
-    sideWays--contactUs 4s ease-in-out infinite alternate;
+  animation: bubble--contactUs 15s ease-in-out infinite;
 
   &--1 {
     left: 10%;
