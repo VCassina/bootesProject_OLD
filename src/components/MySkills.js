@@ -5,12 +5,9 @@ import AnchorTarget from "../items/AnchorTarget";
 import frontEndIcon from "../assets/frontEndByMacrovector.webp";
 import backEndIcon from "../assets/backEndByMacrovector.webp";
 import seoIcon from "../assets/seoByMacrovector.webp";
-import { useStore } from "../store";
 
 function MySkills() {
   const imgSrc = [frontEndIcon, backEndIcon, seoIcon];
-  const isLowTabletteDisplay = useStore((state) => state.isLowTabletteDisplay);
-  const isMobileDisplay = useStore((state) => state.isMobileDisplay);
 
   return (
     <section className="skills_container darkComponent">
@@ -21,7 +18,6 @@ function MySkills() {
             <span>_</span>
             <span>Nos competences</span>
           </h2>
-          {isLowTabletteDisplay || isMobileDisplay ? (
             <div className="skills_content_low">
               {data.map((article, index) => (
                 <SkillsArticle
@@ -34,21 +30,6 @@ function MySkills() {
                 />
               ))}
             </div>
-          ) : (
-            <div className="skills_content_low">
-              {data.map((article, index) => (
-                <SkillsArticle
-                  key={index}
-                  alt={article.alt}
-                  img={imgSrc[index]}
-                  title={article.title}
-                  description={article.description}
-                  skills={article.skills}
-                />
-              ))}
-            </div>
-          )}
-
           <figcaption className="skills_content-credit">
             Icones designed by Macrovector - Thank you !
           </figcaption>
