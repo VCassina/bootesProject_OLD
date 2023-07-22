@@ -45,7 +45,7 @@ function BootesProject() {
               description={data[selectedItemIndex].description}
               titleIndex="first-title"
               secondElement={false}
-              tabletteDisplay={true}
+              dynDisplay={true}
               data={data}
               selectedItemIndex={selectedItemIndex}
               setSelectedItemIndex={setSelectedItemIndex}
@@ -56,7 +56,7 @@ function BootesProject() {
               description={data[0].description}
               titleIndex="first-title"
               secondElement={false}
-              tabletteDisplay={false}
+              dynDisplay={false}
             />
           )}
           <figure>

@@ -5,7 +5,7 @@ function BootesArticle({
   description,
   titleIndex,
   secondElement,
-  tabletteDisplay,
+  dynDisplay,
   data,
   selectedItemIndex,
   setSelectedItemIndex,
@@ -15,7 +15,7 @@ function BootesArticle({
   }`;
   return (
     <article className={sectionClasses}>
-      {tabletteDisplay && data ? (
+      {dynDisplay ? (
         <div className="bootes_titleBundle">
           {data.map((item, index) => (
             <h2
