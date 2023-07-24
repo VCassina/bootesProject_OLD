@@ -92,7 +92,6 @@ function MyCreations() {
               <div className="creations_content_carrousel_items">
                 {data.map((newData, index) => {
                   let resultIndex = index;
-
                   resultIndex += isLowDesktopDisplay
                     ? 3
                     : isTabletteDisplay || isLowTabletteDisplay
@@ -100,7 +99,6 @@ function MyCreations() {
                     : isMobileDisplay
                     ? 9
                     : 0;
-
                   return (
                     <CreationsBottomArticle
                       key={index}

@@ -1,5 +1,3 @@
-import { useEffect } from "react";
-
 export function handleElementChangeWithTimer(
   index,
   selectedElement,
@@ -18,38 +16,5 @@ export function handleElementChangeWithTimer(
     setSelectedImage(index);
     setAnimateOut(false);
     setNewData(dataSlider[index]);
-  }, 200);
-}
-
-export function useSliderEffect(
-  selectedElement,
-  setSelectedElement,
-  setSelectedImage,
-  setAnimateOut,
-  dataSlider,
-  setNewData
-) {
-  useEffect(() => {
-    let timeoutId = null;
-
-    if (selectedElement !== null) {
-      if (timeoutId) {
-        clearTimeout(timeoutId);
-      }
-      timeoutId = setTimeout(() => {
-        setSelectedImage(selectedElement);
-        setAnimateOut(false);
-        setNewData(dataSlider[selectedElement]);
-      }, 350);
-    }
-
-    return () => clearTimeout(timeoutId);
-  }, [
-    selectedElement,
-    setSelectedElement,
-    setSelectedImage,
-    setAnimateOut,
-    dataSlider,
-    setNewData,
-  ]);
+  }, 400);
 }
