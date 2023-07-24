@@ -18,7 +18,7 @@ export function handleElementChangeWithTimer(
     setSelectedImage(index);
     setAnimateOut(false);
     setNewData(dataSlider[index]);
-  }, 350);
+  }, 200);
 }
 
 export function useSliderEffect(
