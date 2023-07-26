@@ -3,10 +3,10 @@ import AnchorTarget from "../items/AnchorTarget";
 import titleAnimationHelper from "../helpers/titleAnimationHelper";
 import AllBubbles from "./AllBubbles";
 import ContentBar from "../items/ContentBar";
+import ContactLinks from "../items/ContactLinks";
 import pralinePicture from "../assets/pralineByCatalysStuff.webp";
 import lowDesktopMobilePralinePicture from "../assets/lowDesktopMobilePralinePicture.webp";
 import tablettePralinePicture from "../assets/tablettePralinePicture.webp";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook, faLinkedin } from "@fortawesome/free-brands-svg-icons";
 import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 import { library } from "@fortawesome/fontawesome-svg-core";
@@ -43,18 +43,24 @@ function ContactUs() {
               {!isLowTabletteDisplay && !isMobileDisplay ? (
                 <article className="contact_content_lower-main-links">
                   <div>
-                    <a href="mailto:victorCassina@gmail.com">
-                      <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
-                      <span>BoötesDev@gmail.com</span>
-                    </a>
-                    <a href="https://www.linkedin.com/in/victor-cassina-032a5816b/">
-                      <FontAwesomeIcon icon="fa-brands fa-linkedin" />{" "}
-                      <span>Victor Cassina</span>
-                    </a>
-                    <a href="https://www.facebook.com/profile.php?id=100006082485106">
-                      <FontAwesomeIcon icon="fa-brands fa-facebook" />{" "}
-                      <span>Victor Cassina</span>
-                    </a>
+                    <ContactLinks
+                      href="mailto:victorCassina@gmail.com"
+                      aria=""
+                      icon="fa-solid fa-envelope"
+                      span="BoötesDev@gmail.com"
+                    />
+                    <ContactLinks
+                      href="https://www.linkedin.com/in/victor-cassina-032a5816b/"
+                      aria="Lien vers mon LinkedIn"
+                      icon="fa-brands fa-linkedin"
+                      span="Victor Cassina"
+                    />
+                    <ContactLinks
+                      href="https://www.facebook.com/profile.php?id=100006082485106"
+                      aria="Lien vers mon Facebook"
+                      icon="fa-brands fa-facebook"
+                      span="Victor Cassina"
+                    />
                   </div>
                 </article>
               ) : null}
@@ -69,8 +75,8 @@ function ContactUs() {
                   <span className="contact_content_lower-main-txt-content-subtitle">
                     <p>
                       Nous pouvons convenir ensemble de la formule la plus
-                      adaptée à vos besoins, discutons de votre projet
-                      ensemble, notre porte est ouverte !
+                      adaptée à vos besoins, discutons de votre projet ensemble,
+                      notre porte est ouverte !
                     </p>
                     <p>
                       Et si vous voulez juste savoir comment se porte Praline,
@@ -84,27 +90,24 @@ function ContactUs() {
                 {isLowTabletteDisplay || isMobileDisplay ? (
                   <article className="contact_content_lower-main-links">
                     <div>
-                      <a
-                        href="mailto:victorcassina@gmail.com"
-                        aria-label="Lien vers l'Email de la boite"
-                      >
-                        <FontAwesomeIcon icon="fa-solid fa-envelope" />{" "}
-                        <span>victorcassina@gmail.com</span>
-                      </a>
-                      <a
+                      <ContactLinks
+                        href="mailto:victorCassina@gmail.com"
+                        aria=""
+                        icon="fa-solid fa-envelope"
+                        span=""
+                      />
+                      <ContactLinks
                         href="https://www.linkedin.com/in/victor-cassina-032a5816b/"
-                        aria-label="Lien vers mon profil LinkedIn"
-                      >
-                        <FontAwesomeIcon icon="fa-brands fa-linkedin" />{" "}
-                        <span>Victor Cassina</span>
-                      </a>
-                      <a
+                        aria="Lien vers mon LinkedIn"
+                        icon="fa-brands fa-linkedin"
+                        span=""
+                      />
+                      <ContactLinks
                         href="https://www.facebook.com/profile.php?id=100006082485106"
-                        aria-label="Lien vers mon facebook"
-                      >
-                        <FontAwesomeIcon icon="fa-brands fa-facebook" />{" "}
-                        <span>Victor Cassina</span>
-                      </a>
+                        aria="Lien vers mon Facebook"
+                        icon="fa-brands fa-facebook"
+                        span=""
+                      />
                     </div>
                   </article>
                 ) : null}
