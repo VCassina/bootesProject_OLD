@@ -30,8 +30,8 @@ function BootesProject() {
           </div>
         ) : null}
         <h1 className="bootes_title title">
-          _Victor Cassina
-          <p>Intégrateur Front-end et plus encore !</p>
+          _Boötes Project
+          <p>Création accessible de sites associatifs modernes</p>
         </h1>
         {isMobileDisplay ? (
           <h1 className="bootes_title-mobile title">
