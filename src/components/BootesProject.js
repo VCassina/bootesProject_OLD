@@ -3,7 +3,7 @@ import meByCatalysStuff from "../assets/meByCatalysStuff.webp";
 import lowDesktopMeByCatalysStuff from "../assets/lowDesktopMeByCatalysStuff.webp";
 import mobileMeByCatalsStuff from "../assets/mobileMeByCatalsStuff.webp";
 import AnchorTarget from "../items/AnchorTarget";
-import data from "../datas/bootesArticle.json";
+import data from "../datas/bootesArticleTeam.json";
 import BootesArticle from "../items/BootesArticle";
 import { useStore } from "../store";
 import Logo from "../assets/bootesDevLogo.webp";
@@ -30,12 +30,12 @@ function BootesProject() {
           </div>
         ) : null}
         <h1 className="bootes_title title">
-          _Boötes Project
-          <p>Commande accessible de sites associatifs modernes</p>
+          _Victor Cassina
+          <p>Intégrateur Front-end et plus encore !</p>
         </h1>
         {isMobileDisplay ? (
           <h1 className="bootes_title-mobile title">
-            Commandez votre site associatif moderne
+             _ Boötes Project !
           </h1>
         ) : null}
         <div className="bootes_content">

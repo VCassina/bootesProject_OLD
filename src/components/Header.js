@@ -37,8 +37,8 @@ function Header() {
               >
                 <span className="header_nav-unit">
                   <FaLeaf className="header_nav-svg" />
-                  <span className="header_nav-mainTxt"> Boötes </span>
-                  <span className="header_nav-prefixe">Project</span>
+                  <span className="header_nav-mainTxt"> Projet </span>
+                  <span className="header_nav-prefixe"></span>
                 </span>
               </a>
             </li>
@@ -54,8 +54,8 @@ function Header() {
               >
                 <span className="header_nav-unit">
                   <FaCode className="header_nav-svg" />{" "}
-                  <span className="header_nav-prefixe">Nos</span>
-                  <span className="header_nav-mainTxt"> compétences</span>
+                  <span className="header_nav-prefixe"></span>
+                  <span className="header_nav-mainTxt"> Compétences</span>
                 </span>
               </a>
             </li>
@@ -71,8 +71,8 @@ function Header() {
               >
                 <span className="header_nav-unit">
                   <FaFolderOpen className="header_nav-svg" />{" "}
-                  <span className="header_nav-prefixe">Nos</span>
-                  <span className="header_nav-mainTxt"> réalisations</span>
+                  <span className="header_nav-prefixe"></span>
+                  <span className="header_nav-mainTxt"> Réalisations</span>
                 </span>
               </a>
             </li>
@@ -88,7 +88,7 @@ function Header() {
               >
                 <span className="header_nav-unit">
                   <FaComments className="header_nav-svg" />{" "}
-                  <span className="header_nav-prefixe">Nous</span>
+                  <span className="header_nav-prefixe">Me</span>
                   <span className="header_nav-mainTxt"> contact</span>
                   <span className="header_nav-prefixe">er</span>
                 </span>

@@ -144,7 +144,7 @@ DESKTOP
 @media (max-width: 1366px) {
   .bootes_title {
     position: relative;
-    top: 20px;
+    top: 40px;
   }
   .bootes_content {
     position: relative;
@@ -1296,7 +1296,7 @@ MOBILE
   color: #031a13;
   height: auto;
   padding: 5px;
-  gap: 15px;
+  gap: 10px;
   margin: auto 0;
 }
 .creations_content_carrousel-txt-title {

@@ -45,21 +45,21 @@ function ContactUs() {
                   <div>
                     <ContactLinks
                       href="mailto:victorCassina@gmail.com"
-                      aria=""
+                      aria="Lien vers mon Gmail"
                       icon="fa-solid fa-envelope"
-                      span="BoötesDev@gmail.com"
+                      span="Gmail"
                     />
                     <ContactLinks
                       href="https://www.linkedin.com/in/victor-cassina-032a5816b/"
                       aria="Lien vers mon LinkedIn"
                       icon="fa-brands fa-linkedin"
-                      span="Victor Cassina"
+                      span="LinkedIn"
                     />
                     <ContactLinks
                       href="https://www.facebook.com/profile.php?id=100006082485106"
                       aria="Lien vers mon Facebook"
                       icon="fa-brands fa-facebook"
-                      span="Victor Cassina"
+                      span="Facebook"
                     />
                   </div>
                 </article>
@@ -74,13 +74,11 @@ function ContactUs() {
                   </p>
                   <span className="contact_content_lower-main-txt-content-subtitle">
                     <p>
-                      Nous pouvons convenir ensemble de la formule la plus
-                      adaptée à vos besoins, discutons de votre projet ensemble,
-                      notre porte est ouverte !
+                      Vous avez un projet où nous pouvons être utile à sa réalisation ? <b>Discutons ensemble !</b>
+                      { } Notre porte est grande ouverte alors cliquez sur un des liens, celui qui vous plait le plus.
                     </p>
                     <p>
-                      Et si vous voulez juste savoir comment se porte Praline,
-                      c'est possible aussi...
+                      En attendant que je vous lise et réponde, je vous dit : "A très bientôt" !
                     </p>
                   </span>
                 </div>

@@ -1,0 +1,12 @@
+[
+    {
+      "title": "Mon profil",
+      "titleShort": "Profil",
+      "description": "<p>Je me présente, Victor Cassina : <b>Intégrateur Front-end</b>.</p><p>Fraichêment diplomé en <b>Front-end</b> et également en <b>Back-end</b> dans le futur, je suis un développeur curieux, qui aime se tenir à jour, apprendre et qui est agréable !</p><p>Et oui, on dirait pas mais c'est toujours un plus d'être avenant, cela me permet d'y <b>rejoindre une équipe</b>, d'être motivé et motivant pour cette dernière !</p>"
+    },
+    {
+        "title": "Mon parcours",
+        "titleShort": "Parcours",
+        "description": "<p>J'ai toujours passé beaucoup de temps sur les écrans et je me suis toujours posé trop de questions.</p><p>Cela m'a conduit à programmer quand j'étais adolescent, d'abord en <b>POO</b>, j'ai même rejoins le <b>CESI:EXIA</b> de Bordeaux avant d'explorer l'audiovisuel à travers du montage audio/video.</p><p> Je suis ensuite passé par la case <b>Système et Réseau</b> où j'ai obtenu mon titre de TRIP avant de me spécialiser dans le <b>Web</b> ! <p>Un profil assez complet donc à votre entière disposition</p>"
+      }
+  ]

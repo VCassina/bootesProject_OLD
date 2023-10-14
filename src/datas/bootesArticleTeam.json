@@ -1,0 +1,12 @@
+[
+  {
+    "title": "Un projet associatif",
+    "titleShort": "Projet associatif",
+    "description": "<p>Le Boötes Project, c'est un concept simple : <b>Fournir aux associations un Site Web</b>.</p><p>Nous savons que cela peut representer un coût pour une structure modeste d'avoir une belle présence toute jolie sur Internet et c'est pourquoi nous proposons des services <b>des plus abordables</b> avec des tarifs autours de <b>20% des prix moyen du marché</b> pour un service comparable.</p><p>Où est l'astuce ? Nous visons uniquement l'intêret de la société avec notre activité, tout simplement.</p></p>"
+  },
+  {
+      "title": "Notre équipe",
+      "titleShort": "Notre équipe",
+      "description": "<p>Nous sommes deux sur le projet :</p><p><b>Victor</b>, le <b>Développeur</b> du duo, il est diplomé en <b>Système & Réseau</b>, en <b>Intégration Web</b> ainsi qu'en <b>Back-end</b>.</p><p><b>Lisa</b>, la <b>Designeuse UI/UX</b>, sans elle, les sites perdraient leur charme et de leur ergonomie !</p><p>A deux, nous formons une sorte de gentille Team Rocket, nous avons même un chat qui ne se tait jamais, notre mascotte : <b>Praline</b> que vous retrouverez en bas de page.</p>"
+    }
+]

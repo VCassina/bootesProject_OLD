@@ -8,7 +8,7 @@
     ],
     "altScreen": "Capture de la page d'accueil du projet bankArgent",
     "title": "Bank Argent",
-    "description": "<p>Ce site a été <b>sécurisé</b> via la gestion de l'authentification sous <b>Redux</b> !</p><p>C'est également un insubmesible résistant aux terribles <b>injections SQL</b> en tout genre.</p>",
+    "description": "<p>Gestion des states via <b>Redux</b></p><p>Sécurisation <b>anti-SQL injections</b></p><p>Gestion d'une <b>dataBase (mongoDB)</b></p><p>Conception et intégration de fonctionnalité d'une <b>API</b></p>",
     "gitUrl": "https://github.com/VCassina/projet-11-front-end/tree/master"
   },
   {
@@ -20,7 +20,7 @@
     ],
     "altScreen": "Capture de la page d'accueil projet Nina Carducci, le site d'une photographe profesionnelle",
     "title": "Nina Carducci",
-    "description": "<p>Enormément de photos <b>haute résolution</b>, et pourtant, il est <b>très léger</b> grâce à nous.</p><p>J'y pense, nous sommes aussi responsables des <b>micro-données</b> qui lui donnent un <b>meilleur référencement</b>.</p>",
+    "description": "<p><b>Optimisation des performances</b> d'un site contenant des images HD</p><p>Ajout de <b>données de référencement</b> adaptées</p><p><b>Customisation de l'affichage</b> lors d'un partage</p>",
     "siteUrl": "https://vcassina.github.io/projet-9/",
     "gitUrl": "https://github.com/VCassina/projet-9/"
   },
@@ -33,7 +33,7 @@
     ],
     "altScreen": "Capture de la page d'accueil de Boötes Dev, notre site",
     "title": "Boötes Dev",
-    "description": "<p>Notre petit protégé.</p><p> Il démontre les moyens que nous pouvons mettre en place au cours d'un projet standard comme <b>React</b>, <b>ReactQuery</b>, <b>SASS</b> ainsi qu'une bonne <b>optimisation</b>.</p>",
+    "description": "<p>Création intégrale d'un projet React avec <b>conception visuelle</b> avec SASS</p><p><b>Responsivité totale</b> latérale & verticale</p><p>Gestion des states globaux avec <b>React Query</b></p><p><b>Optimisation</b> SEO intégrale</p>",
     "siteUrl": "https://vcassina.github.io/projet-12/",
     "gitUrl": "https://github.com/VCassina/projet-12"
   }
