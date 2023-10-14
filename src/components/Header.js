@@ -37,7 +37,7 @@ function Header() {
               >
                 <span className="header_nav-unit">
                   <FaLeaf className="header_nav-svg" />
-                  <span className="header_nav-mainTxt"> Projet </span>
+                  <span className="header_nav-mainTxt"> Boötes Project </span>
                   <span className="header_nav-prefixe"></span>
                 </span>
               </a>
