@@ -5,8 +5,8 @@ import HomePage from "./pages/homePage.js";
 function AppRoutes() {
   return (
     <Routes>
-      <Route path="/bootesProject" element={<HomePage />} />
-      <Route path="/*" element={<Navigate to="/bootesProject" />} />
+      <Route path="/bootesProject_OLD" element={<HomePage />} />
+      <Route path="/*" element={<Navigate to="/bootesProject_OLD" />} />
     </Routes>
   );
 }
