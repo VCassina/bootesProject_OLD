@@ -1,26 +1,26 @@
 {
   "files": {
-    "main.css": "/bootesProject/static/css/main.6762a555.css",
-    "main.js": "/bootesProject/static/js/main.378acf46.js",
-    "static/js/787.1ed0c42c.chunk.js": "/bootesProject/static/js/787.1ed0c42c.chunk.js",
-    "static/media/meByCatalysStuff.webp": "/bootesProject/static/media/meByCatalysStuff.cc79355f130321e42c95.webp",
-    "static/media/lowDesktopMeByCatalysStuff.webp": "/bootesProject/static/media/lowDesktopMeByCatalysStuff.0edbbbf76ad5fde8fb4d.webp",
-    "static/media/pralineByCatalysStuff.webp": "/bootesProject/static/media/pralineByCatalysStuff.f06b3bf05a513dae572e.webp",
-    "static/media/tablettePralinePicture.webp": "/bootesProject/static/media/tablettePralinePicture.6e17619fb32a57a893b5.webp",
-    "static/media/mobileMeByCatalsStuff.webp": "/bootesProject/static/media/mobileMeByCatalsStuff.fce9a7aa1ca59611ae53.webp",
-    "static/media/bootesDevLogo.webp": "/bootesProject/static/media/bootesDevLogo.b07de866d261cf2acf8f.webp",
-    "static/media/lowDesktopMobilePralinePicture.webp": "/bootesProject/static/media/lowDesktopMobilePralinePicture.d15d93cccc1b6e7c7a68.webp",
-    "static/media/backEndByMacrovector.webp": "/bootesProject/static/media/backEndByMacrovector.938c0a4b776835cf0bf2.webp",
-    "static/media/bootesDevMiniLogo.webp": "/bootesProject/static/media/bootesDevMiniLogo.b1bdf102bdde4b1c2f5f.webp",
-    "static/media/seoByMacrovector.webp": "/bootesProject/static/media/seoByMacrovector.06f61f37725c40a1efc1.webp",
-    "static/media/frontEndByMacrovector.webp": "/bootesProject/static/media/frontEndByMacrovector.c588526233e34e4f4195.webp",
-    "index.html": "/bootesProject/index.html",
-    "main.6762a555.css.map": "/bootesProject/static/css/main.6762a555.css.map",
-    "main.378acf46.js.map": "/bootesProject/static/js/main.378acf46.js.map",
-    "787.1ed0c42c.chunk.js.map": "/bootesProject/static/js/787.1ed0c42c.chunk.js.map"
+    "main.css": "/bootesProject_OLD/static/css/main.6762a555.css",
+    "main.js": "/bootesProject_OLD/static/js/main.cf39a70d.js",
+    "static/js/787.1ed0c42c.chunk.js": "/bootesProject_OLD/static/js/787.1ed0c42c.chunk.js",
+    "static/media/meByCatalysStuff.webp": "/bootesProject_OLD/static/media/meByCatalysStuff.cc79355f130321e42c95.webp",
+    "static/media/lowDesktopMeByCatalysStuff.webp": "/bootesProject_OLD/static/media/lowDesktopMeByCatalysStuff.0edbbbf76ad5fde8fb4d.webp",
+    "static/media/pralineByCatalysStuff.webp": "/bootesProject_OLD/static/media/pralineByCatalysStuff.f06b3bf05a513dae572e.webp",
+    "static/media/tablettePralinePicture.webp": "/bootesProject_OLD/static/media/tablettePralinePicture.6e17619fb32a57a893b5.webp",
+    "static/media/mobileMeByCatalsStuff.webp": "/bootesProject_OLD/static/media/mobileMeByCatalsStuff.fce9a7aa1ca59611ae53.webp",
+    "static/media/bootesDevLogo.webp": "/bootesProject_OLD/static/media/bootesDevLogo.b07de866d261cf2acf8f.webp",
+    "static/media/lowDesktopMobilePralinePicture.webp": "/bootesProject_OLD/static/media/lowDesktopMobilePralinePicture.d15d93cccc1b6e7c7a68.webp",
+    "static/media/backEndByMacrovector.webp": "/bootesProject_OLD/static/media/backEndByMacrovector.938c0a4b776835cf0bf2.webp",
+    "static/media/bootesDevMiniLogo.webp": "/bootesProject_OLD/static/media/bootesDevMiniLogo.b1bdf102bdde4b1c2f5f.webp",
+    "static/media/seoByMacrovector.webp": "/bootesProject_OLD/static/media/seoByMacrovector.06f61f37725c40a1efc1.webp",
+    "static/media/frontEndByMacrovector.webp": "/bootesProject_OLD/static/media/frontEndByMacrovector.c588526233e34e4f4195.webp",
+    "index.html": "/bootesProject_OLD/index.html",
+    "main.6762a555.css.map": "/bootesProject_OLD/static/css/main.6762a555.css.map",
+    "main.cf39a70d.js.map": "/bootesProject_OLD/static/js/main.cf39a70d.js.map",
+    "787.1ed0c42c.chunk.js.map": "/bootesProject_OLD/static/js/787.1ed0c42c.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.6762a555.css",
-    "static/js/main.378acf46.js"
+    "static/js/main.cf39a70d.js"
   ]
 }
